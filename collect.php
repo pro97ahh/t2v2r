@@ -91,7 +91,7 @@ function config_array($input){
 }
 
 $raw_url_base =
-    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main"; // Define the base URL for fetching raw data
+    "https://raw.githubusercontent.com/pro97ahh/t2v2r/main"; // Define the base URL for fetching raw data
 
 $mix_data = []; // Initialize an empty array for mix data
 $vmess_data = []; // Initialize an empty array for vmess data
