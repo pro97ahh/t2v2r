@@ -6,6 +6,18 @@ include "modules/config.php"; // Include the config module
 include "modules/ranking.php"; // Include the ranking module
 include "modules/singbox.php"; // Include the singbox module
 
+function addHeader ($subscription, $subscriptionName) {
+    $headerText = "#profile-title: base64:" . base64_encode($subscriptionName) . "
+#profile-update-interval: 1
+#subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+#support-url: https://t.me/v2raycollector
+#profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+
+";
+
+    return $headerText . $subscription;
+}
+
 function deleteFolder($folder) {
     if (!is_dir($folder)) {
         return;
@@ -216,8 +228,8 @@ foreach ($donated_array as $key => $donated_config){
 
 $donated_mix = implode("\n", $donated_array);
 
-file_put_contents("sub/normal/donated", $donated_mix);
-file_put_contents("sub/base64/donated", base64_encode($donated_mix));
+file_put_contents("sub/normal/donated", addHeader($donated_mix, "TVC | DONATED"));
+file_put_contents("sub/base64/donated", base64_encode(addHeader($donated_mix, "TVC | DONATED")));
 
 // Extract the "config" value from each object in $type_data and store it in $type_array
 $vmess_array = config_array($vmess_data);
@@ -324,12 +336,12 @@ $mix_data_deduplicate = array_merge(
 );
 
 $subscription_types = [
-    "mix" => base64_encode($mix),
-    "vmess" => base64_encode($fixed_string_vmess),
-    "vless" => base64_encode($fixed_string_vless),
-    "reality" => base64_encode($fixed_string_reality),
-    "trojan" => base64_encode($fixed_string_trojan),
-    "shadowsocks" => base64_encode($fixed_string_shadowsocks),
+    "mix" => base64_encode(addHeader($mix, "TVC | MIX")),
+    "vmess" => base64_encode(addHeader($fixed_string_vmess, "TVC | VMESS")),
+    "vless" => base64_encode(addHeader($fixed_string_vless, "TVC | VLESS")),
+    "reality" => base64_encode(addHeader($fixed_string_reality, "TVC | REALITY")),
+    "trojan" => base64_encode(addHeader($fixed_string_trojan, "TVC | TROJAN")),
+    "shadowsocks" => base64_encode(addHeader($fixed_string_shadowsocks, "TVC | SHADOWSOCKS")),
 ];
 
 // Write subscription data to files
@@ -368,23 +380,23 @@ $singboxTypes = [
 ];
 
 foreach ($singboxTypes as $singboxType => $subContents) {
-    file_put_contents("singbox/nekobox/118/" . $singboxType . ".json", GenerateConfig($subContents, "nnew"));
-    file_put_contents("singbox/nekobox/117/" . $singboxType . ".json", GenerateConfig($subContents, "nold"));
-    file_put_contents("singbox/sfasfi/" . $singboxType . ".json", GenerateConfig($subContents, "sfia"));
-    file_put_contents("singbox/nekobox/118/" . $singboxType . "Lite.json", GenerateConfigLite($subContents, "nnew"));
-    file_put_contents("singbox/nekobox/117/" . $singboxType . "Lite.json", GenerateConfigLite($subContents, "nold"));
-    file_put_contents("singbox/sfasfi/" . $singboxType . "Lite.json", GenerateConfigLite($subContents, "sfia"));
+    file_put_contents("singbox/nekobox/118/" . $singboxType . ".json", GenerateConfig($subContents, "nnew", $singboxType));
+    file_put_contents("singbox/nekobox/117/" . $singboxType . ".json", GenerateConfig($subContents, "nold", $singboxType));
+    file_put_contents("singbox/sfasfi/" . $singboxType . ".json", GenerateConfig($subContents, "sfia", $singboxType));
+    file_put_contents("singbox/nekobox/118/" . $singboxType . "Lite.json", GenerateConfigLite($subContents, "nnew", $singboxType));
+    file_put_contents("singbox/nekobox/117/" . $singboxType . "Lite.json", GenerateConfigLite($subContents, "nold", $singboxType));
+    file_put_contents("singbox/sfasfi/" . $singboxType . "Lite.json", GenerateConfigLite($subContents, "sfia", $singboxType));
 }
 
 $the_string_reality_singbox = $fixed_string_reality . "\n" . $string_donated_reality ;
 $string_reality_singbox = remove_duplicate_xray($the_string_reality_singbox, "vless");
 
-file_put_contents("singbox/nekobox/117/reality.json", GenerateConfig($string_reality_singbox, "nold"));
-file_put_contents("singbox/nekobox/118/reality.json", GenerateConfig($string_reality_singbox, "nnew"));
-file_put_contents("singbox/sfasfi/reality.json", GenerateConfig($string_reality_singbox,"sfia"));
-file_put_contents("singbox/nekobox/117/realityLite.json", GenerateConfigLite($string_reality_singbox, "nold"));
-file_put_contents("singbox/nekobox/118/realityLite.json", GenerateConfigLite($string_reality_singbox, "nnew"));
-file_put_contents("singbox/sfasfi/realityLite.json", GenerateConfigLite($string_reality_singbox,"sfia"));
+file_put_contents("singbox/nekobox/117/reality.json", GenerateConfig($string_reality_singbox, "nold", "reality"));
+file_put_contents("singbox/nekobox/118/reality.json", GenerateConfig($string_reality_singbox, "nnew", "reality"));
+file_put_contents("singbox/sfasfi/reality.json", GenerateConfig($string_reality_singbox,"sfia", "reality"));
+file_put_contents("singbox/nekobox/117/realityLite.json", GenerateConfigLite($string_reality_singbox, "nold", "reality"));
+file_put_contents("singbox/nekobox/118/realityLite.json", GenerateConfigLite($string_reality_singbox, "nnew", "reality"));
+file_put_contents("singbox/sfasfi/realityLite.json", GenerateConfigLite($string_reality_singbox,"sfia", "reality"));
 
 $data = [
     [

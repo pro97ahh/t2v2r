@@ -2,6 +2,13 @@
 
 header("Content-type: application/json;");
 
+function create_tehran_timestamp_tomorrow() {
+  date_default_timezone_set('Asia/Tehran');
+  $dateTomorrow = new DateTime('tomorrow');
+  $timestampTomorrow = strtotime($dateTomorrow->format('Y-m-d H:i:s'));
+  return $timestampTomorrow;
+}
+
 function isEvenLength($str) {
     $length = strlen($str);
     return $length % 2 == 0;
@@ -252,7 +259,7 @@ function ShadowsocksSingbox($ShadowsocksUrl) {
     return $configResult;
 }
 
-function GenerateConfig($input, $output){
+function GenerateConfig($input, $output, $theType){
     $outbound = [];
     $v2ray_subscription = str_replace(" ", "%20", $input);
 
@@ -326,10 +333,19 @@ function GenerateConfig($input, $output){
     $outboundUrltest = array_merge($outboundUrltest, $outboundBasedOnLocationFull);
 
     $templateBase['outbounds'] = array_merge($templateManual, $outboundUrltest, $outboundSingles,  $templateBase['outbounds']);
-    return json_encode($templateBase, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    $finalJson = json_encode($templateBase, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    $headerText = "//profile-title: base64:" . base64_encode("TVC | " . strtoupper($theType)) . "
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/v2raycollector
+//profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+
+";
+    $createJsonc = $headerText . $finalJson ;
+    return $createJsonc;
 }
 
-function GenerateConfigLite($input, $output){
+function GenerateConfigLite($input, $output, $theType){
     $outbound = [];
     $v2ray_subscription = $input;
 
@@ -379,5 +395,14 @@ function GenerateConfigLite($input, $output){
     $outboundUrltest = process_jsons($templateUrltest, $names);
 
     $templateBase['outbounds'] = array_merge($outboundManual, $outboundUrltest, $outbound,  $templateBase['outbounds']);
-    return json_encode($templateBase, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    $finalJson = json_encode($templateBase, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    $headerText = "//profile-title: base64:" . base64_encode("TVC | " . strtoupper($theType)) . "
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/v2raycollector
+//profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+
+";
+    $createJsonc = $headerText . $finalJson ;
+    return $createJsonc;
 }
