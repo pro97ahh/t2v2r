@@ -111,9 +111,7 @@
                 "GB🇬🇧",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "SE🇸🇪",
-                "US🇺🇸",
-                "AU🇦🇺"
+                "SE🇸🇪"
             ]
         },
         {
@@ -126,10 +124,9 @@
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @DirectVPN | SE🇸🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | AU🇦🇺 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @DirectVPN | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +150,8 @@
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -174,26 +172,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @DirectVPN | SE🇸🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AU🇦🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | AU🇦🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -340,6 +318,27 @@
             }
         },
         {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "3.79.249.0",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "15.188.190.49",
@@ -378,62 +377,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "x4.mehdimoghaddam.fun",
-            "server_port": 2096,
-            "password": "GmOUswOWsd",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "x5.mehdimoghaddam.fun",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/FORWARDV2RAY",
-                "headers": {
-                    "Host": null
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | AU🇦🇺 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "aws-aus-sydney-1.f1rocketnode.com",
-            "server_port": 443,
-            "password": "your_password",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "aws-aus-sydney-1.f1rocketnode.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/f1rocket",
-                "headers": {
-                    "Host": "aws-aus-sydney-1.f1rocketnode.com"
                 }
             }
         },
