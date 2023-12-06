@@ -109,11 +109,11 @@
                 "US🇺🇸",
                 "CA🇨🇦",
                 "RU🇷🇺",
+                "FR🇫🇷",
                 "BY🇧🇾",
                 "AL🇦🇱",
                 "IN🇮🇳",
-                "GB🇬🇧",
-                "FR🇫🇷"
+                "GB🇬🇧"
             ]
         },
         {
@@ -128,11 +128,12 @@
                 "رایگان | SS | @free4allVPN | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣",
                 "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | SS | @VmessProtocol | BY🇧🇾 | 0️⃣1️⃣",
+                "رایگان | SS | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | SS | @VmessProtocol | BY🇧🇾 | 0️⃣2️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | AL🇦🇱 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | IN🇮🇳 | 0️⃣2️⃣",
-                "رایگان | SS | @bright_vpn | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | SS | @bright_vpn | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -183,10 +184,21 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "BY🇧🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @VmessProtocol | BY🇧🇾 | 0️⃣1️⃣"
+                "رایگان | SS | @VmessProtocol | BY🇧🇾 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -217,16 +229,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | SS | @bright_vpn | GB🇬🇧 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -313,7 +315,27 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @VmessProtocol | BY🇧🇾 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "145.239.6.202",
+            "server_port": 4444,
+            "method": "aes-256-gcm",
+            "password": "pKEW8JPByTVTLtM",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "51.178.87.37",
+            "server_port": 810,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G!yBwPWH3Vao",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @VmessProtocol | BY🇧🇾 | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "178.172.217.15",
             "server_port": 51348,
@@ -349,16 +371,6 @@
             "server_port": 443,
             "method": "aes-128-gcm",
             "password": "shadowsocks",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "shadowsocks",
-            "server": "51.178.87.37",
-            "server_port": 810,
-            "method": "chacha20-ietf-poly1305",
-            "password": "G!yBwPWH3Vao",
             "plugin": "",
             "plugin_opts": ""
         },
