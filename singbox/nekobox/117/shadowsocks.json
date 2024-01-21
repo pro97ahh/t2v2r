@@ -105,22 +105,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "FR🇫🇷",
                 "US🇺🇸",
                 "PL🇵🇱",
                 "GB🇬🇧",
-                "RU🇷🇺",
                 "JP🇯🇵",
+                "TW🇹🇼",
                 "TR🇹🇷",
-                "UA🇺🇦",
-                "FR🇫🇷"
+                "UA🇺🇦"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | SS | @free4allVPN | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | SS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | SS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | SS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣3️⃣",
@@ -129,10 +131,21 @@
                 "رایگان | SS | @OutlineVpnOfficial | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | SS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @bright_vpn | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣2️⃣",
+                "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣1️⃣",
+                "رایگان | SS | @VmessProtocol | TW🇹🇼 | 0️⃣2️⃣",
+                "رایگان | SS | @VmessProtocol | TW🇹🇼 | 0️⃣3️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | TR🇹🇷 | 0️⃣1️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | UA🇺🇦 | 0️⃣2️⃣",
+                "رایگان | SS | @OutlineVpnOfficial | UA🇺🇦 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @free4allVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -143,8 +156,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -177,20 +190,21 @@
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
+            "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "TW🇹🇼",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | SS | @VmessProtocol | TW🇹🇼 | 0️⃣2️⃣",
+                "رایگان | SS | @VmessProtocol | TW🇹🇼 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -217,17 +231,27 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "رایگان | SS | @free4allVPN | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "51.21.126.136",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "IUDnrXExpb0IVVHsExsKWL",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "51.178.87.37",
+            "server_port": 810,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G!yBwPWH3Vao",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "us1.dart-vpn.com",
             "server_port": 443,
@@ -237,7 +261,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "us2.dart-vpn.com",
             "server_port": 443,
@@ -327,22 +351,32 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "92.223.109.205",
-            "server_port": 51348,
-            "method": "chacha20-ietf-poly1305",
-            "password": "ackkokOi",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣2️⃣",
+            "tag": "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "84.17.34.108",
             "server_port": 110,
             "method": "aes-256-cfb",
             "password": "asdKkaskJKfnsa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @VmessProtocol | TW🇹🇼 | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "61.228.150.68",
+            "server_port": 7773,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ef3841cf-2556-4d9c-ac8d-c0e5e978ab86",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @VmessProtocol | TW🇹🇼 | 0️⃣3️⃣",
+            "type": "shadowsocks",
+            "server": "125.224.140.154",
+            "server_port": 3234,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ef3841cf-2556-4d9c-ac8d-c0e5e978ab86",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -363,16 +397,6 @@
             "server_port": 8443,
             "method": "aes-256-gcm",
             "password": "534061c0-1854-49ad-9afc-d3187b18200a",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "رایگان | SS | @bright_vpn | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "shadowsocks",
-            "server": "51.178.87.37",
-            "server_port": 810,
-            "method": "chacha20-ietf-poly1305",
-            "password": "G!yBwPWH3Vao",
             "plugin": "",
             "plugin_opts": ""
         },
