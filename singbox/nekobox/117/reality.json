@@ -110,6 +110,7 @@
                 "IR🇮🇷",
                 "SE🇸🇪",
                 "DE🇩🇪",
+                "IE🇮🇪",
                 "US🇺🇸"
             ]
         },
@@ -126,6 +127,7 @@
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @polproxy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | IE🇮🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -181,6 +183,16 @@
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @polproxy | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IE🇮🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | IE🇮🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -488,6 +500,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | IE🇮🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "irelanddlsrv.barreldownloader.site",
+            "server_port": 443,
+            "uuid": "250d674c-eb27-4d15-b98f-31b243898c6d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eset.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UXJg8PBBMG9o_o4l6B_yq2ziTGLmtdRgTrybmtZmcDo",
+                    "short_id": "7a39ef36"
+                }
             }
         },
         {
