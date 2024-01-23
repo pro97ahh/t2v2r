@@ -108,9 +108,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "IR🇮🇷",
                 "SE🇸🇪",
                 "DE🇩🇪",
-                "IR🇮🇷",
                 "US🇺🇸",
                 "NL🇳🇱"
             ]
@@ -119,14 +119,27 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @azadi_az_inja_migzare | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @polproxy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Capital_NET | NL🇳🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @azadi_az_inja_migzare | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,17 +162,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @polproxy | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -184,6 +188,62 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @azadi_az_inja_migzare | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "91.107.154.103",
+            "server_port": 443,
+            "uuid": "1b74315e-715f-4a1d-a1b8-21324b12d8aa",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.aljazeera.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MNN-kSKdj_9m3nQKP16wiS3P1tv-ClrQ4B1IBgqySCs",
+                    "short_id": "6ba85179e30d4fc2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "91.107.249.141",
+            "server_port": 52391,
+            "uuid": "fd881ed5-1c65-422e-a0ef-505690c4c3f3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "aLE5KaEL109tMDAisa1qRPFMzgBsNiZXCLzNZ0S-hmY",
+                    "short_id": "366fba16"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 0️⃣1️⃣",
@@ -354,12 +414,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @polproxy | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "91.107.249.141",
-            "server_port": 52391,
-            "uuid": "fd881ed5-1c65-422e-a0ef-505690c4c3f3",
-            "flow": "xtls-rprx-vision",
+            "server": "159.69.126.121",
+            "server_port": 31642,
+            "uuid": "4fffc17d-a220-4675-b9b6-eca86ce768ad",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -368,7 +428,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "discord.com",
+                "server_name": "microsoft.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -376,9 +436,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "aLE5KaEL109tMDAisa1qRPFMzgBsNiZXCLzNZ0S-hmY",
-                    "short_id": "366fba16"
+                    "public_key": "TlB-TZbBO1eGqqsCeKh6zcHp_jgp4MKBhKt4Jgm0g3o",
+                    "short_id": "96b64437"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
