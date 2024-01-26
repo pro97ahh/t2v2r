@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | REALITY | @Parsashonam | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ARv2ray | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣"
             ]
@@ -120,6 +121,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Parsashonam | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ARv2ray | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣"
             ],
@@ -157,6 +159,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ARv2ray | FI🇫🇮 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "65.108.90.29",
+            "server_port": 443,
+            "uuid": "e685702a-a407-4e41-9713-4217da88462c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "i.zeeblog.click",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-ABwAOwzCHyxZXjtKEySZWnr_OdeLNockPjoKnRo-VQ",
+                    "short_id": "a38ad3b0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
