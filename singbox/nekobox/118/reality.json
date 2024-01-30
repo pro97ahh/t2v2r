@@ -125,6 +125,7 @@
                 "رایگان | REALITY | @Capital_NET | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Capital_NET | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @Outlinev2rayNG | SE🇸🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -149,7 +150,8 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @Outlinev2rayNG | SE🇸🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -321,6 +323,41 @@
         },
         {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "13.49.231.106",
+            "server_port": 8080,
+            "uuid": "049f97b8-7180-4b67-d79d-9541ff116fe8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tj4NuuQRH5GMJqWUYRYsCPvhR4KCRQ58TqF7gqCf9lQ",
+                    "short_id": "21e3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@kiava",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outlinev2rayNG | SE🇸🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "13.49.231.106",
             "server_port": 8080,
