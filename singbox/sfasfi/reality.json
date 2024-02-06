@@ -112,6 +112,7 @@
                 "FI🇫🇮",
                 "DE🇩🇪",
                 "GB🇬🇧",
+                "US🇺🇸",
                 "SE🇸🇪",
                 "NL🇳🇱"
             ]
@@ -124,6 +125,7 @@
                 "رایگان | REALITY | @ipV2Ray | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2pedia | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @fnet00 | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Capital_NET | NL🇳🇱 | 0️⃣1️⃣"
             ],
@@ -166,6 +168,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -314,6 +326,41 @@
                     "enabled": true,
                     "public_key": "sdBnam4YRnGK5b-jYt2DGOucuHh6Y0eUAOgnZuDt1Go",
                     "short_id": "0f50d389"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "172.233.57.232",
+            "server_port": 443,
+            "uuid": "c7f2ac91-c9ce-46c6-98f3-7204178e4b7c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tunnel.svnreallity.online",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE",
+                    "short_id": "3fdec952"
                 }
             },
             "transport": {
