@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "DE🇩🇪",
+                "FI🇫🇮",
                 "GB🇬🇧",
                 "NL🇳🇱"
             ]
@@ -118,8 +119,10 @@
                 "رایگان | REALITY | @rxv2ray | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2RayTz | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | NL🇳🇱 | 0️⃣3️⃣"
             ],
@@ -143,8 +146,19 @@
             "outbounds": [
                 "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2RayTz | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -276,6 +290,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "23.88.38.184",
+            "server_port": 2096,
+            "uuid": "fe9195e9-04ac-4310-dccd-cf2d2b779715",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ajP1Rru1bbPArjvPZ5kEpbuoWyhHesYcooXEp9cSviQ",
+                    "short_id": "7b4d7885"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "116.202.28.240",
@@ -333,6 +375,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "r",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2RayTz | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "37.27.35.223",
+            "server_port": 443,
+            "uuid": "ItsLegendaryking",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wordpress.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XMkMBzxqwN1nH4cHl1q2zAhywQbDDbWTO7qjWzt9skA",
+                    "short_id": "76beea70"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
