@@ -111,10 +111,10 @@
                 "GB🇬🇧",
                 "US🇺🇸",
                 "NL🇳🇱",
-                "IR🇮🇷",
                 "SE🇸🇪",
                 "IE🇮🇪",
                 "DE🇩🇪",
+                "IR🇮🇷",
                 "RU🇷🇺",
                 "AE🇦🇪",
                 "BH🇧🇭",
@@ -231,12 +231,11 @@
                 "رایگان | TROJAN | @PrivateVPNs | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VMESS | @vless_vmess | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2rayng_config_amin | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VPNCUSTOMIZE | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ipV2Ray | SE🇸🇪 | 0️⃣1️⃣",
@@ -290,6 +289,7 @@
                 "رایگان | VLESS | @vless_vmess | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | SS | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
@@ -447,6 +447,7 @@
             "outbounds": [
                 "رایگان | VMESS | @vless_vmess | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2rayng_config_amin | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | US🇺🇸 | 0️⃣1️⃣"
             ],
@@ -460,17 +461,6 @@
             "outbounds": [
                 "رایگان | VMESS | @yaney_01 | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | NL🇳🇱 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -551,6 +541,16 @@
                 "رایگان | VLESS | @vless_vmess | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -3552,6 +3552,42 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "195.123.240.45",
+            "server_port": 12947,
+            "uuid": "8259cb1c-dd6c-4739-9c88-af550d977525",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "57.lwdh.us",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "195.123.240.45"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @v2rayng_config_amin | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "505.outline-vpn.cloud",
@@ -3681,46 +3717,6 @@
                     "public_key": "6P_NQdJQKG9Z-TC62Lmny1-mgX0ZFJFOWQtkbPBNyDk",
                     "short_id": "dc3a9fef8a20"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "31.47.45.146",
-            "server_port": 500,
-            "uuid": "5628d2e2-ab43-45e6-adc3-ad0b9af7a71e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "31.47.45.146"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "193.151.155.41",
-            "server_port": 33134,
-            "uuid": "9104e7c7-a926-4928-8be8-3d6e42658463",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -4953,6 +4949,20 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "193.151.155.41",
+            "server_port": 33134,
+            "uuid": "9104e7c7-a926-4928-8be8-3d6e42658463",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
