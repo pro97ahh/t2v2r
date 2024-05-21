@@ -109,6 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
+                "SG🇸🇬",
                 "FR🇫🇷",
                 "NO🇳🇴",
                 "US🇺🇸",
@@ -117,8 +118,8 @@
                 "DE🇩🇪",
                 "SE🇸🇪",
                 "IE🇮🇪",
+                "FI🇫🇮",
                 "PL🇵🇱",
-                "SG🇸🇬",
                 "JP🇯🇵",
                 "CA🇨🇦"
             ]
@@ -204,6 +205,8 @@
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vpnmasi | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VMESS | @mftizi | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vless_vmess | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | NO🇳🇴 | 0️⃣2️⃣",
@@ -272,9 +275,9 @@
                 "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣3️⃣",
+                "رایگان | VLESS | @vpn_xw | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | SS | @iP_CF | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
                 "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | CA🇨🇦 | 0️⃣2️⃣"
             ],
@@ -363,6 +366,17 @@
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vpnmasi | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | RELAY🚩 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @mftizi | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -509,21 +523,21 @@
             "tolerance": 50
         },
         {
-            "tag": "PL🇵🇱",
+            "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @Outline_Vpn | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | SS | @iP_CF | PL🇵🇱 | 0️⃣1️⃣"
+                "رایگان | VLESS | @vpn_xw | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
+            "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣"
+                "رایگان | VLESS | @Outline_Vpn | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | SS | @iP_CF | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -2750,6 +2764,53 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @mftizi | SG🇸🇬 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "hk.wish.ml",
+            "server_port": 2052,
+            "uuid": "c286daa2-59de-455c-8de8-ec032b6ce2e8",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "hk.wish.ml"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "sg08.421421.xyz",
+            "server_port": 20230,
+            "password": "0f408453-2589-4fc2-bf9d-22e0cef8b8d2",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "421421.xyz",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.64.199.171",
@@ -4294,6 +4355,29 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @vpn_xw | FI🇫🇮 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "95.217.216.45",
+            "server_port": 80,
+            "uuid": "34190107-f315-4ddf-d6d4-7f9f87af715b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @Outline_Vpn | PL🇵🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "64.176.64.31",
@@ -4325,27 +4409,6 @@
             "password": "PCnnH6SQSnfoS27",
             "plugin": "",
             "plugin_opts": ""
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "sg08.421421.xyz",
-            "server_port": 20230,
-            "password": "0f408453-2589-4fc2-bf9d-22e0cef8b8d2",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "421421.xyz",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "رایگان | SS | @VPNGate_Config | JP🇯🇵 | 0️⃣1️⃣",
