@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "NL🇳🇱",
                 "FI🇫🇮"
             ]
         },
@@ -119,7 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ProxyForOpeta | FI🇫🇮 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ProxyForOpeta | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VpnWLF | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -137,10 +139,20 @@
             "tolerance": 50
         },
         {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ProxyForOpeta | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ProxyForOpeta | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VpnWLF | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -183,7 +195,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ProxyForOpeta | FI🇫🇮 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @ProxyForOpeta | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "realgod.gamebestir.ir",
             "server_port": 2093,
@@ -207,6 +219,34 @@
                     "enabled": true,
                     "public_key": "7kjyM2dPWAj_zy6VnB88fevwjT4m3XRna6H2rfSEdH0",
                     "short_id": "d710e2b9"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.164.163.70.sslip.io",
+            "server_port": 443,
+            "uuid": "164b20cc-d14c-40c2-9cd1-cb52746f0170",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nbcnewyork.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AMEa30y-5uzUknTDjDpebXfV1nQ4UsfrgfrMkXh_CGI",
+                    "short_id": "22a1"
                 }
             }
         },
