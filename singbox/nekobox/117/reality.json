@@ -108,6 +108,7 @@
                 "DE🇩🇪",
                 "TR🇹🇷",
                 "KR🇰🇷",
+                "HK🇭🇰",
                 "RU🇷🇺"
             ]
         },
@@ -118,7 +119,8 @@
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | KR🇰🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @VmessProtocol | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,10 +157,20 @@
             "tolerance": 50
         },
         {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @VmessProtocol | HK🇭🇰 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -256,7 +268,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @VmessProtocol | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "157.254.21.242",
+            "server_port": 33600,
+            "uuid": "44c6e217-7e65-4cfd-b1ad-df48a6085c86",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.python.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "487NTwO5yyrUqkI1_p0MM6iZmyTgxBLD8_WGLX9xPjU",
+                    "short_id": "e47fd975"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣3️⃣",
             "type": "vless",
             "server": "5.42.107.93",
             "server_port": 1234,
