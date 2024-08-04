@@ -112,6 +112,7 @@
                 "URL-TEST | رایگان",
                 "RELAY🚩",
                 "KR🇰🇷",
+                "SG🇸🇬",
                 "IE🇮🇪",
                 "NL🇳🇱",
                 "GI🇬🇮"
@@ -134,6 +135,7 @@
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣3️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | IE🇮🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | GI🇬🇮 | 0️⃣1️⃣"
@@ -168,6 +170,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -649,6 +661,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "5.34.176.111",
+            "server_port": 57614,
+            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
