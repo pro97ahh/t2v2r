@@ -110,7 +110,9 @@
                 "URL-TEST | رایگان",
                 "RELAY🚩",
                 "KR🇰🇷",
+                "CA🇨🇦",
                 "IE🇮🇪",
+                "US🇺🇸",
                 "NL🇳🇱",
                 "CH🇨🇭",
                 "GI🇬🇮"
@@ -124,7 +126,6 @@
                 "رایگان | VMESS | @VpnWLF | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @VpnWLF | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @VpnWLF | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @mftizi | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @mftizi | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
@@ -133,8 +134,10 @@
                 "رایگان | VMESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | IE🇮🇪 | 0️⃣2️⃣",
+                "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VMESS | @FreakConfig | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | GI🇬🇮 | 0️⃣2️⃣"
@@ -151,7 +154,6 @@
                 "رایگان | VMESS | @VpnWLF | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @VpnWLF | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @VpnWLF | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @mftizi | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @mftizi | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
@@ -169,7 +171,17 @@
             "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣2️⃣"
+                "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -180,6 +192,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | IE🇮🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -354,42 +376,6 @@
                 "path": "\/\/?ed=2048",
                 "headers": {
                     "Host": "0000:0000:0000:0000:0000:ffff:4f7f:3644"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "denc36.xtooltech.cfd",
-            "server_port": 443,
-            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "adenc36v.xtooltech.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "denc36.xtooltech.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -664,7 +650,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @free4allVPN | KR🇰🇷 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "152.67.218.38",
             "server_port": 443,
@@ -700,6 +686,23 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "162.221.207.62",
+            "server_port": 8443,
+            "uuid": "729a1b70-0110-4701-921d-8a5bb7676d05",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | IE🇮🇪 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "85.159.229.8",
@@ -721,6 +724,42 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "waynn.makeup",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "waynn.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "waynn.makeup"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
