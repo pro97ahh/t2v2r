@@ -110,10 +110,10 @@
                 "URL-TEST | رایگان",
                 "RELAY🚩",
                 "SE🇸🇪",
+                "GB🇬🇧",
                 "IE🇮🇪",
                 "US🇺🇸",
                 "DE🇩🇪",
-                "GB🇬🇧",
                 "LU🇱🇺"
             ]
         },
@@ -200,8 +200,10 @@
                 "رایگان | VLESS | @vmess_vless_v2rayng | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VmessProtocol | SE🇸🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @polproxy | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VlessConfig | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @melov2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @free_v2rayyy | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @iP_CF | US🇺🇸 | 0️⃣1️⃣",
@@ -212,7 +214,6 @@
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VpnWLF | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -317,11 +318,22 @@
             "tolerance": 50
         },
         {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @VlessConfig | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "IE🇮🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣"
+                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -350,16 +362,6 @@
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VpnWLF | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "GB🇬🇧",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1993,7 +1995,71 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @VlessConfig | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "18.169.35.29",
+            "server_port": 22222,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telegram-channel-vlessconfig.sohala.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig-ws",
+                "headers": {
+                    "Host": "telegram-channel-vlessconfig.sohala.uk"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "146.75.74.62",
+            "server_port": 443,
+            "uuid": "25468dd2-7fb0-478c-8ce7-3e72cf65936d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "app.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "wow-online.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "54.228.242.142",
             "server_port": 22222,
@@ -2025,7 +2091,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "54.74.214.14",
             "server_port": 22222,
@@ -2337,38 +2403,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "146.75.74.62",
-            "server_port": 443,
-            "uuid": "25468dd2-7fb0-478c-8ce7-3e72cf65936d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "app.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "wow-online.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
