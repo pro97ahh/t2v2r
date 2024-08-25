@@ -117,8 +117,8 @@
                 "IE🇮🇪",
                 "DE🇩🇪",
                 "RU🇷🇺",
-                "LU🇱🇺",
-                "PL🇵🇱"
+                "IR🇮🇷",
+                "LU🇱🇺"
             ]
         },
         {
@@ -256,9 +256,10 @@
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣2️⃣",
-                "رایگان | SS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣"
+                "رایگان | VLESS | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣",
+                "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -453,7 +454,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | RU🇷🇺 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -464,16 +476,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "PL🇵🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | SS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -704,9 +706,9 @@
         {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "w3.org",
-            "server_port": 443,
-            "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1",
+            "server": "104.16.67.38",
+            "server_port": 2082,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -717,22 +719,14 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "hdfy4c2.freeairlaines.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "WgCmp8p80KDzo64uHE",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/\/ivideos.sbs\/linkws",
+                "headers": {
+                    "Host": "104.16.67.38"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -3412,6 +3406,16 @@
             }
         },
         {
+            "tag": "رایگان | SS | @VPNGate_Config | RU🇷🇺 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "92.223.109.205",
+            "server_port": 51348,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ackkokOi",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "رایگان | SS | @OutlineVpnOfficial | RU🇷🇺 | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "80.66.64.39",
@@ -3420,6 +3424,20 @@
             "password": "LYjtnC2BjY3QYeUlNOeme1",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | VLESS | @VmessProtocol | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "finland.ir.tekcloud.fun",
+            "server_port": 25812,
+            "uuid": "464938cd-2dc4-31e9-17a9-33a430eb5ff9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣2️⃣",
@@ -3452,16 +3470,6 @@
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
-        },
-        {
-            "tag": "رایگان | SS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "77.83.246.74",
-            "server_port": 33320,
-            "method": "chacha20-ietf-poly1305",
-            "password": "L7TuXP27oKAOmPh7DbxvVZ",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "direct",
