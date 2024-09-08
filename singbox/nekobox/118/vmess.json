@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
+                "HK🇭🇰",
                 "CA🇨🇦",
                 "DE🇩🇪",
                 "FR🇫🇷",
@@ -141,13 +142,14 @@
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | CA🇨🇦 | 0️⃣3️⃣",
                 "رایگان | VMESS | @VPNGate_Config | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @proxystore11 | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -176,6 +178,16 @@
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -216,7 +228,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣3️⃣"
+                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -227,7 +239,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @proxystore11 | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -697,9 +709,9 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "172.66.168.173",
+            "server": "104.26.15.148",
             "server_port": 80,
-            "uuid": "f1fb28e5-e5b6-450c-972c-13235c94285c",
+            "uuid": "0cb7b3c3-3c08-4391-af4d-3fc410c9c146",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -714,7 +726,7 @@
                 "type": "ws",
                 "path": "\/\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
                 "headers": {
-                    "Host": "172.66.168.173"
+                    "Host": "104.26.15.148"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -793,6 +805,42 @@
                 "path": "\/\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
                 "headers": {
                     "Host": "104.21.70.68"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "19.lwdh.us",
+            "server_port": 12909,
+            "uuid": "8259cb1c-dd6c-4739-9c88-af550d977525",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "19.lwdh.us",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "19.lwdh.us"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -886,7 +934,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "136.244.101.16",
             "server_port": 59400,
@@ -920,11 +968,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣3️⃣",
             "type": "vmess",
-            "server": "151.101.128.84",
+            "server": "speedtest.net",
             "server_port": 443,
-            "uuid": "70848317-88ef-4840-b839-16caa8b64d18",
+            "uuid": "05bd19cc-fcb2-41da-ae89-1acc4c8672c5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -937,7 +985,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "pinimg.CoM.",
+                "server_name": "speedtest.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -947,9 +995,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/navigate?ed=1024",
+                "path": "\/ws\/?ed=2048",
                 "headers": {
-                    "Host": "151.101.128.84"
+                    "Host": "speedtest.net"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
