@@ -110,7 +110,8 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "RELAY🚩",
-                "JP🇯🇵"
+                "SG🇸🇬",
+                "GB🇬🇧"
             ]
         },
         {
@@ -132,7 +133,8 @@
                 "رایگان | VMESS | @ShadowProxy66 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @mftizi | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣3️⃣",
+                "رایگان | VMESS | @Hope_Net | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -172,10 +174,20 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @mftizi | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -650,11 +662,11 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "masjidd.homes",
+            "server": "104.21.77.29",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "uuid": "8d90c129-4156-4d6c-9115-24df25f26a02",
             "security": "auto",
-            "alter_id": 1,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -665,7 +677,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": null,
+                "server_name": "104.21.77.29",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -675,20 +687,20 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/\/linkws",
                 "headers": {
-                    "Host": "masjidd.homes"
+                    "Host": "104.21.77.29"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VMESS | @mftizi | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣3️⃣",
             "type": "vmess",
-            "server": "61.120.9.18",
-            "server_port": 43720,
-            "uuid": "f248d0e9-19f7-ea7f-6659-17a610dfe8d6",
+            "server": "5.34.176.111",
+            "server_port": 57614,
+            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -698,6 +710,42 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "68.168.31.196",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "68.168.31.196",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkvws",
+                "headers": {
+                    "Host": "68.168.31.196"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
