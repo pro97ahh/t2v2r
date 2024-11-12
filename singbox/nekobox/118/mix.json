@@ -112,6 +112,7 @@
                 "URL-TEST | رایگان",
                 "RELAY🚩",
                 "US🇺🇸",
+                "IR🇮🇷",
                 "SE🇸🇪",
                 "FR🇫🇷",
                 "DE🇩🇪",
@@ -174,6 +175,7 @@
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣2️⃣",
@@ -195,6 +197,7 @@
                 "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Parsashonam | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @servermomo | SE🇸🇪 | 0️⃣1️⃣",
@@ -284,6 +287,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣2️⃣",
@@ -305,6 +309,16 @@
                 "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -578,9 +592,9 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.17.147.22",
-            "server_port": 2087,
-            "uuid": "1d01e6ae-0d97-4a9f-af23-8d754085a94f",
+            "server": "2.189.59.4",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -593,7 +607,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": null,
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -603,9 +617,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/\/linkws",
                 "headers": {
-                    "Host": "104.17.147.22"
+                    "Host": "2.189.59.4"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -744,7 +758,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8880,
-            "uuid": "ee6c2203-3dab-441e-a408-c6f7704ac5ce",
+            "uuid": "e2ea50da-e78d-486b-a711-6f4f026b385b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -767,7 +781,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8880,
-            "uuid": "e2ea50da-e78d-486b-a711-6f4f026b385b",
+            "uuid": "567f096d-7997-4c19-a67b-6b47aa430a9a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -790,7 +804,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8880,
-            "uuid": "e2ea50da-e78d-486b-a711-6f4f026b385b",
+            "uuid": "567f096d-7997-4c19-a67b-6b47aa430a9a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1718,6 +1732,32 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.64.167.22",
+            "server_port": 2082,
+            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "172.64.167.22"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "Zmaoz.Faculty.Ucdavis.Edu",
@@ -2290,6 +2330,42 @@
             "password": "lWaGPVFjmnag7",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "speedtest.net",
+            "server_port": 443,
+            "uuid": "57727d7d-8873-4000-b3f4-33a93fcfdd51",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/m28jcoZZUhkqg6pk11",
+                "headers": {
+                    "Host": "speedtest.net"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
         },
         {
             "tag": "رایگان | VLESS | @Parsashonam | SE🇸🇪 | 0️⃣1️⃣",
