@@ -116,6 +116,7 @@
                 "DE🇩🇪",
                 "NO🇳🇴",
                 "US🇺🇸",
+                "NL🇳🇱",
                 "RELAY🚩"
             ]
         },
@@ -131,6 +132,7 @@
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | NO🇳🇴 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @proxystore11 | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -194,6 +196,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -381,6 +393,27 @@
                 "path": "\/\/?ed=2560",
                 "headers": {
                     "Host": "trojan.putata.us.kg"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "64.225.70.82",
+            "server_port": 36625,
+            "password": "16c9fefb-41ea-4994-9246-54fb2c0faf1c",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.tmall.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
