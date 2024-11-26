@@ -110,7 +110,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "FR🇫🇷"
             ]
         },
         {
@@ -119,7 +120,9 @@
             "outbounds": [
                 "رایگان | REALITY | @Lockey_vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Lockey_vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +134,18 @@
             "outbounds": [
                 "رایگان | REALITY | @Lockey_vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Lockey_vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -219,6 +233,62 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "dllvarzeshtvsamanehouignbguvuibybfhfgdrews.website.24digitalmarkting.ir",
+            "server_port": 12345,
+            "uuid": "3a759bdf-f49a-426b-aa5b-b4091eaf8f6b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "varzeshtviuwsofogleugvwsoyutruyrrteytmci.24digitalmarkting.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QDqpqvWPsDtooLg5PTHd2rmRfQhDJLf7-S5cUyFxUQk",
+                    "short_id": "8e36c7e79b74a6fa"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "my.jasrama.com",
+            "server_port": 2096,
+            "uuid": "f82c2052-7411-40e8-96ef-d433127979a6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dalfak.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9LY8_rbDS8zJoZLk9J4BYbdKOYK8vdKg11Wab5IetXY",
+                    "short_id": "a56f693ce784b4cc"
+                }
             }
         },
         {
