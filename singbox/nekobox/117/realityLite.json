@@ -105,14 +105,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | TR🇹🇷 | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | TR🇹🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,6 +134,62 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "107.172.57.21",
+            "server_port": 443,
+            "uuid": "e8cfc69c-f9a4-40ed-b48d-d5da257f5c7c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "osxapps.itunes.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "f12r3TyZUUckM-XWQ7w63kcF19eZVvWdgZqqk4ry3Ss",
+                    "short_id": "5b6fd34e"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | TR🇹🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "sdctrk2.codesofun.pp.ua",
+            "server_port": 13509,
+            "uuid": "dbc34aa9-3cb1-477a-c47d-998f8badf0e8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.sega.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM",
+                    "short_id": ""
+                }
             }
         },
         {
