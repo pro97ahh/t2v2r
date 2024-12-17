@@ -115,7 +115,9 @@
                 "RELAY🚩",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "IR🇮🇷"
+                "IR🇮🇷",
+                "AT🇦🇹",
+                "NZ🇳🇿"
             ]
         },
         {
@@ -148,8 +150,6 @@
                 "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣3️⃣",
@@ -177,9 +177,12 @@
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @free1_vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @free1_vpn | IR🇮🇷 | 0️⃣2️⃣"
+                "رایگان | VLESS | @free1_vpn | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Outlinev2rayNG | AT🇦🇹 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Outlinev2rayNG | NZ🇳🇿 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -224,8 +227,6 @@
                 "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣3️⃣"
@@ -289,6 +290,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxyymeliii | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @free1_vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -310,6 +312,26 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @free1_vpn | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AT🇦🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @Outlinev2rayNG | AT🇦🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NZ🇳🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @Outlinev2rayNG | NZ🇳🇿 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -964,6 +986,29 @@
         {
             "tag": "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
+            "server": "151.101.3.8",
+            "server_port": 80,
+            "uuid": "1f690e38-502b-4429-8d3c-7684f1080025",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/VpnWedbaz---VpnWedBaZ?ed=443",
+                "headers": {
+                    "Host": "Tehran2.Org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
             "server": "63.141.128.98",
             "server_port": 443,
             "uuid": "71ed6628-5870-4d19-8a52-f2a3ba3d4898",
@@ -994,29 +1039,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "151.101.3.8",
-            "server_port": 80,
-            "uuid": "1f690e38-502b-4429-8d3c-7684f1080025",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/VpnWedbaz---VpnWedBaZ?ed=443",
-                "headers": {
-                    "Host": "Tehran2.Org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
             "server": "bg.com",
@@ -1034,61 +1056,6 @@
                 "path": "\/\/?ed=2056",
                 "headers": {
                     "Host": "rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.apaspeedtest.netrat.com.eu.com.shw594.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g7h.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Outlinev2rayNG | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "R3.fastly80-3.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "TELEGRAM-NUFiLTER",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80",
-                "headers": {
-                    "Host": "6.fidsxss8x.iR"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Outlinev2rayNG | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "hajlab.ucdavis.edu",
-            "server_port": 443,
-            "uuid": "52a842ac-8985-44eb-8208-2190579842e4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hajlab.ucdavis.edu",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v29.drlimit.net"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1831,6 +1798,20 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @free1_vpn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "116.203.201.23",
+            "server_port": 23671,
+            "uuid": "b4a2ccd4-727a-40ca-8455-fa6e62df2218",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "mysql-panel.karaj-game-farsi.ir",
@@ -1911,6 +1892,70 @@
                 "path": "\/\/Zarin3",
                 "headers": {
                     "Host": "yBYTT.divarcdn.com,kDhBx.snappfood.ir,vOAjf.yjc.ir,Lpi2l.digikala.com,N5NBR.tic.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Outlinev2rayNG | AT🇦🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "212.183.88.176",
+            "server_port": 443,
+            "uuid": "71ed6628-5870-4d19-8a52-f2a3ba3d4898",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vb.zhuk.us.kg",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/?ed=2560",
+                "headers": {
+                    "Host": "vb.zhuk.us.kg"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Outlinev2rayNG | NZ🇳🇿 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "202.37.33.81",
+            "server_port": 443,
+            "uuid": "71ed6628-5870-4d19-8a52-f2a3ba3d4898",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vb.zhuk.us.kg",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/?ed=2560",
+                "headers": {
+                    "Host": "vb.zhuk.us.kg"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
