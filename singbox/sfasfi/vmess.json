@@ -111,6 +111,7 @@
                 "FR🇫🇷",
                 "RELAY🚩",
                 "MX🇲🇽",
+                "DE🇩🇪",
                 "US🇺🇸",
                 "IN🇮🇳"
             ]
@@ -120,11 +121,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | MX🇲🇽 | 0️⃣1️⃣",
+                "رایگان | VMESS | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VMESS | @v2ray1_ng | IN🇮🇳 | 0️⃣1️⃣"
@@ -137,8 +138,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | VMESS | @free4allVPN | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,6 +161,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @prrofile_purple | MX🇲🇽 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -218,42 +228,6 @@
                 "path": "\/\/linkws",
                 "headers": {
                     "Host": "beyonddsz.cfd"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "irhms03.dongfeng.cfd",
-            "server_port": 443,
-            "uuid": "fa5b55cd-cafc-4de0-a4c8-722e02a9f58e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hms03.dongfeng.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "irhms03.dongfeng.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -382,6 +356,42 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "frankfurt03.zgjok.com",
+            "server_port": 443,
+            "uuid": "4f7c2243-a38a-4672-983b-f1378aee0a7f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "frankfurt03.zgjok.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "frankfurt03.zgjok.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
