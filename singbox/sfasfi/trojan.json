@@ -113,6 +113,7 @@
                 "CA🇨🇦",
                 "US🇺🇸",
                 "BR🇧🇷",
+                "TW🇹🇼",
                 "GB🇬🇧"
             ]
         },
@@ -129,6 +130,7 @@
                 "رایگان | TROJAN | @DirectVPN | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @VmessProtocol | BR🇧🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @VmessProtocol | TW🇹🇼 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | GB🇬🇧 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -184,6 +186,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @VmessProtocol | BR🇧🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TW🇹🇼",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @VmessProtocol | TW🇹🇼 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -267,7 +279,7 @@
             "type": "trojan",
             "server": "fr1.test3.net",
             "server_port": 443,
-            "password": "f62a6060-c069-11ef-a693-1239d0255272",
+            "password": "22433c60-c058-11ef-b3d0-1239d0255272",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -275,7 +287,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "telewebion.com",
+                "server_name": "",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -288,7 +300,7 @@
             "type": "trojan",
             "server": "fr1.test3.net",
             "server_port": 443,
-            "password": "200bfb30-c06a-11ef-ba69-1239d0255272",
+            "password": "478d03c0-c058-11ef-8091-1239d0255272",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -389,11 +401,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | GB🇬🇧 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @VmessProtocol | TW🇹🇼 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "uk1.test3.net",
-            "server_port": 443,
-            "password": "4ad3c0e0-c06a-11ef-8490-1239d0255272",
+            "server": "ddns.200566.xyz",
+            "server_port": 30337,
+            "password": "1a668915-d98f-4440-8bac-2c51d508f811",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -401,7 +413,28 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "telewebion.com",
+                "server_name": "ddns.200566.xyz",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | GB🇬🇧 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "uk1.test3.net",
+            "server_port": 443,
+            "password": "88e575f0-c058-11ef-95bf-1239d0255272",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
