@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "AM🇦🇲",
+                "FR🇫🇷",
                 "DE🇩🇪"
             ]
         },
@@ -118,7 +119,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣3️⃣",
+                "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -129,7 +132,17 @@
             "tag": "AM🇦🇲",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣3️⃣"
+                "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,6 +152,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -146,7 +160,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣2️⃣",
             "type": "vless",
             "server": "45.129.185.185",
             "server_port": 2087,
@@ -178,6 +192,69 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "136.244.115.217",
+            "server_port": 8080,
+            "uuid": "031a6df1-1eb4-43b3-8e07-9e937447d275",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "varzesh3.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zUPLIGg707x4MLqRzvg6Dej2i5F0wBXFHsA7WzHb1hs",
+                    "short_id": "de3a9e23"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vless8080",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "joinpersianvpn69byamirfbi.seyhello.news",
+            "server_port": 80,
+            "uuid": "d0b052c8-eab4-47ef-90f8-d40e84655ed5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SHyqlTBEGRaRNzHU2aCxUVSwRcc_YjLiAO9t6qF8aB0",
+                    "short_id": "0b6a"
+                }
             }
         },
         {
