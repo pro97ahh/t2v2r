@@ -108,7 +108,8 @@
                 "GB🇬🇧",
                 "IE🇮🇪",
                 "SE🇸🇪",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "FR🇫🇷"
             ]
         },
         {
@@ -117,11 +118,13 @@
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +135,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -165,6 +169,16 @@
             "outbounds": [
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -205,6 +219,27 @@
             "tls": {
                 "enabled": true,
                 "server_name": "zula.ir",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "uk1.test3.net",
+            "server_port": 443,
+            "password": "d06a14d0-ceb9-11ef-a13e-1239d0255272",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -314,6 +349,34 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "fr1.test3.net",
+            "server_port": 443,
+            "password": "23d58330-ceb8-11ef-af55-1239d0255272",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr1.test3.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/howdy",
+                "headers": {
+                    "Host": "fr1.test3.net"
                 }
             }
         },
