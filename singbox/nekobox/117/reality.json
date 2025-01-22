@@ -117,13 +117,12 @@
                 "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,9 +144,10 @@
             "outbounds": [
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,10 +157,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -206,7 +204,7 @@
             "type": "vless",
             "server": "c2.vact.ir",
             "server_port": 2083,
-            "uuid": "7c1c7660-b5cc-45b7-9c36-5334002ee7aa",
+            "uuid": "7204ddc9-8076-493a-9b0b-d53afe7011e6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -239,9 +237,44 @@
         {
             "tag": "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
+            "server": "c1.vact.ir",
+            "server_port": 2083,
+            "uuid": "0748c3a1-1b82-47ef-a846-a6faaacdfbe7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Re7kdDBxVgsI4VmCHrcsPeKD4CBoB6Oc8fqxtWJ6m18",
+                    "short_id": "90278dfc"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
             "server": "c2.vact.ir",
             "server_port": 2083,
-            "uuid": "7204ddc9-8076-493a-9b0b-d53afe7011e6",
+            "uuid": "5b67072c-e76c-45d7-b38b-e39e332ecad0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -300,6 +333,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "77.90.11.193",
+            "server_port": 443,
+            "uuid": "3302c92f-f1b6-41cf-a0d4-384867e5541f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Gk6rNjpZlOLoi9t1dNroi_0ZW29odBJ21QhWQd0uqhE",
+                    "short_id": "4d32acc962b47968"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.90.97.249",
@@ -328,35 +389,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "77.90.11.193",
-            "server_port": 443,
-            "uuid": "3302c92f-f1b6-41cf-a0d4-384867e5541f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Gk6rNjpZlOLoi9t1dNroi_0ZW29odBJ21QhWQd0uqhE",
-                    "short_id": "4d32acc962b47968"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣3️⃣",
             "type": "vless",
             "server": "jp3.xiaofeixia.cyou",
             "server_port": 2052,
@@ -408,62 +441,6 @@
                     "enabled": true,
                     "public_key": "-LeP2n_qttyDuBpYQA8a7q4AOYeQGOkkaxnyLlb8vgo",
                     "short_id": "4f27"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @Outlinev2rayNG | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "us01.ssr.ee",
-            "server_port": 443,
-            "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "itunes.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Fz8HhyDXOLkw3NU59cbyvLvyZEiaMhjmHZ8P-R5RxF0",
-                    "short_id": "6ba85179e30d4fc2"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @Outlinev2rayNG | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "us02.ssr.ee",
-            "server_port": 443,
-            "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "itunes.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AeJ40fWPYK3WSDtY_AGv3ewG_kwQvAoDtf3KIgk1DRU",
-                    "short_id": "6ba85179e30d4fc2"
                 }
             }
         },
