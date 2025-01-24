@@ -113,7 +113,8 @@
                 "IE🇮🇪",
                 "US🇺🇸",
                 "AU🇦🇺",
-                "IR🇮🇷"
+                "IR🇮🇷",
+                "KR🇰🇷"
             ]
         },
         {
@@ -126,7 +127,9 @@
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣1️⃣",
-                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | KR🇰🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -187,7 +190,18 @@
             "tag": "IR🇮🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "KR🇰🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | KR🇰🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -379,6 +393,58 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "hani.mgpingmg.shop"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "185.113.10.40",
+            "server_port": 56060,
+            "uuid": "f60af146-6c9c-4148-b4fa-2ae62305d424",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "185.113.10.40"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | KR🇰🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "132.226.173.76",
+            "server_port": 23451,
+            "uuid": "0083f54b-9f9f-4eb8-8c9e-d7ea2f07c418",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "132.226.173.76"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
