@@ -108,7 +108,8 @@
                 "GB🇬🇧",
                 "IE🇮🇪",
                 "DE🇩🇪",
-                "RELAY🚩"
+                "RELAY🚩",
+                "HK🇭🇰"
             ]
         },
         {
@@ -120,7 +121,8 @@
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
-                "donz*@188.114.96.3:2096?path=\/trv0bKhj5yqIDXOTTS\/MTYyLjE1OC4yMDEuODI=?ed=2560&security=tls&alpn=h2,http\/1.1&host=sue-support.pages.dev&fp=randomized&type=ws&sni=sUE-SuppORt.pAGeS.DeV#رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
+                "donz*@188.114.96.3:2096?path=\/trv0bKhj5yqIDXOTTS\/MTYyLjE1OC4yMDEuODI=?ed=2560&security=tls&alpn=h2,http\/1.1&host=sue-support.pages.dev&fp=randomized&type=ws&sni=sUE-SuppORt.pAGeS.DeV#رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @VmessProtocol | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,6 +165,16 @@
             "type": "urltest",
             "outbounds": [
                 "donz*@188.114.96.3:2096?path=\/trv0bKhj5yqIDXOTTS\/MTYyLjE1OC4yMDEuODI=?ed=2560&security=tls&alpn=h2,http\/1.1&host=sue-support.pages.dev&fp=randomized&type=ws&sni=sUE-SuppORt.pAGeS.DeV#رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @VmessProtocol | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -283,6 +295,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @VmessProtocol | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "hwhk.goudan.world",
+            "server_port": 443,
+            "password": "fdd37849-e66c-464d-8b1c-56a1a16e05bf",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hwhk.goudan.world",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
