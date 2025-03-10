@@ -118,6 +118,7 @@
                 "RS🇷🇸",
                 "FR🇫🇷",
                 "RU🇷🇺",
+                "IR🇮🇷",
                 "NL🇳🇱",
                 "AT🇦🇹",
                 "LT🇱🇹"
@@ -166,7 +167,6 @@
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @mftizi | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣2️⃣",
@@ -205,6 +205,7 @@
                 "رایگان | VLESS | @customv2ray | RS🇷🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | VLESS | @fnet00 | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | SS | @free4allVPN | AT🇦🇹 | 0️⃣1️⃣",
                 "رایگان | SS | @VmessProtocol | LT🇱🇹 | 0️⃣1️⃣"
@@ -274,7 +275,6 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @mftizi | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣2️⃣",
@@ -403,6 +403,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @vmess_vless_v2rayng | RU🇷🇺 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @fnet00 | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1443,23 +1453,6 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @mftizi | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "23.224.152.62",
-            "server_port": 31909,
-            "uuid": "a5e99fc4-5b87-4312-aa8a-52cad1971b92",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "142.4.104.33",
@@ -2427,6 +2420,20 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @fnet00 | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ali.mobilemilan.shop",
+            "server_port": 3333,
+            "uuid": "36740bdb-7471-4d81-bf7a-1cdb65a2061b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
