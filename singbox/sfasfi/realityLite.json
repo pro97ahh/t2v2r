@@ -108,8 +108,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ]
         },
@@ -117,13 +120,51 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @XsV2ray | AM🇦🇲 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.129.185.185",
+            "server_port": 2087,
+            "uuid": "26a45f68-0dd0-4952-ab1e-2c3d023d2431",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "StgXQYbkKSkAHHzakVldKHVmrBXhe_J87e7bydUIOGw",
+                    "short_id": "83cdb009"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
@@ -154,11 +195,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "188.227.86.133",
-            "server_port": 8443,
-            "uuid": "1a16f48a-7197-407c-a139-249872056a22",
+            "server": "23.88.62.209",
+            "server_port": 2089,
+            "uuid": "3a857328-3b53-4333-85b2-a6f2aa22ceb7",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -168,7 +209,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": "refersion.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -176,13 +217,76 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "YP_S0UVAZv8izsii_HPQhf5pbPnrWYjYLB7l-PeJoxw",
-                    "short_id": "7c"
+                    "public_key": "bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg",
+                    "short_id": "e3c5c005cae07eb8"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "mehdi2.vact.ir",
+            "server_port": 443,
+            "uuid": "c7d4c1fa-2bc4-45ed-be11-b5ca8771b99e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GawdeEa7zVBFfOu9G10lQ6yrO65Ys0Gx5PtEOvORfEU",
+                    "short_id": "c78a6e223e2516"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "JoinBadeChannel@antimeli",
+                "service_name": "Join--mtmvpn-Join--mtmvpn-Join--mtmvpn-Join--mtmvpn-Join--mtmvpnJoin--mtmvpnJoin--mtmvpnJoin--mtmvpn-",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "65.21.181.218",
+            "server_port": 443,
+            "uuid": "cdba56b7-82c5-449f-b5ef-86bf02c9797e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CpD2tuOBsn8rHQm8hSzErseno4fsHTdsdq58anDW3AI",
+                    "short_id": "b81f1f0ca108"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@cephalon_ai_bot",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
