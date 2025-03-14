@@ -114,7 +114,6 @@
                 "US🇺🇸",
                 "AM🇦🇲",
                 "GB🇬🇧",
-                "IE🇮🇪",
                 "RELAY🚩",
                 "DE🇩🇪",
                 "NL🇳🇱",
@@ -161,8 +160,6 @@
                 "رایگان | VLESS | @VlessConfig | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -185,11 +182,11 @@
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RU🇷🇺 | 0️⃣3️⃣"
             ],
@@ -269,17 +266,6 @@
             "tolerance": 50
         },
         {
-            "tag": "IE🇮🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
@@ -314,7 +300,6 @@
             "outbounds": [
                 "رایگان | VLESS | @Lockey_vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
@@ -327,7 +312,8 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1264,70 +1250,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "3.252.50.14",
-            "server_port": 22222,
-            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "telegram-channel-vlessconfig.sohala.uk",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/telegram-channel-vlessconfig-ws",
-                "headers": {
-                    "Host": "telegram-channel-vlessconfig.sohala.uk"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @VlessConfig | IE🇮🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "34.255.156.215",
-            "server_port": 22222,
-            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "telegram-channel-vlessconfig.sohala.uk",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/telegram-channel-vlessconfig-ws",
-                "headers": {
-                    "Host": "telegram-channel-vlessconfig.sohala.uk"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -1870,41 +1792,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "VpnWedBaz.iphone-shopp.ir",
-            "server_port": 1000,
-            "uuid": "3594fe0f-5217-4f88-99dd-d67d986636f8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ea6_hMfN4rcPe1GW4080wUV7ZMVklxfS3Yn_qUobyz4",
-                    "short_id": "83f40032"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "\/@VpnWedBaZ----------@VpnWedBaZ-----------@VpnWedBaZ----@VpnWedBaZ-------@VpnWedBaz-----@VpnWedBaZ----------@VpnWedBaZ-----------@VpnWedBaZ----@VpnWedBaZ-------@VpnWedBaz-----@VpnWedBaZ----------@VpnWedBaZ-----------@VpnWedBaZ----@VpnWedBaZ-------@VpnWedBaz",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "195.201.91.167",
@@ -2000,6 +1887,27 @@
                     "public_key": "310Tjx1xSaet9WjXtEJEngtdp-NhD6GWJs7ZQSoblhc",
                     "short_id": "ffffffffff"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "185.234.247.110",
+            "server_port": 80,
+            "uuid": "0cfebfbf-5dfb-430f-918f-6805c9f38b13",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vless-grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
