@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "CH🇨🇭",
                 "DE🇩🇪",
                 "FI🇫🇮"
             ]
@@ -116,10 +117,21 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | FI🇫🇮 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +142,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -146,6 +158,41 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "wedbaz.net.flashwrite.ir",
+            "server_port": 1000,
+            "uuid": "3594fe0f-5217-4f88-99dd-d67d986636f8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ea6_hMfN4rcPe1GW4080wUV7ZMVklxfS3Yn_qUobyz4",
+                    "short_id": "83f40032"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@VpnWedBaZ----------@VpnWedBaZ-----------@VpnWedBaZ----@VpnWedBaZ-------@VpnWedBaz-----@VpnWedBaZ----------@VpnWedBaZ-----------@VpnWedBaZ----@VpnWedBaZ-------@VpnWedBaz-----@VpnWedBaZ----------@VpnWedBaZ-----------@VpnWedBaZ----@VpnWedBaZ-------@VpnWedBaz",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
@@ -176,11 +223,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "91.107.156.176",
+            "server": "mw2.niassa.ir",
             "server_port": 443,
-            "uuid": "e0c23a67-1fd3-4225-bf67-f1fdd465e9f7",
+            "uuid": "b78fb3f5-e6a9-4e00-859f-3a886b19b394",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -190,7 +237,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "mw5.baradshops.ir",
+                "server_name": "eset.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -198,8 +245,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "0sxnaKMU6kGtDElfjsdnNlL_7SxBq0QPhaaaWvAj9zw",
-                    "short_id": "ac"
+                    "public_key": "3Yzz5Unz5elPLlaQkzgBxirSUbvIRbg9XlJ1Vruc4RI",
+                    "short_id": "8819"
                 }
             }
         },
