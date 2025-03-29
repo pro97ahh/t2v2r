@@ -108,9 +108,9 @@
                 "LT🇱🇹",
                 "US🇺🇸",
                 "RELAY🚩",
+                "FR🇫🇷",
                 "IT🇮🇹",
                 "CZ🇨🇿",
-                "FR🇫🇷",
                 "DE🇩🇪",
                 "JP🇯🇵",
                 "FI🇫🇮",
@@ -169,10 +169,11 @@
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VLESS | @V2pedia | IT🇮🇹 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2pedia | IT🇮🇹 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Lockey_vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
@@ -262,6 +263,18 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2pedia | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
@@ -276,17 +289,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @V2pedia | FR🇫🇷 | 0️⃣3️⃣",
-                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1502,11 +1504,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @V2pedia | IT🇮🇹 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "31.14.131.51",
-            "server_port": 55829,
-            "uuid": "c17e5bd4-00f9-4cb2-bd8f-cfd21bd9e2fd",
+            "server": "13.37.126.24",
+            "server_port": 22222,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1514,33 +1516,23 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "80.211.203.158",
-            "server_port": 25210,
-            "uuid": "ca6ddb90-89a2-45f9-9705-6a8b521f0d59",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tls": {
+                "enabled": true,
+                "server_name": "telegram-channel-vlessconfig.sohala.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig-ws",
+                "headers": {
+                    "Host": "telegram-channel-vlessconfig.sohala.uk"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -1585,6 +1577,48 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @V2pedia | IT🇮🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "31.14.131.51",
+            "server_port": 55829,
+            "uuid": "c17e5bd4-00f9-4cb2-bd8f-cfd21bd9e2fd",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "80.211.203.158",
+            "server_port": 25210,
+            "uuid": "ca6ddb90-89a2-45f9-9705-6a8b521f0d59",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1668,9 +1702,9 @@
         {
             "tag": "رایگان | VLESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "185.125.103.139",
-            "server_port": 30693,
-            "uuid": "61a31fcb-b805-4181-9220-b911f973696e",
+            "server": "116.203.184.248",
+            "server_port": 48460,
+            "uuid": "6c7a591f-10ee-474f-bbc8-00f893a084ef",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
