@@ -105,15 +105,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -124,29 +136,19 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "mmdv.s8573.ir",
-            "server_port": 28982,
-            "uuid": "d197d32d-962e-4d5a-a0f1-ca18e59c43a1",
-            "flow": "",
+            "server": "91.107.219.8",
+            "server_port": 443,
+            "uuid": "eacc24ed-a1c1-4037-9af4-4f6bcd657119",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -155,7 +157,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fy-h3-frontier-a2z-com.customer.fastly.net",
+                "server_name": "direct.pdownloaddigikala.ir",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -163,8 +165,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "VGULpliqwCC98vIUyB4olrmgUjGjRbgY6z3QxinkA2g",
-                    "short_id": "2ddfc3d063c09388"
+                    "public_key": "Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA",
+                    "short_id": "1d13151ce1"
                 }
             }
         },
@@ -201,6 +203,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "mmdv.s8573.ir",
+            "server_port": 28982,
+            "uuid": "d197d32d-962e-4d5a-a0f1-ca18e59c43a1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fy-h3-frontier-a2z-com.customer.fastly.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VGULpliqwCC98vIUyB4olrmgUjGjRbgY6z3QxinkA2g",
+                    "short_id": "2ddfc3d063c09388"
+                }
             }
         },
         {
