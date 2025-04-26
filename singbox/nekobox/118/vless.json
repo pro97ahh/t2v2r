@@ -119,6 +119,7 @@
                 "CZ🇨🇿",
                 "DE🇩🇪",
                 "LV🇱🇻",
+                "CH🇨🇭",
                 "GB🇬🇧",
                 "FR🇫🇷",
                 "FI🇫🇮"
@@ -186,9 +187,11 @@
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | LV🇱🇻 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣3️⃣"
             ],
@@ -336,6 +339,16 @@
             "tolerance": 50
         },
         {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
@@ -350,7 +363,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1766,6 +1780,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "mehamboz.darkping.net",
+            "server_port": 59838,
+            "uuid": "f28b23ed-6eb2-da9a-c112-6918a83654a6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
+                    "short_id": "d6d54c08fbbf895f"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
             "server": "64.227.35.202",
@@ -1846,6 +1888,29 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "162.19.228.119",
+            "server_port": 80,
+            "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/http",
+                "headers": {
+                    "Host": "google.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
