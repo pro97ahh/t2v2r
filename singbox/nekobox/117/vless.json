@@ -109,6 +109,7 @@
                 "SE🇸🇪",
                 "US🇺🇸",
                 "RELAY🚩",
+                "IR🇮🇷",
                 "CZ🇨🇿",
                 "DE🇩🇪",
                 "LV🇱🇻",
@@ -170,9 +171,10 @@
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VLESS | @v2_team | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | LV🇱🇻 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣3️⃣",
@@ -180,7 +182,8 @@
                 "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣2️⃣"
+                "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -271,6 +274,16 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @v2_team | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "CZ🇨🇿",
             "type": "urltest",
             "outbounds": [
@@ -285,7 +298,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -338,7 +351,8 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣2️⃣"
+                "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1343,8 +1357,8 @@
             "tag": "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "cname.proxystore11.news",
-            "server_port": 8443,
-            "uuid": "6c5b33a8-feee-44f0-92a1-ea0bec3f3754",
+            "server_port": 2087,
+            "uuid": "ffff9fa0-a8b5-4230-8f08-c139f9d08ffc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1362,11 +1376,13 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "panel.proxystore11.news",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/\/prx11",
+                "headers": {
+                    "Host": "panel.proxystore11.news"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -1374,7 +1390,7 @@
             "type": "vless",
             "server": "cname.proxystore11.news",
             "server_port": 2087,
-            "uuid": "ffff9fa0-a8b5-4230-8f08-c139f9d08ffc",
+            "uuid": "8a79d0bc-9f05-4a16-bf90-5d9bbc012ae5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1405,8 +1421,8 @@
             "tag": "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
             "server": "cname.proxystore11.news",
-            "server_port": 2087,
-            "uuid": "8a79d0bc-9f05-4a16-bf90-5d9bbc012ae5",
+            "server_port": 8443,
+            "uuid": "c32557aa-bcff-4d98-b042-18c80e6e9652",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1424,13 +1440,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/\/prx11",
-                "headers": {
-                    "Host": "panel.proxystore11.news"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+                "type": "grpc",
+                "service_name": "panel.proxystore11.news",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1535,6 +1549,20 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @v2_team | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "78.157.44.88",
+            "server_port": 27574,
+            "uuid": "ce20a6c7-c069-4bec-bd39-8201c49e31f2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣1️⃣",
             "type": "vless",
             "server": "194.182.79.114",
@@ -1570,7 +1598,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "23.88.62.209",
             "server_port": 2089,
@@ -1795,7 +1823,28 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "37.27.31.235",
+            "server_port": 8880,
+            "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣3️⃣",
             "type": "vless",
             "server": "37.27.31.235",
             "server_port": 8880,
