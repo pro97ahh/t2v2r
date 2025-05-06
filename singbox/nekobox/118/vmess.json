@@ -115,7 +115,8 @@
                 "CA🇨🇦",
                 "FR🇫🇷",
                 "US🇺🇸",
-                "PL🇵🇱"
+                "PL🇵🇱",
+                "HK🇭🇰"
             ]
         },
         {
@@ -132,7 +133,8 @@
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -198,6 +200,16 @@
             "outbounds": [
                 "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -482,6 +494,32 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "b79bda8c-svc1s0-t65a3e-tqgz.hk3.p5pv.com",
+            "server_port": 8080,
+            "uuid": "88da0d21-b25d-11ec-b9f7-f23c91cfbbc9",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "b79bda8c-svc1s0-t65a3e-tqgz.hk3.p5pv.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
