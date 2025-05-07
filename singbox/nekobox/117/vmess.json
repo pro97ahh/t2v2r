@@ -110,7 +110,8 @@
                 "CA🇨🇦",
                 "FR🇫🇷",
                 "US🇺🇸",
-                "PL🇵🇱"
+                "PL🇵🇱",
+                "GB🇬🇧"
             ]
         },
         {
@@ -119,18 +120,18 @@
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @prrofile_purple | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Awlix_ir | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,6 +143,7 @@
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣"
             ],
@@ -174,8 +176,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Awlix_ir | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -186,8 +187,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ShadowProxy66 | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @ShadowProxy66 | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -199,6 +199,16 @@
             "outbounds": [
                 "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -261,6 +271,42 @@
                 "path": "\/\/aa",
                 "headers": {
                     "Host": "104.18.149.76"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.21.64.1",
+            "server_port": 2096,
+            "uuid": "8f78e709-2c5f-4c19-9f44-b5b5f80ab74c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cc2d1.988988.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.21.64.1"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -435,42 +481,6 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Awlix_ir | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.67.170.13",
-            "server_port": 443,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "glweidf.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "172.67.170.13"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VMESS | @VPNGate_Config | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "waynn.makeup",
@@ -524,32 +534,6 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "174.136.204.209",
-            "server_port": 11611,
-            "uuid": "baec9adb-d6b9-465a-f531-d0a38144cf6c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "174.136.204.209"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VMESS | @ShadowProxy66 | PL🇵🇱 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "2.56.125.101",
@@ -572,6 +556,23 @@
             "server": "2.56.125.101",
             "server_port": 38088,
             "uuid": "1275ea18-bc9c-4bcb-b3fd-fee70272e143",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "37.221.125.159",
+            "server_port": 33940,
+            "uuid": "353e0787-71bc-442d-9c9d-902f90359eb5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
