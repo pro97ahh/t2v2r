@@ -109,14 +109,14 @@
                 "US🇺🇸",
                 "IR🇮🇷",
                 "DE🇩🇪",
+                "FR🇫🇷",
                 "CZ🇨🇿",
                 "RELAY🚩",
                 "FI🇫🇮",
                 "RU🇷🇺",
                 "CY🇨🇾",
-                "FR🇫🇷",
                 "GB🇬🇧",
-                "RO🇷🇴"
+                "NL🇳🇱"
             ]
         },
         {
@@ -155,6 +155,9 @@
                 "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣3️⃣",
@@ -180,11 +183,9 @@
                 "رایگان | VLESS | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | CY🇨🇾 | 0️⃣3️⃣",
-                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | VLESS | @flyv2ray | RO🇷🇴 | 0️⃣3️⃣"
+                "رایگان | VLESS | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -253,6 +254,18 @@
                 "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -329,17 +342,6 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
@@ -351,10 +353,10 @@
             "tolerance": 50
         },
         {
-            "tag": "RO🇷🇴",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @flyv2ray | RO🇷🇴 | 0️⃣3️⃣"
+                "رایگان | VLESS | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1224,6 +1226,84 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "51.44.1.140",
+            "server_port": 22224,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "57.128.178.253",
+            "server_port": 443,
+            "uuid": "6842f2ae-8c18-4e30-8a42-d4632a849f98",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "en.linceedab.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "162.19.228.119",
+            "server_port": 80,
+            "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/http",
+                "headers": {
+                    "Host": "google.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @V2pedia | CZ🇨🇿 | 0️⃣1️⃣",
             "type": "vless",
             "server": "194.182.79.113",
@@ -1806,52 +1886,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "57.128.178.253",
-            "server_port": 443,
-            "uuid": "6842f2ae-8c18-4e30-8a42-d4632a849f98",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "en.linceedab.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "162.19.228.119",
-            "server_port": 80,
-            "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/http",
-                "headers": {
-                    "Host": "google.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
             "server": "146.75.74.62",
@@ -1905,7 +1939,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @flyv2ray | RO🇷🇴 | 0️⃣3️⃣",
+            "tag": "رایگان | VLESS | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣",
             "type": "vless",
             "server": "djfdd.nexavps.ir",
             "server_port": 8880,
