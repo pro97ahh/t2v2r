@@ -108,7 +108,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "IR🇮🇷"
             ]
         },
         {
@@ -116,7 +117,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,7 +131,19 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -169,6 +185,41 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.14.247.129",
+            "server_port": 2087,
+            "uuid": "263098e9-838b-493a-96a1-ddebe9c1d665",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "iJdX3pipeJfuZwmbVOW6p4i41eXI-_ZwYmcigwRO9mg",
+                    "short_id": "3523"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "128.140.113.136",
@@ -193,6 +244,62 @@
                     "enabled": true,
                     "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
                     "short_id": "e559dd"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "local.connectix-d1.info",
+            "server_port": 44444,
+            "uuid": "94e0acd7-aa2f-4a8a-abf6-921bbba18810",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "local.connectix-d1.info",
+            "server_port": 44444,
+            "uuid": "9116e758-76c5-4e9d-aef6-6fe6edd11163",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
                 }
             }
         },
