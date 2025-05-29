@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "IR🇮🇷",
                 "FR🇫🇷"
             ]
         },
@@ -120,7 +121,9 @@
             "outbounds": [
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -133,7 +136,18 @@
             "outbounds": [
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -220,11 +234,39 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "128.140.113.136",
-            "server_port": 57065,
-            "uuid": "c9b4de16-e133-4e10-a4bb-fd40f64de17d",
+            "server": "91.107.219.8",
+            "server_port": 443,
+            "uuid": "eacc24ed-a1c1-4037-9af4-4f6bcd657119",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "direct.pdownloaddigikala.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA",
+                    "short_id": "1d13151ce1"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "public.misvn.ir",
+            "server_port": 443,
+            "uuid": "SVNTEAM-2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -234,7 +276,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "lunavopershiansni369871.adas.monster",
+                "server_name": "tgju.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -242,8 +284,36 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
-                    "short_id": "e559dd"
+                    "public_key": "O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "local.connectix-d1.info",
+            "server_port": 44444,
+            "uuid": "94e0acd7-aa2f-4a8a-abf6-921bbba18810",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
                 }
             }
         },
