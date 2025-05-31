@@ -108,7 +108,6 @@
                 "DE🇩🇪",
                 "GB🇬🇧",
                 "LT🇱🇹",
-                "IR🇮🇷",
                 "FI🇫🇮"
             ]
         },
@@ -117,10 +116,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | LT🇱🇹 | 0️⃣3️⃣",
-                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxystore11 | FI🇫🇮 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxystore11 | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +129,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,20 +157,10 @@
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxystore11 | FI🇫🇮 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxystore11 | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -180,6 +170,41 @@
             "tag": "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "193.46.81.67",
+            "server_port": 3567,
+            "uuid": "telegram-id-ArV2ray3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+                    "short_id": "c14b9292de5a8d6f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "193.46.81.83",
             "server_port": 3567,
             "uuid": "telegram-id-ArV2ray3",
             "flow": "",
@@ -268,35 +293,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "local.connectix-d1.info",
-            "server_port": 44444,
-            "uuid": "9116e758-76c5-4e9d-aef6-6fe6edd11163",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @proxystore11 | FI🇫🇮 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxystore11 | FI🇫🇮 | 0️⃣2️⃣",
             "type": "vless",
             "server": "37.27.246.211",
             "server_port": 443,
