@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "LV🇱🇻",
+                "GB🇬🇧",
                 "DE🇩🇪",
                 "FR🇫🇷"
             ]
@@ -120,8 +121,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @prrofile_purple | LV🇱🇻 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | FR🇫🇷 | 0️⃣3️⃣"
             ],
@@ -140,11 +142,21 @@
             "tolerance": 50
         },
         {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -190,6 +202,62 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "158.220.94.91",
+            "server_port": 3000,
+            "uuid": "bd39598b-b9a9-40b2-a8dd-ab1df5627dc5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zzbexZUufjA8hDluJTujyHRAxTEpljvFytrMO_6AKWw",
+                    "short_id": "c0fae980"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "78.46.209.177",
+            "server_port": 7005,
+            "uuid": "3a17f5ac-413e-404b-9dee-fae975e0efe9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uvD80HhI4bd7zO_C-f8gtm7AzRhGdjiWDU2TI-S-hEk",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
@@ -214,34 +282,6 @@
                     "enabled": true,
                     "public_key": "-4S95rjoZIG_AeUxIlwedx89e7C_X4jnePY3RsiF4io",
                     "short_id": "f8fcb589"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "78.46.209.177",
-            "server_port": 7005,
-            "uuid": "3a17f5ac-413e-404b-9dee-fae975e0efe9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "uvD80HhI4bd7zO_C-f8gtm7AzRhGdjiWDU2TI-S-hEk",
-                    "short_id": ""
                 }
             }
         },
