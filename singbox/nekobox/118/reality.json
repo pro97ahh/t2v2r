@@ -110,16 +110,40 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "FR🇫🇷",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "GB🇬🇧",
+                "FR🇫🇷"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @customv2ray | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣",
+                "رایگان | REALITY | @customv2ray | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,22 +160,12 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @customv2ray | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "arvancloud.de.ir.systemgamingirani.ir",
+            "server": "91.107.152.130",
             "server_port": 443,
-            "uuid": "341a20b9-045b-4abd-94ab-6871f29ab05a",
-            "flow": "xtls-rprx-vision",
+            "uuid": "d53da42f-d4b7-4d80-a9ca-cecf3beaa79a",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -160,7 +174,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "speedtest.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -168,8 +182,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "kxj-EhIXEgwh66gBVOf3shmmwuMqKgsd0mUJNUN8Gw8",
+                    "short_id": "d62385a8"
                 }
             }
         },
@@ -198,6 +212,62 @@
                     "enabled": true,
                     "public_key": "-4S95rjoZIG_AeUxIlwedx89e7C_X4jnePY3RsiF4io",
                     "short_id": "f8fcb589"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "185.168.194.59",
+            "server_port": 41445,
+            "uuid": "3d8d5627-62c0-491a-ad68-0079983f95e1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tesla.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eb0fWFAevT3a_BqrfJ2dLhY_Hv910o9LSmaumdZpIyQ",
+                    "short_id": "f8a537"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @customv2ray | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "arvancloud.de.ir.systemgamingirani.ir",
+            "server_port": 443,
+            "uuid": "341a20b9-045b-4abd-94ab-6871f29ab05a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         },
