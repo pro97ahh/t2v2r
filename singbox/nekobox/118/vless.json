@@ -113,10 +113,11 @@
                 "US🇺🇸",
                 "RELAY🚩",
                 "IR🇮🇷",
-                "GB🇬🇧",
+                "DE🇩🇪",
                 "FR🇫🇷",
+                "GB🇬🇧",
                 "IT🇮🇹",
-                "DE🇩🇪"
+                "SG🇸🇬"
             ]
         },
         {
@@ -169,11 +170,14 @@
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @XsV2ray | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxystore11 | IT🇮🇹 | 0️⃣1️⃣",
-                "رایگان | VLESS | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | VLESS | @free1_vpn | SG🇸🇬 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -253,11 +257,11 @@
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣"
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -267,7 +271,19 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2rayngninja | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -284,10 +300,10 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | VLESS | @free1_vpn | SG🇸🇬 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1253,6 +1269,107 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "18.184.206.67",
+            "server_port": 22224,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "amirhgermany.norozhost.com",
+            "server_port": 6890,
+            "uuid": "d8810bbc-ae3f-43ad-bc8d-4f3ee0ef02a5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "13.37.38.184",
+            "server_port": 22224,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "57.128.178.253",
+            "server_port": 443,
+            "uuid": "6842f2ae-8c18-4e30-8a42-d4632a849f98",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "en.linceedab.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
             "server": "102.177.189.29",
@@ -1317,29 +1434,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @vless_vmess | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "57.128.178.253",
-            "server_port": 443,
-            "uuid": "6842f2ae-8c18-4e30-8a42-d4632a849f98",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "en.linceedab.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @proxystore11 | IT🇮🇹 | 0️⃣1️⃣",
             "type": "vless",
             "server": "ipfast.maketunnelim.lat",
@@ -1354,11 +1448,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @free1_vpn | SG🇸🇬 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "amirhgermany.norozhost.com",
-            "server_port": 6890,
-            "uuid": "d8810bbc-ae3f-43ad-bc8d-4f3ee0ef02a5",
+            "server": "43.156.217.68",
+            "server_port": 41283,
+            "uuid": "4839e0b9-b275-47ea-81ab-9bfd38bbe7af",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
