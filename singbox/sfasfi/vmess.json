@@ -110,7 +110,8 @@
                 "URL-TEST | رایگان",
                 "JP🇯🇵",
                 "CA🇨🇦",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "RELAY🚩"
             ]
         },
         {
@@ -118,8 +119,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣2️⃣",
+                "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣3️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,7 +132,8 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,7 +143,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣"
+                "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,7 +153,17 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,6 +171,23 @@
         },
         {
             "tag": "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.79.88.113",
+            "server_port": 53710,
+            "uuid": "1db838d0-ecd2-4b73-a7f8-5af6b401d833",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free4allVPN | JP🇯🇵 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "5.253.41.147",
             "server_port": 27750,
@@ -173,7 +204,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -199,13 +230,13 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "57.129.24.141",
+            "server": "57.129.25.20",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -216,7 +247,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "57.129.24.141",
+                "server_name": null,
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -226,9 +257,35 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/linkvws",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "57.129.24.141"
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "185.174.138.199",
+            "server_port": 2052,
+            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/az05.beyondy.cfd\/link?\/TM",
+                "headers": {
+                    "Host": "185.174.138.199"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
