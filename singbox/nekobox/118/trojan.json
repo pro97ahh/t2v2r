@@ -112,6 +112,7 @@
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
                 "DE🇩🇪",
+                "RELAY🚩",
                 "JP🇯🇵"
             ]
         },
@@ -120,7 +121,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @yaney_01 | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -131,7 +135,9 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,6 +148,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -179,6 +195,48 @@
             }
         },
         {
+            "tag": "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "15.237.102.198",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "35.180.235.166",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "63.177.25.243",
@@ -196,6 +254,34 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "172.67.207.27",
+            "server_port": 443,
+            "password": "5a5d1112-4ae7-431f-bdde-0d008fb473dd",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "90.tAIpEI108.dpDnS.orG",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/685uFbiRrgAsHzTP8d",
+                "headers": {
+                    "Host": "90.taipei108.dpdns.org"
                 }
             }
         },
