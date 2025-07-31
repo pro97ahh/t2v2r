@@ -114,9 +114,8 @@
                 "FI🇫🇮",
                 "GB🇬🇧",
                 "NL🇳🇱",
-                "FR🇫🇷",
-                "BG🇧🇬",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "BG🇧🇬"
             ]
         },
         {
@@ -130,10 +129,10 @@
                 "رایگان | REALITY | @flyv2ray | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -183,10 +182,12 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -197,17 +198,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -445,11 +435,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "fr.safeline.12.afterhav.ir",
-            "server_port": 8880,
-            "uuid": "ServerNett",
+            "server": "5.75.201.180",
+            "server_port": 14703,
+            "uuid": "ServerNett-ServerNett1",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -459,7 +449,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.apple.com.cn",
+                "server_name": "stackoverflow.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -467,44 +457,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "XetKmjWtt6D08aG4I5F9tETkO4RogFgDaqW6F-HHoyA",
-                    "short_id": "64ede3f582de"
+                    "public_key": "Y9zKrv5hG5fbRdibewYRmulK0HEHX6QgaU30EbKxrAU",
+                    "short_id": "a3"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "russiatest-tap2.servers807.ir",
-            "server_port": 2025,
-            "uuid": "ebac2049-8367-4eab-a1a5-8b742b2fd3b6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Cnuh4bNEBvRIjrYBEWSVhX8nr5j46lHuyen_IU2rbSk",
-                    "short_id": "a76e2f1d45"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "das12327gsgsyu",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -565,6 +520,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "russiatest-tap2.servers807.ir",
+            "server_port": 2025,
+            "uuid": "ebac2049-8367-4eab-a1a5-8b742b2fd3b6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Cnuh4bNEBvRIjrYBEWSVhX8nr5j46lHuyen_IU2rbSk",
+                    "short_id": "a76e2f1d45"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "das12327gsgsyu",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
