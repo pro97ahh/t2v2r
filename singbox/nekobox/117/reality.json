@@ -107,8 +107,7 @@
                 "URL-TEST | رایگان",
                 "AE🇦🇪",
                 "DE🇩🇪",
-                "BG🇧🇬",
-                "FI🇫🇮"
+                "BG🇧🇬"
             ]
         },
         {
@@ -116,13 +115,13 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | AE🇦🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | FI🇫🇮 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +131,8 @@
             "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | AE🇦🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,16 +157,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | BG🇧🇬 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FI🇫🇮",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -205,6 +195,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | AE🇦🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "31.56.206.70",
+            "server_port": 443,
+            "uuid": "b67ddb53-9e46-492a-84be-0f5b752d7e83",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "s7Ai9wZFZdDEA3ox2FSjMAqaugUFKja-7TMNCu2GYmo",
+                    "short_id": "c6d0465acae1"
+                }
             }
         },
         {
@@ -377,41 +395,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "das12327gsgsyu",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | FI🇫🇮 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "65.109.208.107",
-            "server_port": 2083,
-            "uuid": "949e6151-6899-4605-f2d1-51570f60d51d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "khamenei.ir",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "mDWXgatiJqUc4fmeDQqGusEBIhjFVrQ85y_ZUfNpFV8",
-                    "short_id": "54602915a7"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "melov2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
