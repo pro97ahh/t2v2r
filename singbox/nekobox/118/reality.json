@@ -113,7 +113,9 @@
                 "DE🇩🇪",
                 "AE🇦🇪",
                 "TR🇹🇷",
-                "US🇺🇸"
+                "AU🇦🇺",
+                "IR🇮🇷",
+                "CA🇨🇦"
             ]
         },
         {
@@ -127,7 +129,10 @@
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | TR🇹🇷 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | AU🇦🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | CA🇨🇦 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -168,10 +173,31 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "AU🇦🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | AU🇦🇺 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | CA🇨🇦 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -388,7 +414,98 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | AU🇦🇺 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "pj.bestirstorei.top",
+            "server_port": 60000,
+            "uuid": "7FuseVPN----------ProxyPJ",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7tLNRTi59oqO5FYHExWge-LbEdRpyk9n6x0PJWK2UiY",
+                    "short_id": "e1573b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "60000vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "62.60.178.200",
+            "server_port": 40792,
+            "uuid": "24d0e335-659e-45c7-8e61-0bd899c1d510",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "I2gX0RY5PEXPm6shWotiQ5bVwoBs4cmGV_sQUryQ63w",
+                    "short_id": "5a"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "62.60.178.200",
+            "server_port": 20322,
+            "uuid": "35b5783e-cde8-4a3f-82c6-0778f32a6e5e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-3D1yyc2r7xOKDJ_nvn5x5Ij7tWYxKTpQmKiukGG7B4",
+                    "short_id": "4d"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | CA🇨🇦 | 0️⃣2️⃣",
             "type": "vless",
             "server": "amazon-13.cristiano.name.ng",
             "server_port": 443,
