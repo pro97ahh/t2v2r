@@ -119,9 +119,10 @@
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,8 +135,8 @@
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,7 +146,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -204,7 +206,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.156.135.250",
             "server_port": 22223,
@@ -225,7 +227,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "52.59.51.173",
             "server_port": 22223,
@@ -246,9 +248,30 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "13.36.4.102",
+            "server": "15.237.5.121",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "15.237.5.121",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -269,9 +292,9 @@
         {
             "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "172.67.181.173",
+            "server": "104.20.20.150",
             "server_port": 443,
-            "password": "f282b878-8711-45a1-8c69-5564172123c1",
+            "password": "auto",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -279,7 +302,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vpn.stupidworld.web.id",
+                "server_name": "b96ef9ae.trojanfree-76s.pages.dev",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -288,9 +311,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/Stupid-World\/103.106.228.126-2053",
+                "path": "\/\/b96ef9ae.trojanfree-76s.pages.dev\/",
                 "headers": {
-                    "Host": "vpn.stupidworld.web.id"
+                    "Host": "b96ef9ae.trojanfree-76s.pages.dev"
                 }
             }
         },
