@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "CA🇨🇦",
                 "LV🇱🇻",
+                "FR🇫🇷",
                 "NL🇳🇱",
                 "US🇺🇸",
                 "DE🇩🇪",
@@ -119,11 +120,13 @@
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free4allVPN | LV🇱🇻 | 0️⃣2️⃣",
-                "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -151,10 +154,20 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -176,7 +189,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -245,7 +259,33 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "51.254.21.193",
+            "server_port": 20086,
+            "uuid": "9bcecb26-920a-4e68-b296-88526310bff6",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "51.254.21.193"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "92.112.126.22",
             "server_port": 8443,
@@ -375,6 +415,23 @@
             "server": "customers.tele-shop-too.studio",
             "server_port": 33203,
             "uuid": "eaae52d7-bc1a-4979-bd66-b6b428107173",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "91.107.186.41",
+            "server_port": 54895,
+            "uuid": "faee5289-ca58-42f0-8564-fd84b49106c7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
