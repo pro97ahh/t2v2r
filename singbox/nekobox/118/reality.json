@@ -112,7 +112,6 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "SE🇸🇪",
                 "US🇺🇸",
                 "MD🇲🇩"
             ]
@@ -125,9 +124,9 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2_team | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣3️⃣"
             ],
@@ -143,6 +142,7 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -154,16 +154,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2_team | FR🇫🇷 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -316,6 +306,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "de.vipdatacloud.com",
+            "server_port": 47193,
+            "uuid": "a1599ca4-4762-481a-888a-8022b2b7f8b9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.pcmag.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Q9KrxctP_L5fT1sL_sQLejDpNn7KdH1b-wZ_GR0UtX4",
+                    "short_id": "f414e49bc35be542"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "80.240.23.101",
@@ -368,34 +386,6 @@
                     "enabled": true,
                     "public_key": "aO2tx4kfUpQWIvT5bO7lH6G1GDfnrThtSFigLJXDens",
                     "short_id": "370dd394052f2386"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "amazon-20.cristiano.name.ng",
-            "server_port": 443,
-            "uuid": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "store.steampowered.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-                    "short_id": "f5"
                 }
             }
         },
