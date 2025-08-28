@@ -110,10 +110,11 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "NL🇳🇱",
-                "JP🇯🇵",
+                "KR🇰🇷",
                 "IS🇮🇸",
                 "US🇺🇸",
-                "PL🇵🇱"
+                "PL🇵🇱",
+                "FI🇫🇮"
             ]
         },
         {
@@ -127,10 +128,11 @@
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣3️⃣",
-                "رایگان | REALITY | @DarkTeam_VPN | JP🇯🇵 | 0️⃣2️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | KR🇰🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | IS🇮🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,10 +164,10 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | REALITY | @DarkTeam_VPN | KR🇰🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -195,7 +197,17 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @flyv2ray | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -419,7 +431,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | JP🇯🇵 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | KR🇰🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "amazon-15.cristiano.name.ng",
             "server_port": 443,
@@ -503,7 +515,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "2.58.95.16",
             "server_port": 34045,
@@ -528,6 +540,41 @@
                     "public_key": "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA",
                     "short_id": "e8ab71d0"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | FI🇫🇮 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "65.109.218.179",
+            "server_port": 2083,
+            "uuid": "fb84938c-8708-4289-a4f1-4f513b1581ac",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "khamenei.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mDWXgatiJqUc4fmeDQqGusEBIhjFVrQ85y_ZUfNpFV8",
+                    "short_id": "54602915a7"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "melov2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
