@@ -115,8 +115,9 @@
                 "PL🇵🇱",
                 "FR🇫🇷",
                 "DE🇩🇪",
-                "TR🇹🇷",
-                "RELAY🚩"
+                "RELAY🚩",
+                "CN🇨🇳",
+                "TR🇹🇷"
             ]
         },
         {
@@ -135,8 +136,10 @@
                 "رایگان | VMESS | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Awlix_ir | CN🇨🇳 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -200,20 +203,31 @@
             "tolerance": 50
         },
         {
-            "tag": "TR🇹🇷",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "CN🇨🇳",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Awlix_ir | CN🇨🇳 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -557,11 +571,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "38.54.105.192",
-            "server_port": 443,
-            "uuid": "7bf26ca3-ca19-4b51-b5b2-f919b3630b90",
+            "server": "104.16.60.8",
+            "server_port": 2095,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -572,21 +586,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "38.54.105.192",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/\/afrhms16v.bestxray.buzz\/linkws",
                 "headers": {
-                    "Host": "38.54.105.192"
+                    "Host": "104.16.60.8"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -623,6 +627,68 @@
                 "path": "\/\/telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2",
                 "headers": {
                     "Host": "172.66.40.99"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Awlix_ir | CN🇨🇳 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "38.54.105.192",
+            "server_port": 443,
+            "uuid": "7bf26ca3-ca19-4b51-b5b2-f919b3630b90",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "38.54.105.192",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "38.54.105.192"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
