@@ -114,8 +114,7 @@
                 "DE🇩🇪",
                 "US🇺🇸",
                 "CA🇨🇦",
-                "GB🇬🇧",
-                "FR🇫🇷"
+                "GB🇬🇧"
             ]
         },
         {
@@ -127,7 +126,8 @@
                 "رایگان | VMESS | @ShadowProxy66 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @free4allVPN | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VMESS | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
@@ -135,7 +135,7 @@
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @prrofile_purple | CA🇨🇦 | 0️⃣2️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣",
-                "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,7 +159,8 @@
             "outbounds": [
                 "رایگان | VMESS | @free4allVPN | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VMESS | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -193,17 +194,8 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣",
+                "رایگان | VMESS | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -370,7 +362,43 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "lammaland.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lammaland.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "lammaland.org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "91.99.157.193",
             "server_port": 2052,
@@ -620,11 +648,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "lammaland.org",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "51.38.64.209",
+            "server_port": 44023,
+            "uuid": "7da457da-ed0f-437d-c81d-6c35885bbea3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -634,25 +662,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "lammaland.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "lammaland.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
