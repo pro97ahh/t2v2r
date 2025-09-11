@@ -114,8 +114,9 @@
                 "NL🇳🇱",
                 "GB🇬🇧",
                 "FR🇫🇷",
+                "TR🇹🇷",
                 "US🇺🇸",
-                "RU🇷🇺"
+                "IL🇮🇱"
             ]
         },
         {
@@ -129,10 +130,12 @@
                 "رایگان | REALITY | @rxv2ray | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | IL🇮🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,7 +169,8 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -176,7 +180,18 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @VmessProtocol | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -186,18 +201,17 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
+            "tag": "IL🇮🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | IL🇮🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -414,6 +428,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ShadowProxy66 | GB🇬🇧 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "64.227.32.13",
+            "server_port": 443,
+            "uuid": "c2c5b83f-4892-c49f-b9d1-7af232611820",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc",
+                    "short_id": "6ea3daaac3d6bede"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "fr-node.vipclubiran.ir",
@@ -442,7 +484,63 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "paisaoutt.outline360bot.com",
+            "server_port": 443,
+            "uuid": "70912dd6-942f-4dba-a85a-63826351724f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fv0Zz9FtroOmuK1Tsn0u98gXSq8XepZKtbdH3lDg9EU",
+                    "short_id": "ad2e"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | TR🇹🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "tr-node.vipclubiran.ir",
+            "server_port": 47193,
+            "uuid": "12b9f991-3e67-46f5-938f-7430bfb1adc4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.pcmag.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Q9KrxctP_L5fT1sL_sQLejDpNn7KdH1b-wZ_GR0UtX4",
+                    "short_id": "f414e49bc35be542"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣3️⃣",
             "type": "vless",
             "server": "us-node.vipclubiran.ir",
             "server_port": 47193,
@@ -470,11 +568,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | IL🇮🇱 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "206.81.6.239",
+            "server": "193.202.12.10",
             "server_port": 443,
-            "uuid": "c2c5b83f-4892-c49f-b9d1-7af232611820",
+            "uuid": "3c7a1227-5383-3a19-7084-76624ec8f84f",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -484,7 +582,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "androidcentral.com",
+                "server_name": "speed.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -492,36 +590,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc",
-                    "short_id": "6ea3daaac3d6bede"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "ru-0017.vpnvezdehod.net",
-            "server_port": 443,
-            "uuid": "ce9751a0-fee7-402a-a887-bdc5f7bd1093",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hls-svod.itunes.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-                    "short_id": "d3b13f31"
+                    "public_key": "BqPcbcS0agCOmW5xem5nQldi_2oGariVJdJZ6Q57810",
+                    "short_id": ""
                 }
             }
         },
