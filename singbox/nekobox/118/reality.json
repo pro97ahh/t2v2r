@@ -112,8 +112,9 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "RU🇷🇺",
-                "IR🇮🇷",
-                "FR🇫🇷"
+                "FR🇫🇷",
+                "US🇺🇸",
+                "LT🇱🇹"
             ]
         },
         {
@@ -123,8 +124,10 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @iP_CF | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,20 +155,31 @@
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "LT🇱🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -270,11 +284,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "hybrid.arvancloud.online",
-            "server_port": 44443,
-            "uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
+            "server": "ovhfrance.ip-venzo.com",
+            "server_port": 35588,
+            "uuid": "6b3a7034-39ec-f057-377d-cf6af57b4db4",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -284,7 +298,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": "www.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -292,17 +306,73 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
-                    "short_id": ""
+                    "public_key": "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4",
+                    "short_id": "5f4ab2905a60052e"
                 }
             }
         },
         {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "51.210.181.3",
-            "server_port": 443,
-            "uuid": "7f75f70e-8d14-403b-9ec4-cad4b0836b8e",
+            "server": "ovhpoland.ip-venzo.com",
+            "server_port": 35588,
+            "uuid": "6b3a7034-39ec-f057-377d-cf6af57b4db4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4",
+                    "short_id": "5f4ab2905a60052e"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "fiba-turkey.ip-venzo.com",
+            "server_port": 35588,
+            "uuid": "6b3a7034-39ec-f057-377d-cf6af57b4db4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4",
+                    "short_id": "5f4ab2905a60052e"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | LT🇱🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "services.dissertationhelpspecialist.com",
+            "server_port": 8443,
+            "uuid": "50f8d474-34cc-4486-8bdb-968f2ea090d9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -312,7 +382,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "google.com",
+                "server_name": "tgju.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -320,9 +390,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "HTmgtYAdc4266sqGG1zMSYcsMPJfWJfxgaJEKCMiFww",
-                    "short_id": "f8f87a"
+                    "public_key": "1uJxq_S0vz0bi1bBzy3i-r3vcvjMt9CRB6OpPCr0yFk",
+                    "short_id": "a739e76c"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
