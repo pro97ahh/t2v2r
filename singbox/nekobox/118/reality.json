@@ -111,7 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "RU🇷🇺"
+                "RU🇷🇺",
+                "CZ🇨🇿"
             ]
         },
         {
@@ -120,8 +121,8 @@
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @iP_CF | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @iP_CF | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | CZ🇨🇿 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,8 +133,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,6 +144,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @iP_CF | RU🇷🇺 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CZ🇨🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | CZ🇨🇿 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -220,34 +230,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "94.131.111.195",
-            "server_port": 443,
-            "uuid": "56b6c679-fc4f-4b9b-bea7-680f6128c0cd",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "CA3Mhyhpt04cAfBM65vIBCN5MjfLm9PL6mWRWNiLP3Q",
-                    "short_id": "61781e31"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @iP_CF | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "5.181.171.2",
@@ -273,6 +255,41 @@
                     "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | CZ🇨🇿 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "194.182.84.53",
+            "server_port": 443,
+            "uuid": "5d985c1c-72c1-486c-a76b-63155e0dacf7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wordpress.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DpSW8adQoMP_hcXxdAGD6PPdrHuwYbFomzJmBmtsqxM",
+                    "short_id": "e3f189ed"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
