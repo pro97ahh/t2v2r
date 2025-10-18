@@ -106,7 +106,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "IR🇮🇷"
+                "IR🇮🇷",
+                "US🇺🇸",
+                "CH🇨🇭"
             ]
         },
         {
@@ -115,7 +117,10 @@
             "outbounds": [
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,7 +131,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,6 +143,26 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -199,6 +225,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "vfast7.hvitrin.ir",
+            "server_port": 49330,
+            "uuid": "7f5c3ff3-c113-4379-812b-c5733f47d4e1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "miro.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Dee9YE139lZpb4V3QytB8DvHY3nTCnEXzk2IjvMLHi8",
+                    "short_id": "b3"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @V2rayNGn | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "hybrid.arvancloud.online",
@@ -224,6 +278,69 @@
                     "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "apkq.bosx.net",
+            "server_port": 443,
+            "uuid": "0f425380-a684-11f0-8500-a4251a3d3534",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.bosx.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "q86BBVDZMO72kxpwkYxf2kRJRdQwTWYCHL3k4ByikR8",
+                    "short_id": "90c1c30633151151"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "23.166.88.109",
+            "server_port": 443,
+            "uuid": "535915c5-b455-4ac1-a186-78353570a251",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mbUkRT2YVvtaeGlZbLsfdQ-P1j07sEBBRzn9dZQ-DHY",
+                    "short_id": "be8a0c77d5ff88d5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "aec69a9d2944dd7468412f47",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
