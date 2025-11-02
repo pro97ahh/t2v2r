@@ -112,6 +112,7 @@
                 "UA🇺🇦",
                 "US🇺🇸",
                 "TR🇹🇷",
+                "SI🇸🇮",
                 "AT🇦🇹"
             ]
         },
@@ -126,6 +127,7 @@
                 "رایگان | REALITY | @DarkTeam_VPN | UA🇺🇦 | 0️⃣1️⃣",
                 "رایگان | REALITY | @DarkTeam_VPN | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2rayngvpn | SI🇸🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | AT🇦🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -170,6 +172,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SI🇸🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | SI🇸🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -378,6 +390,34 @@
                     "enabled": true,
                     "public_key": "M2uESRDALzI6uyXoBSjp2pb7fC47a5wBB85y9FhEMWA",
                     "short_id": "212c006f8004d93f"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | SI🇸🇮 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "g4viptkk.hpx.lol",
+            "server_port": 8443,
+            "uuid": "4abea1f7-a23e-4412-bced-92c8b39c27b3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UzsqjGMapOinXKGGFatGA9eYcozQ7LiMgpML2m0PkTo",
+                    "short_id": "ae3261"
                 }
             }
         },
