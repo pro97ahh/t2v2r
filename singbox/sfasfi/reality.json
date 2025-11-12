@@ -111,20 +111,21 @@
                 "DE🇩🇪",
                 "NL🇳🇱",
                 "FI🇫🇮",
-                "RU🇷🇺"
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @rxv2ray | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,6 +135,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
@@ -164,21 +166,49 @@
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
+            "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "188.245.217.190",
             "server_port": 443,
             "uuid": "Parsashonam-320",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LOi-3brURXBaOe83KFpaKZ5A4exl3J9qjeZIIWa8GCQ",
+                    "short_id": "0a8b4a1ad485"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "188.245.217.190",
+            "server_port": 443,
+            "uuid": "Parsashonam-321",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -342,12 +372,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "176.120.72.63",
-            "server_port": 38339,
-            "uuid": "481c5606-b586-44d7-bc2e-d8ef30d67f62",
-            "flow": "",
+            "server": "finland4.clear-vpn.org",
+            "server_port": 443,
+            "uuid": "c07c396a-6206-4d1a-9605-2952af00f2fc",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -356,7 +386,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "dl.google.com",
+                "server_name": "google.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -364,8 +394,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "o0MFuznHh_Wztg0FTAMhFXm3hjAqOJAJIIVNn-_A9WA",
-                    "short_id": "e16883e511"
+                    "public_key": "e8R6bqFhE4LBJeH-V9y8As5nu7KvUnIEOh2tDhm4mRE",
+                    "short_id": "a2820e7a894f37"
                 }
             }
         },
