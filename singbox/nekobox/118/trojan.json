@@ -115,6 +115,7 @@
                 "PL🇵🇱",
                 "NO🇳🇴",
                 "US🇺🇸",
+                "JP🇯🇵",
                 "RELAY🚩"
             ]
         },
@@ -130,6 +131,7 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
                 "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -184,6 +186,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -362,6 +374,27 @@
                 "path": "\/\/gXKGj8a1tp1nNbZEcRugowKV",
                 "headers": {
                     "Host": "107.174.82.102.sslip.io"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "160.16.124.55",
+            "server_port": 5553,
+            "password": "2274c52572e721086f8bd8f88984643c",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nintendogames.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
