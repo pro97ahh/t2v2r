@@ -110,7 +110,8 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "TR🇹🇷",
-                "FR🇫🇷"
+                "CA🇨🇦",
+                "PL🇵🇱"
             ]
         },
         {
@@ -122,8 +123,10 @@
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2rayngvpn | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | CA🇨🇦 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,17 +150,28 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | CA🇨🇦 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "PL🇵🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -318,7 +332,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "Trk.originalproxy.sbs",
             "server_port": 20936,
@@ -353,12 +367,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | CA🇨🇦 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "fr.monkeyisland.xyz",
-            "server_port": 443,
-            "uuid": "6184fcfb-52e0-40bb-a271-bbd097b70a8e",
-            "flow": "xtls-rprx-vision",
+            "server": "155.138.157.49",
+            "server_port": 39418,
+            "uuid": "2291f4eb-652e-4307-b417-f3cb9e365794",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -367,7 +381,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fr.monkeyisland.xyz",
+                "server_name": "zula.ir",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -375,8 +389,71 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4",
-                    "short_id": "0dd15ad462aad7fc"
+                    "public_key": "LZQ9s7Qqi9VI4zXCyT6UET6ieXjWTbsHyHRAkoT8Al4",
+                    "short_id": "805ec6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | CA🇨🇦 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "155.138.157.49",
+            "server_port": 40152,
+            "uuid": "4cd34e5e-7687-43f9-8682-f64cd02b0a67",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KbNEUxds5ftCob5HXf5PNDytRFp2ATjJbF5q95yy2Fk",
+                    "short_id": "75f8c7"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.144.50.162",
+            "server_port": 443,
+            "uuid": "39198da5-1cd5-4d48-b70a-af5a454a22d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "q1GJ-cUUd4FGu0ZfsXosBvyzbJmpRHrZYMidWhAqMQI",
+                    "short_id": "22628a15a948"
                 }
             }
         },
