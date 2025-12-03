@@ -111,7 +111,7 @@
                 "HK🇭🇰",
                 "DE🇩🇪",
                 "US🇺🇸",
-                "KR🇰🇷"
+                "RELAY🚩"
             ]
         },
         {
@@ -123,7 +123,7 @@
                 "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | KR🇰🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,10 +162,10 @@
             "tolerance": 50
         },
         {
-            "tag": "KR🇰🇷",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | KR🇰🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -294,11 +294,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | KR🇰🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "129.154.61.32",
-            "server_port": 80,
-            "uuid": "93c8fd94-17de-4730-8977-d55e304e9a85",
+            "server": "104.16.68.38",
+            "server_port": 8880,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -308,6 +308,15 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linde06.indiavideo.sbs\/linkws",
+                "headers": {
+                    "Host": "104.16.68.38"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
