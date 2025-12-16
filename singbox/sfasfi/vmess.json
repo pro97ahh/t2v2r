@@ -108,9 +108,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "HK🇭🇰",
                 "RU🇷🇺",
-                "RELAY🚩",
+                "DE🇩🇪",
+                "US🇺🇸",
                 "FI🇫🇮"
             ]
         },
@@ -118,22 +118,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @mftizi | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | FI🇫🇮 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @mftizi | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,10 +142,20 @@
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -170,32 +170,6 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | VMESS | @mftizi | HK🇭🇰 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "v24.heduian.link",
-            "server_port": 30824,
-            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/oooo",
-                "headers": {
-                    "Host": "v24.heduian.link"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
         },
         {
             "tag": "رایگان | VMESS | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣",
@@ -306,11 +280,28 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.20.25.146",
-            "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "server": "cpanel.navar1.ir",
+            "server_port": 100,
+            "uuid": "95c6f6f0-84f7-4443-8a50-a59f8e66f5ee",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "speedtest.net",
+            "server_port": 443,
+            "uuid": "46b656e7-71f3-414f-a86b-87537faadebd",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -321,11 +312,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/ws\/?ed=2048",
                 "headers": {
-                    "Host": ""
+                    "Host": "speedtest.net"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
