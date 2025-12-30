@@ -105,7 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "RELAY🚩"
+                "RELAY🚩",
+                "DE🇩🇪"
             ]
         },
         {
@@ -114,7 +115,8 @@
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Awlix_ir | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,8 +127,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Awlix_ir | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -205,11 +217,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.26.15.141",
-            "server_port": 8080,
-            "uuid": "239ed41c-4af6-49ba-8156-ff2310ea5d78",
+            "server": "82.198.246.97",
+            "server_port": 180,
+            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -219,15 +231,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/14351\/Nextlife",
-                "headers": {
-                    "Host": "104.26.15.141"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Awlix_ir | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "82.198.246.97",
+            "server_port": 180,
+            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
