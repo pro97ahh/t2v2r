@@ -105,8 +105,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪",
-                "FR🇫🇷"
+                "DE🇩🇪"
             ]
         },
         {
@@ -116,8 +115,8 @@
                 "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,17 +129,8 @@
                 "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -231,6 +221,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "46.101.133.147",
+            "server_port": 6048,
+            "uuid": "2f30aa44-c87c-e73d-a715-0813c68ee9b2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telewebion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8KraKuYxjT-2mqg_y_yJvME2zxbc7BUDPoPvUMWNXmE",
+                    "short_id": "cdc30097"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "bshs-187271-isbshs-18181717.bawqrataaui.ir",
@@ -263,34 +281,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "fr2.miyazono-kaori.com",
-            "server_port": 443,
-            "uuid": "39a5f471-6ac7-4279-98ef-a3ad0601c816",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.polytechnique.edu",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "K-I11Oh3xcz6Rgya6uqF1fts86xQSOEGNgoeN39TMk4",
-                    "short_id": "0bbfa66b"
-                }
             }
         },
         {
