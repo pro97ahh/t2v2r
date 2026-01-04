@@ -113,6 +113,7 @@
                 "DE🇩🇪",
                 "MD🇲🇩",
                 "FR🇫🇷",
+                "CH🇨🇭",
                 "NL🇳🇱",
                 "HU🇭🇺",
                 "CY🇨🇾",
@@ -127,11 +128,13 @@
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ARv2ray | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | HU🇭🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | PL🇵🇱 | 0️⃣1️⃣"
@@ -148,7 +151,7 @@
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -169,7 +172,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | CH🇨🇭 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -179,7 +193,7 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -328,7 +342,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "Lis.iranfreedomserver.com",
             "server_port": 7005,
@@ -419,7 +433,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "frx.fastdbn.com",
+            "server_port": 443,
+            "uuid": "2ce48b7b-6271-4dae-b894-2a58bf382787",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "deb.debian.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "maxa21.gatesrev.ir",
             "server_port": 8080,
@@ -447,7 +489,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | CH🇨🇭 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "ch-gt-01.com",
+            "server_port": 8443,
+            "uuid": "8836eecd-0455-4e2e-8e78-d5938b565029",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc",
+                    "short_id": "d037f6f67cc90016"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
             "type": "vless",
             "server": "91.84.107.75",
             "server_port": 8443,
