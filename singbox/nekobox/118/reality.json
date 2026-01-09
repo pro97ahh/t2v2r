@@ -110,21 +110,36 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "FR🇫🇷",
                 "JP🇯🇵",
                 "DE🇩🇪",
                 "RU🇷🇺",
-                "MD🇲🇩"
+                "MD🇲🇩",
+                "CH🇨🇭"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @azadi_az_inja_migzare | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @azadi_az_inja_migzare | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,6 +170,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -170,6 +186,44 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @azadi_az_inja_migzare | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "135.125.204.154",
+            "server_port": 443,
+            "uuid": "7f6d5245-0a2e-49ac-b8e0-63f4ad4d2061",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pcv3JlDH32sgMR7_ay476Ytd_EqpUR8vxCByLmBUeTE",
+                    "short_id": "0d"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @Outline_Vpn | JP🇯🇵 | 0️⃣2️⃣",
@@ -256,6 +310,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "ru-msk-yan-1gbit-01.sssrvpn.pro",
+            "server_port": 443,
+            "uuid": "d684cb56-e4b8-4453-8a7b-a1ad8c81935a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdnv-img.perekrestok.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "87.242.100.82",
@@ -308,6 +390,34 @@
                     "enabled": true,
                     "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
                     "short_id": "1aab45"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "che01-plr-vlr01.tcp-reset-club.net",
+            "server_port": 443,
+            "uuid": "cf93275f-9805-4a4c-a5f7-ac0423b92d02",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hls-svod.itunes.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+                    "short_id": "e499f276e7bd6420"
                 }
             }
         },
