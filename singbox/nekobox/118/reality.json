@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
+                "GB🇬🇧",
                 "IT🇮🇹",
                 "DE🇩🇪"
             ]
@@ -119,8 +120,10 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | IT🇮🇹 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | IT🇮🇹 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -131,7 +134,18 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,7 +155,7 @@
             "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | IT🇮🇹 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,6 +170,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "nl1.rsvps.tech",
+            "server_port": 443,
+            "uuid": "beab408c-6aa3-43b9-a1ca-e6fabba5d8e7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rTp9PEn36FtQFu32jWAPO3r-e1W2px3RGSuhR-L1DVM",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
@@ -186,7 +228,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | IT🇮🇹 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "140.238.100.35",
+            "server_port": 40721,
+            "uuid": "bf3e8944-8d26-47de-8748-b9aa74cce974",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk",
+                    "short_id": "df8611c07d"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | IT🇮🇹 | 0️⃣3️⃣",
             "type": "vless",
             "server": "95.141.35.101",
             "server_port": 443,
