@@ -107,8 +107,9 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "NL🇳🇱",
-                "EE🇪🇪",
-                "DE🇩🇪"
+                "RU🇷🇺",
+                "DE🇩🇪",
+                "EE🇪🇪"
             ]
         },
         {
@@ -117,9 +118,10 @@
             "outbounds": [
                 "رایگان | REALITY | @CUSTOMVPNSERVER | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | EE🇪🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,10 +148,10 @@
             "tolerance": 50
         },
         {
-            "tag": "EE🇪🇪",
+            "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,6 +163,16 @@
             "outbounds": [
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "EE🇪🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | EE🇪🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -223,12 +235,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "185.73.125.42",
-            "server_port": 2053,
-            "uuid": "943c4137-e92e-4fd8-a3a1-b101f41f8f62",
-            "flow": "",
+            "server": "rogbypass3.suio.me",
+            "server_port": 443,
+            "uuid": "a7a9f670-44c0-45a9-8047-69db0203c142",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -237,7 +249,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn.yektanet.com",
+                "server_name": "api-maps.yandex.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -245,8 +257,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "14CYRxjc3_NTNZPpIEWL3GiIxGX42Cgdtt4KLN8RoFs",
-                    "short_id": "194ac11b09b5"
+                    "public_key": "5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc",
+                    "short_id": "aad92345"
                 }
             }
         },
@@ -303,6 +315,34 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | EE🇪🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "185.73.125.42",
+            "server_port": 2053,
+            "uuid": "943c4137-e92e-4fd8-a3a1-b101f41f8f62",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.yektanet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "14CYRxjc3_NTNZPpIEWL3GiIxGX42Cgdtt4KLN8RoFs",
+                    "short_id": "194ac11b09b5"
                 }
             }
         },
