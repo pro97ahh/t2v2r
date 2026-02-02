@@ -110,8 +110,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱",
                 "US🇺🇸",
+                "NL🇳🇱",
                 "DE🇩🇪"
             ]
         },
@@ -119,20 +119,11 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @UnlimitedDev | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @CUSTOMVPNSERVER | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,8 +133,18 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @UnlimitedDev | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @CUSTOMVPNSERVER | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,6 +154,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -160,11 +162,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @CUSTOMVPNSERVER | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "51.158.206.93",
-            "server_port": 23576,
-            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+            "server": "137.184.218.169",
+            "server_port": 36925,
+            "uuid": "c9fd0fb1-8251-4106-b09a-f4b426736f67",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -174,7 +176,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fuck.rkn",
+                "server_name": "www.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -182,13 +184,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-                    "short_id": "01"
+                    "public_key": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0",
+                    "short_id": ""
                 }
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "47.251.25.74",
             "server_port": 443,
@@ -216,11 +218,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @UnlimitedDev | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @CUSTOMVPNSERVER | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "137.184.218.169",
-            "server_port": 36925,
-            "uuid": "c9fd0fb1-8251-4106-b09a-f4b426736f67",
+            "server": "51.158.206.93",
+            "server_port": 23576,
+            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -230,7 +232,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cloudflare.com",
+                "server_name": "fuck.rkn",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -238,7 +240,35 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0",
+                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+                    "short_id": "01"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "vpn-de.spend.tg",
+            "server_port": 8443,
+            "uuid": "f4e28bf7-c5f6-40de-be3e-b560a4bef575",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kt-wshmPVd-J1dlU-tsXUoGag2-oFwYQ5UafScaAfzQ",
                     "short_id": ""
                 }
             }
