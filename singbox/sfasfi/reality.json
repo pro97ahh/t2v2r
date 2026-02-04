@@ -109,7 +109,6 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "IR🇮🇷",
                 "DE🇩🇪"
             ]
         },
@@ -117,9 +116,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FalconPolV2rayNG | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣"
@@ -132,18 +130,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FalconPolV2rayNG | US🇺🇸 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,12 +150,12 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "us-4.hwowst.ru",
-            "server_port": 8443,
+            "server_port": 443,
             "uuid": "6e44b298-a091-4433-af5e-c89afd438c98",
-            "flow": "",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -214,34 +202,6 @@
                     "enabled": true,
                     "public_key": "uG51OJ4QHrSFthqOCL3Ctqxy4plPkeUyRGDmF4V7dFo",
                     "short_id": "c6de8980"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "home.gymrent.eu",
-            "server_port": 2030,
-            "uuid": "a9a7bebc-1fb6-4a97-81a6-13954e2d9966",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UOTb6h7CmPfAHXCS9u_VOUvRBRJAPkGzKSzHxLwtvk4",
-                    "short_id": "ffdb3abc"
                 }
             }
         },
