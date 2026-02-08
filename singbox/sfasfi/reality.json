@@ -109,8 +109,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RU🇷🇺",
+                "GB🇬🇧",
                 "NL🇳🇱",
-                "MD🇲🇩",
                 "DE🇩🇪",
                 "SE🇸🇪",
                 "FI🇫🇮"
@@ -121,10 +121,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2_team | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | SE🇸🇪 | 0️⃣2️⃣",
@@ -145,22 +145,22 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣3️⃣",
-                "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "MD🇲🇩",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -226,12 +226,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "realitytur.totalmntxah.ir",
-            "server_port": 20401,
-            "uuid": "953826f9-bc60-40bf-b992-cba769c55f26",
-            "flow": "",
+            "server": "drift.wenllies.com",
+            "server_port": 443,
+            "uuid": "513b4c6a-6883-44fa-812b-82d679d45b1d",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -240,7 +240,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "drift.wenllies.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -248,8 +248,36 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "fJpqhfm-r-KN_MrwhH8EVX3c3hGOKKfQO01j_VxXpHw",
-                    "short_id": ""
+                    "public_key": "QbtmZEFd261VWVWJmcITAdSN2c-i__pO_QVbztOdcno",
+                    "short_id": "899b779c6daa1a48"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "yssa.wenllies.com",
+            "server_port": 443,
+            "uuid": "513b4c6a-6883-44fa-812b-82d679d45b1d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yssa.wenllies.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e6aQpD8WEGMY6YX5pBHKD4kc7EA4-YBS6yNCGxKt6A0",
+                    "short_id": "993839449eb35f93"
                 }
             }
         },
@@ -306,34 +334,6 @@
                     "enabled": true,
                     "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
                     "short_id": "01"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "94.232.247.168",
-            "server_port": 41360,
-            "uuid": "e16a35ea-6715-4e75-9845-d20358bd0876",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
-                    "short_id": "1aab45"
                 }
             }
         },
