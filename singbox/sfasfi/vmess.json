@@ -109,7 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
-                "JP🇯🇵",
+                "DE🇩🇪",
                 "US🇺🇸",
                 "PL🇵🇱",
                 "TR🇹🇷",
@@ -122,7 +122,8 @@
             "outbounds": [
                 "رایگان | VMESS | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | JP🇯🇵 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @customv2ray | PL🇵🇱 | 0️⃣1️⃣",
@@ -138,17 +139,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @prrofile_purple | RELAY🚩 | 0️⃣3️⃣"
+                "رایگان | VMESS | @prrofile_purple | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -259,11 +261,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "n1753598451.74qxv.top",
-            "server_port": 443,
-            "uuid": "9798678f-5b8c-4ff1-bbdd-b9b5c1539de0",
+            "server": "104.16.61.8",
+            "server_port": 2087,
+            "uuid": "2a3263e2-891c-4446-b474-a8c63acb6e25",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -276,7 +278,41 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "n1753598451.74qxv.top",
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "frankfurt01.zgjok.com",
+            "server_port": 443,
+            "uuid": "b71579b1-6593-426d-90ac-f002fa96ade1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -288,7 +324,7 @@
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "n1753598451.74qxv.top"
+                    "Host": "frankfurt01.zgjok.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
