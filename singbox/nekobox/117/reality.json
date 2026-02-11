@@ -107,8 +107,9 @@
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
                 "GB🇬🇧",
-                "DE🇩🇪",
-                "LT🇱🇹"
+                "RU🇷🇺",
+                "LT🇱🇹",
+                "DE🇩🇪"
             ]
         },
         {
@@ -118,10 +119,9 @@
                 "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | LT🇱🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @customv2ray | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,12 +149,10 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,7 +162,17 @@
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FreakConfig | LT🇱🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @customv2ray | LT🇱🇹 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -255,12 +263,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "panelsaf.netvip1.ru",
-            "server_port": 2087,
-            "uuid": "3dcd6767-ec3e-4eeb-9fa6-c70b8661072f",
-            "flow": "",
+            "server": "51.250.64.147",
+            "server_port": 443,
+            "uuid": "80c8f8e9-e674-4f2a-b819-6e2d6c861c5c",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -269,7 +277,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "api-maps.yandex.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -277,8 +285,36 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "DwNl_pR9JMgEQoq_cdx4HuZRPyapUBn4FkLZs1U3fXQ",
-                    "short_id": "e004"
+                    "public_key": "7HX4_-yDOR3syJz7N0155JUspPu_pnwOkk52tK0Ahyk",
+                    "short_id": "de46d8b4ef20b286"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @customv2ray | LT🇱🇹 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "lt-cherry-01.com",
+            "server_port": 8443,
+            "uuid": "ff6fb512-147d-419a-9672-e131133f7189",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
+                    "short_id": "e0ef3d5c0aacb615"
                 }
             }
         },
@@ -307,62 +343,6 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "178.162.240.165",
-            "server_port": 443,
-            "uuid": "a60e3576-21fa-4c50-bc09-7cc5f60ac1d3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.samsung.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | LT🇱🇹 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "lt-cherry-01.com",
-            "server_port": 8443,
-            "uuid": "ff6fb512-147d-419a-9672-e131133f7189",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tradingview.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
-                    "short_id": "e0ef3d5c0aacb615"
                 }
             }
         },
