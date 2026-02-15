@@ -106,8 +106,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
-                "DE🇩🇪",
-                "PL🇵🇱"
+                "MD🇲🇩",
+                "PL🇵🇱",
+                "DE🇩🇪"
             ]
         },
         {
@@ -115,11 +116,12 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @NIM_VPN_ir | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | PL🇵🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,8 +131,28 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @NIM_VPN_ir | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @NIM_VPN_ir | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "PL🇵🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,16 +165,6 @@
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "PL🇵🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @lrnbymaa | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -187,7 +199,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "nld14.freednet.org",
             "server_port": 443,
@@ -211,6 +223,62 @@
                     "enabled": true,
                     "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "pol1.linkey37.ru",
+            "server_port": 443,
+            "uuid": "201cb355-27c3-4bcc-a27f-50394519d242",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "z6ja1quSA8bpLdIzWDb9Yj8mnl8Mw_Q0PZB6-3Jgg2U",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @lrnbymaa | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "195.3.223.6",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pl.jojack.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hSTtlpXKAYVVu5ybX3hQfq8dfsUrO_HoFVgfGGoCHVw",
+                    "short_id": "a7ab02dfcc1f2c04"
                 }
             }
         },
@@ -295,34 +363,6 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @lrnbymaa | PL🇵🇱 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "195.3.223.6",
-            "server_port": 443,
-            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pl.jojack.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "hSTtlpXKAYVVu5ybX3hQfq8dfsUrO_HoFVgfGGoCHVw",
-                    "short_id": "a7ab02dfcc1f2c04"
                 }
             }
         },
