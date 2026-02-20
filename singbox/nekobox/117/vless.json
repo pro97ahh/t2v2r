@@ -169,9 +169,8 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @customv2ray | CY🇨🇾 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣2️⃣"
@@ -294,7 +293,7 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -304,8 +303,7 @@
             "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @customv2ray | CY🇨🇾 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣"
+                "رایگان | VLESS | @customv2ray | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1615,51 +1613,35 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "imgur.com",
-            "server_port": 80,
-            "uuid": "49af75d4-31d0-4322-b425-630be07030e1",
-            "flow": "",
+            "server": "159.89.87.21",
+            "server_port": 28190,
+            "uuid": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/download",
-                "headers": {
-                    "Host": "diarasup2.global.ssl.fastly.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "aws.amazon.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
+                    "short_id": ""
+                }
             }
         },
         {
             "tag": "رایگان | VLESS | @customv2ray | CY🇨🇾 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "yesok42v2.ip4exordir.shop",
-            "server_port": 8880,
-            "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣",
             "type": "vless",
             "server": "yesok42v2.ip4exordir.shop",
             "server_port": 8880,
