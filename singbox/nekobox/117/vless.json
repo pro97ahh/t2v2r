@@ -114,9 +114,10 @@
                 "NL🇳🇱",
                 "US🇺🇸",
                 "CY🇨🇾",
+                "IR🇮🇷",
                 "IM🇮🇲",
                 "RO🇷🇴",
-                "TR🇹🇷"
+                "IT🇮🇹"
             ]
         },
         {
@@ -152,9 +153,9 @@
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @MehradLearn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣3️⃣",
@@ -176,9 +177,10 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowSocks_s | CY🇨🇾 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vmess_vless_v2rayng | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @lrnbymaa | IM🇮🇲 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | TR🇹🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | IT🇮🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -216,8 +218,7 @@
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @MehradLearn | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -228,7 +229,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -319,6 +321,16 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @vmess_vless_v2rayng | IR🇮🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "IM🇮🇲",
             "type": "urltest",
             "outbounds": [
@@ -339,10 +351,10 @@
             "tolerance": 50
         },
         {
-            "tag": "TR🇹🇷",
+            "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FreakConfig | TR🇹🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | IT🇮🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1205,38 +1217,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "chatgpt.com",
-            "server_port": 2096,
-            "uuid": "686c62d9-17a7-43c9-a40a-f6747df60a9f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ca.adobe-connect.top",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "ca.adobe-connect.top"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "13.38.166.241",
@@ -1298,6 +1278,34 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "57.128.191.90",
+            "server_port": 8443,
+            "uuid": "ac754349-a3d5-4eca-990e-1119c0cff4d5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.chatgpt.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FFMIZGGtmpMeCKluwyQ2qjgReo6EU8xwM7oLB-ysa2k",
+                    "short_id": "59611200"
+                }
             }
         },
         {
@@ -1870,6 +1878,20 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @vmess_vless_v2rayng | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "46.38.138.221",
+            "server_port": 71,
+            "uuid": "d0d95162-fb61-4f82-9325-d628490cef3d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @lrnbymaa | IM🇮🇲 | 0️⃣2️⃣",
             "type": "vless",
             "server": "185.162.231.138",
@@ -1934,11 +1956,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | TR🇹🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | IT🇮🇹 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "188.132.183.140",
+            "server": "80.211.141.177",
             "server_port": 443,
-            "uuid": "213325c6-ef4b-4cdb-850b-24a06f2865c8",
+            "uuid": "c2d73a71-923a-4a53-bc4b-dfb47db20527",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1948,7 +1970,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "2gis.kz",
+                "server_name": "gmail.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1956,8 +1978,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tQshkBu8_I2WDLqhS0kssD7F0uKl6vkvK9egXVXjsQE",
-                    "short_id": "63d80d5199a2bc"
+                    "public_key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
+                    "short_id": ""
                 }
             }
         },
