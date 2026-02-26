@@ -108,8 +108,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "HK🇭🇰",
                 "DE🇩🇪",
-                "CH🇨🇭",
                 "MD🇲🇩",
                 "RU🇷🇺"
             ]
@@ -118,12 +118,22 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowSocks_s | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowSocks_s | RU🇷🇺 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,19 +143,9 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "CH🇨🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -172,11 +172,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | HK🇭🇰 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "80.75.212.10",
+            "server": "219.79.98.117",
             "server_port": 443,
-            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "uuid": "fcfc091d-81a4-40b7-cbdc-8eb7683617a4",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -186,7 +186,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "nl.jojack.ru",
+                "server_name": "www.icloud.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -194,8 +194,36 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4",
-                    "short_id": "6bb3c7f9f97b45b8"
+                    "public_key": "4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "46.225.239.217",
+            "server_port": 8880,
+            "uuid": "6888427e-8af1-4e19-a61a-382250a32b01",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fnT7Zog2N4LJSMVba718lh4qzAgDdWKENQIhXyQCKS4",
+                    "short_id": ""
                 }
             }
         },
@@ -253,41 +281,6 @@
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "83.228.231.196",
-            "server_port": 56249,
-            "uuid": "4cb986b2-f314-4a99-b207-6cc82f10878a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "H7KH4KYHGvXjsveYiAeVBxI-eOEjMC8A3-ZZrS493GA",
-                    "short_id": "709dc24f43"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
