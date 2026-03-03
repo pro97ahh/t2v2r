@@ -116,6 +116,7 @@
                 "BE🇧🇪",
                 "US🇺🇸",
                 "RO🇷🇴",
+                "ES🇪🇸",
                 "RU🇷🇺",
                 "JP🇯🇵"
             ]
@@ -153,8 +154,9 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | ES🇪🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -262,10 +264,20 @@
             "tolerance": 50
         },
         {
+            "tag": "ES🇪🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | ES🇪🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -275,7 +287,7 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1130,7 +1142,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | ES🇪🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "4.cdnconn.com",
+            "server_port": 23335,
+            "uuid": "e384913f-8863-47b4-8858-a84b68abb4a6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "icloud.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik",
+                    "short_id": "67b1e94e4dd1ef90"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "us01-gmn-vlr03.tcp-reset-club.net",
             "server_port": 22443,
@@ -1158,7 +1198,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣3️⃣",
             "type": "vless",
             "server": "jp.cdn.stun.su",
             "server_port": 443,
