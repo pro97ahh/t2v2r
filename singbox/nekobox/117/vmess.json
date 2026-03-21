@@ -105,6 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "GB🇬🇧",
+                "DE🇩🇪",
+                "IT🇮🇹",
                 "TR🇹🇷",
                 "US🇺🇸"
             ]
@@ -113,8 +116,41 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VMESS | @oneclickvpnkeys | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | VMESS | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VMESS | @oneclickvpnkeys | IT🇮🇹 | 0️⃣3️⃣",
                 "رایگان | VMESS | @v2Line | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @oneclickvpnkeys | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IT🇮🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @oneclickvpnkeys | IT🇮🇹 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,6 +175,57 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | VMESS | @oneclickvpnkeys | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "66.163.117.58",
+            "server_port": 22324,
+            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "46.225.54.75",
+            "server_port": 10410,
+            "uuid": "0654d64d-08bf-43e5-ad44-18a7d1a8d6f7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @oneclickvpnkeys | IT🇮🇹 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "45.92.70.236",
+            "server_port": 22324,
+            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "رایگان | VMESS | @v2Line | TR🇹🇷 | 0️⃣1️⃣",
