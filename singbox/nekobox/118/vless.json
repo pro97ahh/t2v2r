@@ -114,6 +114,7 @@
                 "DE🇩🇪",
                 "FR🇫🇷",
                 "SC🇸🇨",
+                "NL🇳🇱",
                 "US🇺🇸",
                 "RO🇷🇴",
                 "MD🇲🇩",
@@ -135,7 +136,7 @@
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxy_kafee | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
@@ -147,6 +148,7 @@
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
@@ -172,7 +174,7 @@
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxy_kafee | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
@@ -211,6 +213,16 @@
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | SC🇸🇨 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -556,7 +568,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
             "server": "poe.com",
             "server_port": 443,
@@ -933,6 +945,34 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.149.115.148",
+            "server_port": 443,
+            "uuid": "8b648e4c-ac38-4809-951b-e1c8862b13d1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0pX0dvxDHHJS2uK0t_SHauP1LB65JsRD1kQp9MK9vjI",
+                    "short_id": "96"
+                }
             }
         },
         {
