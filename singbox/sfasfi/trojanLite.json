@@ -110,11 +110,13 @@
                 "URL-TEST | رایگان",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣3️⃣"
@@ -126,11 +128,13 @@
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣3️⃣"
@@ -164,6 +168,27 @@
             "tag": "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.39.70.196",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "63.183.59.137",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -224,49 +249,56 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "v1.dabache.top",
-            "server_port": 443,
-            "password": "humanity",
+            "server": "63.183.59.137",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/assignment",
-                "headers": {
-                    "Host": "www.creationlong.org"
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "mfyousheng.nl.eu.org",
-            "server_port": 443,
-            "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/tjwsLhx0SFASG4l9FERJ1g",
-                "headers": {
-                    "Host": "mfyousheng.nl.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "45.12.146.179",
             "server_port": 4443,
             "password": "strong-secret-pass-777",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | LT🇱🇹 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "84.32.9.60",
+            "server_port": 4443,
+            "password": "strong-secret-pass-777",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "healthy-ewe.rooster465.autos",
+            "server_port": 443,
+            "password": "IL37892054",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
