@@ -121,6 +121,7 @@
                 "RO🇷🇴",
                 "MD🇲🇩",
                 "RU🇷🇺",
+                "HK🇭🇰",
                 "BR🇧🇷",
                 "GB🇬🇧",
                 "UA🇺🇦"
@@ -169,7 +170,9 @@
                 "رایگان | SS | @OutlineVpnOfficial | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | BR🇧🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | BR🇧🇷 | 0️⃣3️⃣",
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
@@ -319,10 +322,21 @@
             "tolerance": 50
         },
         {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "BR🇧🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | BR🇧🇷 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | BR🇧🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1419,7 +1433,31 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | BR🇧🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "ready-monarch.rooster465.autos",
+            "server_port": 443,
+            "password": "WF42809561",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "right-seahorse.rooster465.autos",
+            "server_port": 443,
+            "password": "WF42809561",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | BR🇧🇷 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "216.238.102.254",
             "server_port": 26593,
