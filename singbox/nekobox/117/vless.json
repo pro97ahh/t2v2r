@@ -112,9 +112,9 @@
                 "NL🇳🇱",
                 "US🇺🇸",
                 "IR🇮🇷",
+                "RU🇷🇺",
                 "RO🇷🇴",
-                "MD🇲🇩",
-                "RU🇷🇺"
+                "MD🇲🇩"
             ]
         },
         {
@@ -146,9 +146,10 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -243,6 +244,17 @@
             "tolerance": 50
         },
         {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RO🇷🇴",
             "type": "urltest",
             "outbounds": [
@@ -257,16 +269,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -981,9 +983,9 @@
         {
             "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "forimarket.2.globalmymusic2.com",
+            "server": "a.iup.ir1-one.ir",
             "server_port": 80,
-            "uuid": "88f964e1-4ab8-4280-9557-e1cd573abdec",
+            "uuid": "27bc6915-84bb-4901-9490-3c7e95d22e46",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -993,12 +995,68 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/filimo-video\/177430809054030600\/1774365690\/cb857b0770767a2b38b3ebc9d4c44d7fc5630fdd\/196328x264new1-1080p.mp4\/s-20-v1-a1.ts",
+                "path": "\/\/dl?ed=2048",
                 "headers": {
-                    "Host": "best.3.iran.avenflow.ir"
+                    "Host": ""
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "193.233.253.77",
+            "server_port": 8443,
+            "uuid": "ca05976a-2dea-11f1-9ec5-baabcd4be2cd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc",
+                    "short_id": "cafe01234567"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "us01-gmn-vlr03.tcp-reset-club.net",
+            "server_port": 22443,
+            "uuid": "1c4aceb6-bff7-4737-8c5d-43afb3dc350b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hls-svod.itunes.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+                    "short_id": "8453e5fd9af927"
+                }
             }
         },
         {
@@ -1058,34 +1116,6 @@
                     "enabled": true,
                     "public_key": "7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik",
                     "short_id": "67b1e94e4dd1ef90"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "us01-gmn-vlr03.tcp-reset-club.net",
-            "server_port": 22443,
-            "uuid": "1c4aceb6-bff7-4737-8c5d-43afb3dc350b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hls-svod.itunes.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-                    "short_id": "8453e5fd9af927"
                 }
             }
         },
