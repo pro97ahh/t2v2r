@@ -145,9 +145,9 @@
                 "رایگان | VLESS | @vmess_vless_v2rayng | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
@@ -220,7 +220,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣"
             ],
@@ -232,6 +231,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VLESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣"
             ],
@@ -882,9 +882,9 @@
         {
             "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 80,
-            "uuid": "b0220369-51bf-45fb-962f-b302634b69d4",
+            "server": "verso.legion-bot.site",
+            "server_port": 443,
+            "uuid": "4ba9a59a-fd53-4fcd-b206-69ce84abd6f2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -892,34 +892,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "arc.liarashop.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 8080,
-            "uuid": "06e27e58-997a-499e-9a19-71d4980aaabf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tls": {
+                "enabled": true,
+                "server_name": "verso.legion-bot.site",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/\/vl\/",
                 "headers": {
-                    "Host": "download2erfan.sudoserver.ir"
+                    "Host": "verso.legion-bot.site"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -987,6 +973,20 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "151.101.192.223",
+            "server_port": 80,
+            "uuid": "c71b2a75-cb1d-452f-b85b-8918c76d5f6a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
