@@ -113,9 +113,9 @@
                 "RELAY🚩",
                 "DE🇩🇪",
                 "SC🇸🇨",
+                "IR🇮🇷",
                 "NL🇳🇱",
                 "US🇺🇸",
-                "IR🇮🇷",
                 "RO🇷🇴",
                 "MD🇲🇩",
                 "RU🇷🇺"
@@ -144,15 +144,15 @@
                 "رایگان | VLESS | @MehradLearn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
@@ -192,8 +192,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -206,6 +205,18 @@
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | SC🇸🇨 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -227,17 +238,6 @@
             "outbounds": [
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -828,34 +828,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "80.240.23.101",
-            "server_port": 443,
-            "uuid": "97d53a59-918e-45fc-bc5d-ba487f090cc1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hundleymechanical.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
-                    "short_id": "008c74"
-                }
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
             "type": "vless",
             "server": "156.243.83.167",
@@ -952,6 +924,93 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "snapp.ir",
+            "server_port": 80,
+            "uuid": "2101adeb-fe06-4aa2-8323-cc2178b60f6a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "ar.liarashop.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir",
+            "server_port": 443,
+            "uuid": "8c53daee-2173-4889-a483-4f698b4b0432",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "t",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vless",
+                "headers": {
+                    "Host": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "varzesh3.com",
+            "server_port": 443,
+            "uuid": "c387b0f2-5d9e-4c95-882d-1d5eeb443ce2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/movie",
+                "headers": {
+                    "Host": "nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "45.149.115.148",
@@ -1038,70 +1097,6 @@
                 "path": "\/\/Telegram,VPNCUSTOMIZE?ed=2480",
                 "headers": {
                     "Host": "join.bede.VPNCUSTOMIZE.www.speedtest.net.Powerfullserver.de"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir",
-            "server_port": 443,
-            "uuid": "8c53daee-2173-4889-a483-4f698b4b0432",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "t",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vless",
-                "headers": {
-                    "Host": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "varzesh3.com",
-            "server_port": 443,
-            "uuid": "c387b0f2-5d9e-4c95-882d-1d5eeb443ce2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/movie",
-                "headers": {
-                    "Host": "nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
