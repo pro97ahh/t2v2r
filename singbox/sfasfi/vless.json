@@ -109,6 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "FR🇫🇷",
                 "SC🇸🇨",
                 "RELAY🚩",
                 "IR🇮🇷",
@@ -126,6 +127,7 @@
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | SC🇸🇨 | 0️⃣1️⃣",
@@ -139,7 +141,6 @@
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ServerNett | RELAY🚩 | 0️⃣1️⃣",
@@ -175,6 +176,16 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
@@ -200,7 +211,6 @@
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ServerNett | RELAY🚩 | 0️⃣1️⃣",
@@ -367,6 +377,38 @@
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "15.224.47.47",
+            "server_port": 22224,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -701,38 +743,6 @@
         },
         {
             "tag": "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "104.18.13.149",
-            "server_port": 443,
-            "uuid": "f8ba32b4-0c40-49ed-a895-f9b07c51114f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "x.mtt1.xyz",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/t.me\/TEAMNETGRATISCOLTXT",
-                "headers": {
-                    "Host": "x.mtt1.xyz"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "104.18.12.149",
             "server_port": 2053,
