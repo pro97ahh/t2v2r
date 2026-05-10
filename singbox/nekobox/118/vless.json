@@ -137,6 +137,7 @@
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | IR🇮🇷 | 0️⃣1️⃣",
@@ -145,7 +146,6 @@
                 "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
@@ -211,6 +211,7 @@
             "outbounds": [
                 "رایگان | VLESS | @V2pedia | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | IR🇮🇷 | 0️⃣1️⃣",
@@ -218,8 +219,7 @@
                 "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣"
+                "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -588,6 +588,38 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "red.nahidapp.com",
+            "server_port": 443,
+            "uuid": "c9841f8b-9388-4142-9549-688c98d77d13",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "red.nahidapp.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/red\/",
+                "headers": {
+                    "Host": "red.nahidapp.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "snapp.ir",
@@ -683,8 +715,8 @@
             "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "snapp.ir",
-            "server_port": 2082,
-            "uuid": "15d05a66-e5cd-4173-8bac-185c74aa5267",
+            "server_port": 80,
+            "uuid": "35431605-610b-4e20-9c0d-25c3616ff05b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -694,9 +726,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/path",
+                "path": "\/\/API\/superip",
                 "headers": {
-                    "Host": "cdn.linoxa.ir"
+                    "Host": "brand2.bi6x.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -729,8 +761,8 @@
             "tag": "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "snapp.ir",
-            "server_port": 80,
-            "uuid": "35431605-610b-4e20-9c0d-25c3616ff05b",
+            "server_port": 2082,
+            "uuid": "15d05a66-e5cd-4173-8bac-185c74aa5267",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -740,9 +772,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/API\/superip",
+                "path": "\/\/path",
                 "headers": {
-                    "Host": "brand2.bi6x.ir"
+                    "Host": "cdn.linoxa.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -750,29 +782,6 @@
         },
         {
             "tag": "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 8880,
-            "uuid": "0ed63d7f-ba30-4ec6-b539-d3fd9260f597",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/api",
-                "headers": {
-                    "Host": "ryzo.px-ir.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "snapp.ir",
             "server_port": 80,
