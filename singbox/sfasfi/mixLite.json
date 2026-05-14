@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
@@ -132,10 +133,9 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
@@ -155,6 +155,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
@@ -179,10 +180,9 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
@@ -200,6 +200,32 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "www.arvancloud.ir",
+            "server_port": 2082,
+            "uuid": "f4ff777e-9adb-43f8-84da-5866f150ee86",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/newserver",
+                "headers": {
+                    "Host": "www.arvancloud.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
         },
         {
             "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
@@ -557,9 +583,9 @@
         {
             "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "dl10.wolfcityroleplay.ir",
+            "server": "snapp.ir",
             "server_port": 80,
-            "uuid": "5aa802a6-b84a-4965-9e49-4a3dd420e3ca",
+            "uuid": "c6ceccbe-351b-444f-b7eb-2462fcdab45f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -569,9 +595,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/js",
+                "path": "\/\/?ed=2080",
                 "headers": {
-                    "Host": "dl10.wolfcityroleplay.ir"
+                    "Host": "ir3.cdnk1.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -880,52 +906,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 80,
-            "uuid": "d9ae4879-27cf-4fed-90aa-3a606eaab4bc",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "arvan-abr.linkbaz.site"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2ray_vpn_ir | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 80,
-            "uuid": "35431605-610b-4e20-9c0d-25c3616ff05b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/API\/superip",
-                "headers": {
-                    "Host": "brand2.bi6x.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "80.240.23.101",
@@ -971,6 +951,29 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "mypassvps-b1eed1fa2e-xprojer.apps.ir-central1.arvancaas.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "snapp.ir",
+            "server_port": 80,
+            "uuid": "6a2405d9-61e2-4c74-a638-b2e2899e1995",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "pa1.ghostantaniehh.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
