@@ -109,7 +109,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
-                "FI🇫🇮"
+                "DE🇩🇪",
+                "RU🇷🇺",
+                "LV🇱🇻"
             ]
         },
         {
@@ -120,7 +122,10 @@
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
-                "8ZQi@93.123.30.73:8443?allowInsecure=1&fp=chrome&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | FI🇫🇮 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+                "8ZQi@194.67.204.158:8443?allowInsecure=1&ed=2560&eh=Sec-WebSocket-Protocol&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | LV🇱🇻 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,10 +145,31 @@
             "tolerance": 50
         },
         {
-            "tag": "FI🇫🇮",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "8ZQi@93.123.30.73:8443?allowInsecure=1&fp=chrome&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | FI🇫🇮 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "8ZQi@194.67.204.158:8443?allowInsecure=1&ed=2560&eh=Sec-WebSocket-Protocol&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "LV🇱🇻",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | LV🇱🇻 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -234,7 +260,49 @@
             }
         },
         {
-            "tag": "8ZQi@93.123.30.73:8443?allowInsecure=1&fp=chrome&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | FI🇫🇮 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "63.182.26.197",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "63.182.26.197",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "8ZQi@194.67.204.158:8443?allowInsecure=1&ed=2560&eh=Sec-WebSocket-Protocol&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "8r<[9'l6hAO",
             "server_port": 0,
@@ -243,6 +311,25 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | LV🇱🇻 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "216.173.71.221",
+            "server_port": 8443,
+            "password": "162534",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/?https:\/\/t.me\/WangCai2🇨🇳=",
+                "headers": {
+                    "Host": "cchh2.pages.dev"
+                }
             }
         },
         {
