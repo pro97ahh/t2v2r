@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "FR🇫🇷",
                 "NL🇳🇱",
                 "RELAY🚩"
             ]
@@ -118,9 +119,20 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "8ZQi@46.149.78.144:2053?allowInsecure=1&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,6 +158,27 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.37.186.112",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "8ZQi@46.149.78.144:2053?allowInsecure=1&host=Koma-YT.PAGeS.Dev&path=\/trTelegram🇨🇳+@WangCai2&sni=Koma-YT.PAGeS.Dev&type=ws#رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣",
