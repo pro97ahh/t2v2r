@@ -105,7 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | MD🇲🇩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ]
         },
@@ -113,7 +114,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | MD🇲🇩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -121,11 +123,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | MD🇲🇩 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "45.15.162.178",
-            "server_port": 33826,
-            "uuid": "1b536681-edf6-4d30-a908-d081ab83ec0e",
+            "server": "185.248.144.70",
+            "server_port": 10549,
+            "uuid": "46d74f41-89fb-41a9-801d-75945f388879",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -143,8 +145,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "mAp9MUXYFKezyoMbySDsN73_k5VHcI9McPHh0Xdmojo",
-                    "short_id": "f5"
+                    "public_key": "tyNWG6Tu_so9cRgv6Le8G5nwa065RoZXiSEBfIsXbFk",
+                    "short_id": "be"
                 }
             },
             "transport": {
@@ -153,6 +155,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "fi.gryaz-vpn.com",
+            "server_port": 34572,
+            "uuid": "abcd6b4c-2d85-4de5-be7f-62791b0f5085",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8PkeN5hkQBkoBt0I2JdcDC865gUXui86897Th8DaDlY",
+                    "short_id": "88acba"
+                }
             }
         },
         {
