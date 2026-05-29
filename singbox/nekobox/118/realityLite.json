@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ]
         },
@@ -117,11 +118,40 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "fi.gryaz-vpn.com",
+            "server_port": 34572,
+            "uuid": "abcd6b4c-2d85-4de5-be7f-62791b0f5085",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8PkeN5hkQBkoBt0I2JdcDC865gUXui86897Th8DaDlY",
+                    "short_id": "88acba"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
