@@ -105,7 +105,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪",
+                "CY🇨🇾",
                 "CA🇨🇦"
             ]
         },
@@ -113,9 +113,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | VMESS | @iP_CF | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -123,12 +121,10 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | VMESS | @iP_CF | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,11 +141,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @iP_CF | CY🇨🇾 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "108.61.190.45",
-            "server_port": 36956,
-            "uuid": "8b8db685-af04-4053-9452-a12fd98c8db1",
+            "server": "45.128.72.44",
+            "server_port": 80,
+            "uuid": "a2170d39-140a-47f9-85b8-084078856c36",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -159,40 +155,15 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "108.61.190.45",
-            "server_port": 36956,
-            "uuid": "6335dc43-197a-480b-9e87-b9f9ce0362f5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @vmessorg | DE🇩🇪 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "108.61.190.45",
-            "server_port": 36956,
-            "uuid": "d571bf84-a865-48d1-93e0-2e8f9b45b038",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/api\/v1",
+                "headers": {
+                    "Host": "45.128.72.44"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
