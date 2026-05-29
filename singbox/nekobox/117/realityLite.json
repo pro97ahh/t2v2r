@@ -105,6 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ]
@@ -113,12 +116,99 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "132.243.231.122",
+            "server_port": 8443,
+            "uuid": "7625adbb-52f7-4ff4-95f8-677471071a77",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "io.ozone.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM",
+                    "short_id": "92d0c4089b6c1da3"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "nld.pink-service.ru",
+            "server_port": 443,
+            "uuid": "f998c699-43b5-4af2-921e-03b879eb7912",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0",
+                    "short_id": "86b80f1e713a33ad"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "95.85.228.146",
+            "server_port": 8443,
+            "uuid": "a67e3045-626c-42c9-8cc0-a5afa6b18b05",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "io.ozone.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM",
+                    "short_id": "92d0c4089b6c1da3"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣2️⃣",
