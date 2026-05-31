@@ -106,6 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "TR🇹🇷",
+                "CZ🇨🇿",
                 "DE🇩🇪"
             ]
         },
@@ -113,7 +114,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | CZ🇨🇿 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -124,7 +127,18 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CZ🇨🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | CZ🇨🇿 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,6 +153,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "37.221.79.69",
+            "server_port": 8443,
+            "uuid": "15115772-74b5-4c9b-9049-d7237a9c68f9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kSqgT4C5AcpCMLdW1VCvFSiv5UX6UDLaF33ECFpzUgQ",
+                    "short_id": "41"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣1️⃣",
@@ -165,6 +207,34 @@
                     "enabled": true,
                     "public_key": "MbVEbNu2iMIDhD5ziJFLKVfV0lBY7tGGpklBrwqVCyg",
                     "short_id": "61ad"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | CZ🇨🇿 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "vip.starservices.lol",
+            "server_port": 3082,
+            "uuid": "6f122bf8-65b5-43c5-a0be-5719cd842ff3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nvidia.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QKTZSC0lg00iBLqnvSSmU8m5KaoOIcIsbMQtWwfTvkE",
+                    "short_id": "b0725c69"
                 }
             }
         },
