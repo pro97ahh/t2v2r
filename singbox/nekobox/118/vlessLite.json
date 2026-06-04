@@ -110,8 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VLESS | @Parsashonam | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣3️⃣",
@@ -124,6 +123,7 @@
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
@@ -163,8 +163,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @Parsashonam | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣3️⃣",
@@ -177,6 +176,7 @@
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
@@ -216,30 +216,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VLESS | @Parsashonam | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "103.130.147.66",
-            "server_port": 443,
-            "uuid": "Telegram-Parsashonam-10",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "p4r34m.hendevaneh.sbs",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.130.125.160",
             "server_port": 443,
@@ -577,6 +554,29 @@
                 "path": "\/\/213.35.100.31=47112",
                 "headers": {
                     "Host": "afrcloud1.c01.kr"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "snapp.ir",
+            "server_port": 80,
+            "uuid": "c9c7a2b1-caf7-4adb-a184-1f55573ecba0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "cactos.cactuscloud.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"

@@ -110,11 +110,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "IR🇮🇷",
                 "SC🇸🇨",
                 "DE🇩🇪",
                 "FR🇫🇷",
                 "RELAY🚩",
+                "IR🇮🇷",
                 "IT🇮🇹",
                 "GB🇬🇧",
                 "US🇺🇸",
@@ -126,9 +126,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @Parsashonam | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayngvpn | SC🇸🇨 | 0️⃣2️⃣",
@@ -161,6 +159,8 @@
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | IT🇮🇹 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | GB🇬🇧 | 0️⃣1️⃣",
@@ -179,21 +179,10 @@
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @Parsashonam | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayngvpn | SC🇸🇨 | 0️⃣2️⃣",
@@ -259,6 +248,17 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
@@ -316,53 +316,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VLESS | @Parsashonam | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "103.130.147.66",
-            "server_port": 443,
-            "uuid": "Telegram-Parsashonam-10",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "p4r34m.hendevaneh.sbs",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "185.143.234.122",
-            "server_port": 80,
-            "uuid": "5631816e-ac57-4b24-930f-576ce5f1018f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "tr1.lnsynccloud.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @Parsashonam | SC🇸🇨 | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.130.125.160",
             "server_port": 443,
@@ -1276,6 +1230,52 @@
                 "path": "\/\/in-do",
                 "headers": {
                     "Host": "zaintest.vuclip.com.cyylr.eu.cc"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "snapp.ir",
+            "server_port": 80,
+            "uuid": "c9c7a2b1-caf7-4adb-a184-1f55573ecba0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "cactos.cactuscloud.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "185.143.234.122",
+            "server_port": 80,
+            "uuid": "5631816e-ac57-4b24-930f-576ce5f1018f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "tr1.lnsynccloud.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
