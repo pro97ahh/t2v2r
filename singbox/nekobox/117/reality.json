@@ -106,9 +106,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
+                "DE🇩🇪",
                 "FI🇫🇮",
-                "TW🇹🇼",
-                "DE🇩🇪"
+                "TW🇹🇼"
             ]
         },
         {
@@ -116,9 +116,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vmessorg | FI🇫🇮 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2rayngvpn | TW🇹🇼 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | TW🇹🇼 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,6 +131,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,16 +163,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2rayngvpn | TW🇹🇼 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -189,6 +193,90 @@
                     "enabled": true,
                     "public_key": "nb4KaSPDM33uIfKWzptz0M8DAUBtZy37S4YvD6oa0FE",
                     "short_id": "40"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "91.107.162.63",
+            "server_port": 8443,
+            "uuid": "73cfa726-772b-4e91-9401-918598d29e50",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rKXg6--NSVISGCnP980Hu7Cs9Gb0phAgQkdw87ko9hI",
+                    "short_id": "1e7f0263824cca"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "france.aliriw.com",
+            "server_port": 443,
+            "uuid": "37c64d37-824c-4688-8747-4815c4343689",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "icloud.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "V1wO60MfptJ9jzeo94f1RKIcUPq6frrKoFWPp2Jutlo",
+                    "short_id": "3bbaf2c984e16a31"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "80.240.23.101",
+            "server_port": 443,
+            "uuid": "97d53a59-918e-45fc-bc5d-ba487f090cc1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hundleymechanical.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
+                    "short_id": "008c74"
                 }
             }
         },
@@ -245,34 +333,6 @@
                     "enabled": true,
                     "public_key": "JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM",
                     "short_id": "473277e2"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "80.240.23.101",
-            "server_port": 443,
-            "uuid": "97d53a59-918e-45fc-bc5d-ba487f090cc1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hundleymechanical.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
-                    "short_id": "008c74"
                 }
             }
         },
