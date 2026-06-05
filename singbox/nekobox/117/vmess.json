@@ -107,7 +107,8 @@
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
                 "CA🇨🇦",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "US🇺🇸"
             ]
         },
         {
@@ -116,7 +117,8 @@
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,6 +149,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -223,6 +235,33 @@
             "tls": {
                 "enabled": true,
                 "server_name": "node-de.connectsuite.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "00000000000000000000000000000000000000000000000000000000000004a.rui77.com",
+            "server_port": 443,
+            "uuid": "f0038a33-6b22-4449-8bef-c16829a9d3aa",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
