@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
+                "IR🇮🇷",
                 "FI🇫🇮",
                 "DE🇩🇪"
             ]
@@ -120,6 +121,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vmessorg | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
@@ -133,6 +137,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -184,6 +200,90 @@
                     "enabled": true,
                     "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
                     "short_id": "01"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "62.60.245.10",
+            "server_port": 443,
+            "uuid": "97de1f85-5f2c-4446-8507-b437125623a2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mNPCrTF4rKb_SRmOH-9-IBs5ihK6Pn4SH29iZtKmiX0",
+                    "short_id": "abcd1234"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "62.60.245.10",
+            "server_port": 443,
+            "uuid": "97de1f85-5f2c-4446-8507-b437125623a2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mNPCrTF4rKb_SRmOH-9-IBs5ihK6Pn4SH29iZtKmiX0",
+                    "short_id": "abcd1234"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "62.60.245.10",
+            "server_port": 443,
+            "uuid": "97de1f85-5f2c-4446-8507-b437125623a2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mNPCrTF4rKb_SRmOH-9-IBs5ihK6Pn4SH29iZtKmiX0",
+                    "short_id": "abcd1234"
                 }
             }
         },
