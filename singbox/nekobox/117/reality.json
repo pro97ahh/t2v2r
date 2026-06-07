@@ -106,8 +106,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
-                "FR🇫🇷",
                 "DE🇩🇪",
+                "FR🇫🇷",
                 "GB🇬🇧",
                 "FI🇫🇮"
             ]
@@ -118,11 +118,12 @@
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vmessorg | FI🇫🇮 | 0️⃣2️⃣"
             ],
@@ -142,23 +143,24 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -241,12 +243,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "151.241.228.254",
-            "server_port": 34754,
-            "uuid": "35762c02-ff2b-4526-b41b-e96e5d99528b",
-            "flow": "xtls-rprx-vision",
+            "server": "best1.darkteam.info",
+            "server_port": 443,
+            "uuid": "f218423f-b529-4b50-a675-2ffa28555cbc",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -255,7 +257,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "www.amazon.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -263,9 +265,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "eMijZKuJlNEciXbhyzdbewk-ot_JLMZVaA42bxKFcBM",
-                    "short_id": "c9eb0359fac0c345"
+                    "public_key": "iGmGz1yVM3MwLtgj-R0xqrLbysfBxgcRRlbXN6f883Y",
+                    "short_id": "f1b9917f2c6e42e8"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "DarkTeam_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -377,6 +386,34 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "151.241.228.254",
+            "server_port": 34754,
+            "uuid": "35762c02-ff2b-4526-b41b-e96e5d99528b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eMijZKuJlNEciXbhyzdbewk-ot_JLMZVaA42bxKFcBM",
+                    "short_id": "c9eb0359fac0c345"
                 }
             }
         },
