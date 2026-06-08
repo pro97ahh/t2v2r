@@ -113,8 +113,7 @@
                 "NL🇳🇱",
                 "US🇺🇸",
                 "FR🇫🇷",
-                "DE🇩🇪",
-                "TR🇹🇷"
+                "DE🇩🇪"
             ]
         },
         {
@@ -125,8 +124,9 @@
                 "رایگان | REALITY | @shh_proxy | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vmessorg | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray_vpn_ir | TR🇹🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -167,17 +167,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @vmessorg | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "TR🇹🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2ray_vpn_ir | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -296,6 +288,62 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "85.208.139.98",
+            "server_port": 8444,
+            "uuid": "c931f737-cafe-4e4f-998a-a65517941256",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdnjs.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Hp6K5hsiPY4_zATgAtef9YTxNGpSkhAHTTo9MUO7fik",
+                    "short_id": "77e934f68f02ab4c"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "64.188.71.108",
+            "server_port": 26426,
+            "uuid": "e82387dd-afe2-4f77-8655-df4693739bb4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "microsoft.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gWhNEtQThatVeeZxgbB71CKVK_2eKGmjE3to2ew2VRk",
+                    "short_id": "b8f9dcce"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "80.240.23.101",
@@ -320,34 +368,6 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2ray_vpn_ir | TR🇹🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "141.98.118.70",
-            "server_port": 443,
-            "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ",
-                    "short_id": "44"
                 }
             }
         },
