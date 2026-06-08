@@ -110,20 +110,43 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | BR🇧🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | BR🇧🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.233.17.76",
+            "server_port": 22324,
+            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
@@ -152,7 +175,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | BR🇧🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.233.17.76",
             "server_port": 22324,
@@ -166,6 +189,69 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.18.141.98",
+            "server_port": 443,
+            "uuid": "F3E36B53-E75E-48C0-B9F1-F918F397E996",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.18.141.98",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/speedtest",
+                "headers": {
+                    "Host": "104.18.141.98"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "de5.taskflowhub.org",
+            "server_port": 2053,
+            "uuid": "ca58b165-0f7d-49aa-9fae-a017e8a0f884",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de5.taskflowhub.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
