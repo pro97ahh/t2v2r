@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "BR🇧🇷",
                 "CA🇨🇦",
+                "BZ🇧🇿",
                 "FR🇫🇷"
             ]
         },
@@ -117,6 +118,7 @@
                 "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -139,6 +141,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "BZ🇧🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -209,6 +221,42 @@
                 "path": "\/\/api\/v1",
                 "headers": {
                     "Host": "158.69.208.120"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "203.30.191.18",
+            "server_port": 443,
+            "uuid": "5f64fa65-7b14-49c5-954d-aa15c6bfcacd",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "203.30.191.18",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dongtaiwang.com",
+                "headers": {
+                    "Host": "203.30.191.18"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
