@@ -112,8 +112,7 @@
                 "URL-TEST | رایگان",
                 "CA🇨🇦",
                 "BR🇧🇷",
-                "RELAY🚩",
-                "CY🇨🇾"
+                "RELAY🚩"
             ]
         },
         {
@@ -123,7 +122,7 @@
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | CY🇨🇾 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,17 +152,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "CY🇨🇾",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @Hope_Net | CY🇨🇾 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -215,35 +205,9 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.67.193.109",
-            "server_port": 2095,
-            "uuid": "417d27fb-cb93-3bd8-9bf7-71cd91319821",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/hgcefomn",
-                "headers": {
-                    "Host": "172.67.193.109"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @Hope_Net | CY🇨🇾 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "203.23.106.157",
+            "server": "104.27.23.251",
             "server_port": 443,
-            "uuid": "c13277ce-cda6-4d01-cedc-1e3605a0eb72",
+            "uuid": "824c58b1-65ba-4680-a609-663a000dbb92",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -256,7 +220,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "203.23.106.157",
+                "server_name": "104.27.23.251",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -266,9 +230,35 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/12796",
+                "path": "\/\/wss13889",
                 "headers": {
-                    "Host": "203.23.106.157"
+                    "Host": "104.27.23.251"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.67.191.240",
+            "server_port": 80,
+            "uuid": "92eb32af-ec3c-40d4-ab83-c3df80af64af",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "172.67.191.240"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
