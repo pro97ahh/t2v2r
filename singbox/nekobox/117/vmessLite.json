@@ -168,9 +168,9 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.18.62.204",
-            "server_port": 2086,
-            "uuid": "a1655f51-1e20-4a92-8a11-b7ca30a7a353",
+            "server": "104.31.16.65",
+            "server_port": 443,
+            "uuid": "c13277ce-cda6-4d01-cedc-1e3605a0eb72",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -181,11 +181,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.31.16.65",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/\/12796?ed=2048",
                 "headers": {
-                    "Host": "104.18.62.204"
+                    "Host": "104.31.16.65"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
