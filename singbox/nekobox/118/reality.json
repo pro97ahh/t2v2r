@@ -110,14 +110,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,11 +130,50 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "ge3.pandaonline.org",
+            "server_port": 443,
+            "uuid": "bf038412-931e-4b18-a6a7-32d09304f333",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ge3.pandaonline.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lvFOmvUfAoLa9vgvoAQVrZtCmU-wB-HcmgCU66WCQzc",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
@@ -158,6 +200,34 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | JP🇯🇵 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "3.112.19.64",
+            "server_port": 26902,
+            "uuid": "9cb72288-da5a-40a4-b856-4557f9849016",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.icloud.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5CqD0ZEtt5W_xA9adU4CxjH4xAV-BdCwhDuthBBnpFM",
+                    "short_id": "450d60a09ffb65"
                 }
             }
         },
