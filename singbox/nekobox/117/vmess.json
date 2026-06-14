@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "IT🇮🇹",
                 "BR🇧🇷",
+                "IR🇮🇷",
                 "RELAY🚩"
             ]
         },
@@ -116,7 +117,9 @@
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,10 +146,21 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -197,11 +211,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.67.183.5",
+            "server": "digi21.ez0535.com",
             "server_port": 443,
-            "uuid": "824c58b1-65ba-4680-a609-663a000dbb92",
+            "uuid": "b5406cd3-1a11-4c78-b346-7763fcc9e476",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -214,7 +228,34 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "172.67.183.5",
+                "server_name": "digi21.ez0535.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "seoul03.zgjok.com",
+            "server_port": 443,
+            "uuid": "72a0dac4-9689-4a57-b164-5c65bfa94772",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "seoul03.zgjok.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -224,9 +265,35 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/wss13889",
+                "path": "\/\/",
                 "headers": {
-                    "Host": "172.67.183.5"
+                    "Host": "seoul03.zgjok.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "104.19.40.84",
+            "server_port": 8880,
+            "uuid": "57e0cb4d-eae5-48ec-8091-149dc2b309e0",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/d\/65dd503.TG.WangCai2.WangCai_8:107690",
+                "headers": {
+                    "Host": "104.19.40.84"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
