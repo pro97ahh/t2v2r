@@ -107,7 +107,8 @@
                 "URL-TEST | رایگان",
                 "IT🇮🇹",
                 "BR🇧🇷",
-                "FR🇫🇷"
+                "FR🇫🇷",
+                "RELAY🚩"
             ]
         },
         {
@@ -117,7 +118,8 @@
                 "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | BR🇧🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,6 +151,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -240,6 +252,32 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.19.45.232",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.19.45.232"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {

@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "RU🇷🇺",
                 "US🇺🇸",
                 "DE🇩🇪"
             ]
@@ -116,9 +117,20 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,6 +156,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "89.169.39.55",
+            "server_port": 443,
+            "uuid": "c61ec320-29f1-4e00-9272-8b676e6957b4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "max.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU",
+                    "short_id": "28a059440d3d5ba1"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @ShadowProxy66 | US🇺🇸 | 0️⃣1️⃣",
