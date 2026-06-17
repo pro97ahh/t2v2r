@@ -111,7 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
-                "RELAY🚩"
+                "RELAY🚩",
+                "DE🇩🇪"
             ]
         },
         {
@@ -119,11 +120,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,7 +135,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣"
             ],
@@ -154,30 +154,19 @@
             "tolerance": 50
         },
         {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "15.188.218.165",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.188.67.19",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -282,6 +271,18 @@
                 "headers": {
                     "Host": "www.calmlunch.com"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "185.137.157.59",
+            "server_port": 443,
+            "password": "fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {

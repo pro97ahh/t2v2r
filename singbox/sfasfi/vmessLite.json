@@ -114,8 +114,8 @@
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ]
         },
         {
@@ -128,8 +128,8 @@
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -297,7 +297,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.17.77.77",
             "server_port": 8443,
@@ -333,11 +333,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "154.92.9.174",
-            "server_port": 80,
-            "uuid": "dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3",
+            "server": "ac2088.herokuapp.com",
+            "server_port": 443,
+            "uuid": "d1babe08-f8ac-490b-b66f-9be27467f3cc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -348,11 +348,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "ac2088.herokuapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/blue",
+                "path": "\/\/d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess",
                 "headers": {
-                    "Host": "154.92.9.174"
+                    "Host": "ac2088.herokuapp.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
