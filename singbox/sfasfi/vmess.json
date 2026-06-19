@@ -111,7 +111,7 @@
                 "US🇺🇸",
                 "NL🇳🇱",
                 "IR🇮🇷",
-                "IE🇮🇪"
+                "TR🇹🇷"
             ]
         },
         {
@@ -119,9 +119,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | IE🇮🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +132,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -158,10 +160,10 @@
             "tolerance": 50
         },
         {
-            "tag": "IE🇮🇪",
+            "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | IE🇮🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -192,6 +194,42 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "ac2088.herokuapp.com",
+            "server_port": 443,
+            "uuid": "d1babe08-f8ac-490b-b66f-9be27467f3cc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ac2088.herokuapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess",
+                "headers": {
+                    "Host": "ac2088.herokuapp.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -249,11 +287,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | IE🇮🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "ac2088.herokuapp.com",
-            "server_port": 443,
-            "uuid": "d1babe08-f8ac-490b-b66f-9be27467f3cc",
+            "server": "dashboard.afracp.top",
+            "server_port": 5370,
+            "uuid": "7d2322fc-f0cc-4b70-a9a9-e7885ad178d4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -266,22 +304,13 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ac2088.herokuapp.com",
+                "server_name": "host.afrahosting.top",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess",
-                "headers": {
-                    "Host": "ac2088.herokuapp.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
