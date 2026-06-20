@@ -112,7 +112,6 @@
                 "FR🇫🇷",
                 "SC🇸🇨",
                 "RELAY🚩",
-                "CA🇨🇦",
                 "TR🇹🇷",
                 "CH🇨🇭",
                 "NL🇳🇱",
@@ -138,7 +137,6 @@
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | FR🇫🇷 | 0️⃣3️⃣",
-                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣1️⃣",
@@ -158,9 +156,9 @@
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VLESS | @shh_proxy | CA🇨🇦 | 0️⃣2️⃣",
-                "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | NL🇳🇱 | 0️⃣1️⃣",
@@ -207,8 +205,7 @@
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | FR🇫🇷 | 0️⃣3️⃣",
-                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -252,20 +249,10 @@
             "tolerance": 50
         },
         {
-            "tag": "CA🇨🇦",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @shh_proxy | CA🇨🇦 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -275,7 +262,8 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | CH🇨🇭 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -615,34 +603,6 @@
                     "enabled": true,
                     "public_key": "NJrlB9wz9ctlwMOIK8Jp7Ml25j77QlFOjpha1lEktkg",
                     "short_id": "4a9acf81b8773e1e"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "greb.loralden.com",
-            "server_port": 443,
-            "uuid": "2065a8c9-8b3d-4dba-b0ce-90d649aa3da7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "greb.loralden.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k",
-                    "short_id": "3620820fe66d6731"
                 }
             }
         },
@@ -1183,39 +1143,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @shh_proxy | CA🇨🇦 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "ov-canada1.09vpn.com",
-            "server_port": 8443,
-            "uuid": "08f96221-9b7b-4e6f-8ffe-aee8b9c9b504",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vless\/",
-                "headers": {
-                    "Host": ""
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "194.116.236.222",
             "server_port": 4111,
@@ -1274,6 +1202,34 @@
                     "enabled": true,
                     "public_key": "l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY",
                     "short_id": "4e590fdc"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | CH🇨🇭 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "208.69.78.205",
+            "server_port": 443,
+            "uuid": "ff19693c-11f3-4df9-8713-79a85a5ca090",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sellflow.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
                 }
             }
         },
