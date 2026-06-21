@@ -113,6 +113,7 @@
                 "US🇺🇸",
                 "NL🇳🇱",
                 "IR🇮🇷",
+                "IE🇮🇪",
                 "DE🇩🇪",
                 "FR🇫🇷",
                 "SC🇸🇨",
@@ -133,7 +134,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | US🇺🇸 | 0️⃣1️⃣",
@@ -148,6 +148,7 @@
                 "رایگان | VLESS | @flyv2ray | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VMESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | IE🇮🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
@@ -161,6 +162,7 @@
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
@@ -212,7 +214,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | US🇺🇸 | 0️⃣1️⃣",
@@ -251,6 +252,16 @@
             "tolerance": 50
         },
         {
+            "tag": "IE🇮🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | IE🇮🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
@@ -276,6 +287,7 @@
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣2️⃣",
@@ -446,42 +458,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "ac2088.herokuapp.com",
-            "server_port": 443,
-            "uuid": "d1babe08-f8ac-490b-b66f-9be27467f3cc",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ac2088.herokuapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess",
-                "headers": {
-                    "Host": "ac2088.herokuapp.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -870,6 +846,42 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @Hope_Net | IE🇮🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "ac2088.herokuapp.com",
+            "server_port": 443,
+            "uuid": "d1babe08-f8ac-490b-b66f-9be27467f3cc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ac2088.herokuapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess",
+                "headers": {
+                    "Host": "ac2088.herokuapp.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "3.126.148.235",
@@ -1208,6 +1220,34 @@
                     "enabled": true,
                     "public_key": "Icm1TWywIJz1OVINqBXHYeQr1yxDoT-t3R9DDi-CD2U",
                     "short_id": "71b1677c130233d7"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "greb.loralden.com",
+            "server_port": 443,
+            "uuid": "2065a8c9-8b3d-4dba-b0ce-90d649aa3da7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greb.loralden.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k",
+                    "short_id": "3620820fe66d6731"
                 }
             }
         },
