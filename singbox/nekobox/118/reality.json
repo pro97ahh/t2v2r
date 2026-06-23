@@ -114,10 +114,10 @@
                 "CH🇨🇭",
                 "PL🇵🇱",
                 "US🇺🇸",
+                "FR🇫🇷",
                 "SC🇸🇨",
                 "ES🇪🇸",
-                "AE🇦🇪",
-                "RU🇷🇺"
+                "AE🇦🇪"
             ]
         },
         {
@@ -130,10 +130,11 @@
                 "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | PL🇵🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vmessorg | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣3️⃣",
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | ES🇪🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -182,10 +183,21 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -205,17 +217,7 @@
             "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -280,7 +282,7 @@
         {
             "tag": "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "37.156.44.157",
+            "server": "37.156.44.6",
             "server_port": 2083,
             "uuid": "89049f79-320b-48a0-b1cf-110165cae30c",
             "flow": "xtls-rprx-vision",
@@ -390,7 +392,63 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "greb.loralden.com",
+            "server_port": 443,
+            "uuid": "2065a8c9-8b3d-4dba-b0ce-90d649aa3da7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greb.loralden.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k",
+                    "short_id": "3620820fe66d6731"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.206.0.45",
+            "server_port": 8443,
+            "uuid": "52faee73-e0fe-4661-992d-67259257170f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
+                    "short_id": "ea10cd5686751ec5"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | SC🇸🇨 | 0️⃣2️⃣",
             "type": "vless",
             "server": "45.206.0.41",
             "server_port": 8443,
@@ -446,7 +504,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "89.125.20.104",
             "server_port": 443,
@@ -470,34 +528,6 @@
                     "enabled": true,
                     "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
                     "short_id": "abcd"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "45.8.228.110",
-            "server_port": 443,
-            "uuid": "18655112-fd8a-44e7-a30c-37388c05816b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "max.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "kIwNoNzk1uJnZD1evWxURZskv9ZY0aGoUjrAbn3uVXQ",
-                    "short_id": "4d3ff920673f7534"
                 }
             }
         },
