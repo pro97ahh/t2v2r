@@ -109,7 +109,8 @@
                 "DE🇩🇪",
                 "LT🇱🇹",
                 "FR🇫🇷",
-                "US🇺🇸"
+                "US🇺🇸",
+                "RU🇷🇺"
             ]
         },
         {
@@ -117,13 +118,15 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @iP_CF | LT🇱🇹 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | LT🇱🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @vmessorg | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @vmessorg | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +136,8 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,7 +160,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @iP_CF | LT🇱🇹 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | LT🇱🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @flyv2ray | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -183,9 +187,47 @@
             "tolerance": 50
         },
         {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣3️⃣",
             "type": "vless",
             "server": "217.217.247.248",
+            "server_port": 443,
+            "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "enterprisekitten.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": "6ba85179e30d4fc2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "217.217.247.247",
             "server_port": 443,
             "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
             "flow": "xtls-rprx-vision",
@@ -323,7 +365,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | LT🇱🇹 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @flyv2ray | LT🇱🇹 | 0️⃣1️⃣",
             "type": "vless",
             "server": "5.199.170.105",
             "server_port": 443,
@@ -403,6 +445,34 @@
                     "enabled": true,
                     "public_key": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU",
                     "short_id": "c84f"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "89.169.39.55",
+            "server_port": 443,
+            "uuid": "c61ec320-29f1-4e00-9272-8b676e6957b4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "max.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU",
+                    "short_id": "28a059440d3d5ba1"
                 }
             }
         },
