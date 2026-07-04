@@ -110,8 +110,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @shh_proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | US🇺🇸 | 0️⃣2️⃣",
@@ -152,9 +153,9 @@
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | RO🇷🇴 | 0️⃣2️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | SE🇸🇪 | 0️⃣3️⃣"
             ]
@@ -163,8 +164,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @shh_proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | US🇺🇸 | 0️⃣2️⃣",
@@ -205,9 +207,9 @@
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayngninja | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | RO🇷🇴 | 0️⃣2️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | SE🇸🇪 | 0️⃣3️⃣"
             ],
@@ -216,9 +218,9 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "63.186.137.193",
+            "server": "13.37.135.58",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -251,6 +253,38 @@
             "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "13.39.35.22",
+            "server_port": 22224,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-channel-vlessconfig",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "3.73.234.160",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1353,43 +1387,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "172.64.185.156",
-            "server_port": 2083,
-            "uuid": "a753775d-5114-4bd0-927a-cb932b41c24d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ez-7d5d7f.shayrad885.workers.dev",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh",
-                "headers": {
-                    "Host": "ez-7d5d7f.shayrad885.workers.dev"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "172.64.185.156",
+            "server": "cdn6.sudonetwork.com",
             "server_port": 443,
-            "uuid": "a753775d-5114-4bd0-927a-cb932b41c24d",
+            "uuid": "68f68e9d-e1f2-4904-9971-10983e47ffc4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1399,29 +1401,20 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ez-7d5d7f.shayrad885.workers.dev",
+                "server_name": "dustream.hediehjavani.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh",
-                "headers": {
-                    "Host": "ez-7d5d7f.shayrad885.workers.dev"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
+            "tag": "رایگان | VLESS | @FreakConfig | RO🇷🇴 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "104.17.1.18",
-            "server_port": 2083,
-            "uuid": "a753775d-5114-4bd0-927a-cb932b41c24d",
+            "server": "cdn.fonix1.com",
+            "server_port": 443,
+            "uuid": "68f68e9d-e1f2-4904-9971-10983e47ffc4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1431,7 +1424,30 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ez-7d5d7f.shayrad885.workers.dev",
+                "server_name": "dustream.hediehjavani.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "ansooyefilter-channel.up.railway.app",
+            "server_port": 443,
+            "uuid": "3aff2f4c-cbe7-b6f1-d1b2-86ad0a8d78c2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ansooyefilter-channel.up.railway.app",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1440,9 +1456,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh",
+                "path": "\/\/ws\/3aff2f4c-cbe7-b6f1-d1b2-86ad0a8d78c2",
                 "headers": {
-                    "Host": "ez-7d5d7f.shayrad885.workers.dev"
+                    "Host": "ansooyefilter-channel.up.railway.app"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
