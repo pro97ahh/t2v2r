@@ -106,6 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "IR🇮🇷",
+                "FR🇫🇷",
                 "US🇺🇸"
             ]
         },
@@ -114,6 +115,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -125,6 +127,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -171,6 +183,32 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "s10.tiizping.cloud"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "bestcf.030101.xyz",
+            "server_port": 80,
+            "uuid": "f8975871-a7a0-4906-8835-a23c1258ca1e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "bestcf.030101.xyz"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
