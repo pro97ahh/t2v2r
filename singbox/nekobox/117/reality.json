@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "SE🇸🇪",
                 "PL🇵🇱",
+                "FR🇫🇷",
                 "DE🇩🇪",
                 "AM🇦🇲"
             ]
@@ -116,8 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | SE🇸🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | AM🇦🇲 | 0️⃣1️⃣"
             ],
@@ -129,8 +131,7 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | SE🇸🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,7 +141,18 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -195,12 +207,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | SE🇸🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "148.253.211.10",
+            "server": "83.168.71.216",
             "server_port": 443,
-            "uuid": "60576147-90e7-4afc-9cf9-c7361a8c7fd8",
-            "flow": "xtls-rprx-vision",
+            "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -209,7 +221,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vk.me",
+                "server_name": "ads.x5.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -217,8 +229,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "B3MWDjEWGQsObyH-9npa_PlkaoQDBqzwlwURFK1zlE8",
-                    "short_id": "3e0527d94cc8d1"
+                    "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+                    "short_id": "2f49bccf11150ef2"
                 }
             }
         },
@@ -247,6 +259,34 @@
                     "enabled": true,
                     "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
                     "short_id": "2f49bccf11150ef2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "185.171.202.108",
+            "server_port": 8443,
+            "uuid": "52ce35e3-aacc-465b-8bf1-cdf4fbd9344d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0",
+                    "short_id": "6ba85179e30d4fc2"
                 }
             }
         },
