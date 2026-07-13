@@ -111,6 +111,7 @@
                 "SE🇸🇪",
                 "PL🇵🇱",
                 "RU🇷🇺",
+                "AM🇦🇲",
                 "US🇺🇸"
             ]
         },
@@ -119,11 +120,12 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | AM🇦🇲 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,7 +145,7 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -154,7 +156,17 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AM🇦🇲",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @lrnbymaa | AM🇦🇲 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,8 +176,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -200,7 +212,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "152.233.43.77",
             "server_port": 16923,
@@ -263,7 +275,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "186.246.0.111",
             "server_port": 443,
@@ -298,7 +310,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @lrnbymaa | AM🇦🇲 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "87.121.47.237",
+            "server_port": 443,
+            "uuid": "cde6db10-61db-418f-9ea1-52f7c13404a9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "am-1.alpha-ai-studio.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "msysQ0O50UghY7hzYz14sJF3cvfolf999HsO2Iu99xc",
+                    "short_id": "1aa760b0"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "212.18.104.39",
             "server_port": 443,
@@ -326,7 +366,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣",
             "type": "vless",
             "server": "212.18.104.39",
             "server_port": 8443,
