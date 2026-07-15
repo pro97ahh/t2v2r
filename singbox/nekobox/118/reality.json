@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "SE🇸🇪",
+                "FI🇫🇮",
                 "US🇺🇸",
                 "FR🇫🇷",
                 "DE🇩🇪",
@@ -123,12 +124,14 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | AT🇦🇹 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | AM🇦🇲 | 0️⃣1️⃣"
             ],
@@ -141,6 +144,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -173,7 +186,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -224,6 +238,34 @@
                     "enabled": true,
                     "public_key": "iqdZR5Uwz-FttCXsi-c6cb8YqYQYtEh6GMbxHW13hBE",
                     "short_id": "fe2e4376"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "65.109.245.160",
+            "server_port": 8442,
+            "uuid": "665b2cec-6027-44e1-bd04-9dc2c3ca8f2e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vsk5Gct4zcJxWTgDqAj5wtv9dCa-Zk-uNVQHq44vFhI",
+                    "short_id": "2a7f6b8788caca70"
                 }
             }
         },
@@ -400,6 +442,41 @@
                     "public_key": "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "89.222.123.211",
+            "server_port": 16923,
+            "uuid": "c065e1bb-cb56-41e5-b043-9dfd15b67565",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api-maps.yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+                    "short_id": "10ffb85da1c2d986"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "neurex",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
