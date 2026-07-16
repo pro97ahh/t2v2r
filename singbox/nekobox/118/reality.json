@@ -129,6 +129,7 @@
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
@@ -183,7 +184,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣"
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -371,6 +373,34 @@
             "server": "212.233.78.243",
             "server_port": 8443,
             "uuid": "68d3fcbe-f025-1f40-82d6-9455c5e5f6b5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "secget.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI",
+                    "short_id": "f8a8ee8381529673"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "secget.ru",
+            "server_port": 8443,
+            "uuid": "68d3fcbe-f025-2710-82d6-9455c5e5f6b5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
