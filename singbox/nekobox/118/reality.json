@@ -129,7 +129,8 @@
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
@@ -185,7 +186,8 @@
             "outbounds": [
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣"
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -396,12 +398,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "secget.ru",
-            "server_port": 8443,
-            "uuid": "68d3fcbe-f025-2710-82d6-9455c5e5f6b5",
-            "flow": "xtls-rprx-vision",
+            "server": "45.12.114.157",
+            "server_port": 443,
+            "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -410,7 +412,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "secget.ru",
+                "server_name": "www.samsung.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -418,9 +420,51 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI",
-                    "short_id": "f8a8ee8381529673"
+                    "public_key": "SK0KGyJuRjuijxlXfFIQ16DBIVRIMwYWUvYyS_CrWhA",
+                    "short_id": "ec092e19"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.12.114.157",
+            "server_port": 443,
+            "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SK0KGyJuRjuijxlXfFIQ16DBIVRIMwYWUvYyS_CrWhA",
+                    "short_id": "ec092e19"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
