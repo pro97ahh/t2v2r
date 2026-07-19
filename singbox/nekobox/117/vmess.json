@@ -104,65 +104,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST | رایگان",
-                "DE🇩🇪"
+                "URL-TEST | رایگان"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "108.61.210.223",
-            "server_port": 17367,
-            "uuid": "399f7f1b-0f5e-43a1-b0b5-6f255367d778",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "209.250.237.71",
-            "server_port": 48824,
-            "uuid": "399f7f1b-0f5e-43a1-b0b5-6f255367d778",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
         },
         {
             "tag": "direct",
