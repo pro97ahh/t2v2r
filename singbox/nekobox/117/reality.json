@@ -107,9 +107,9 @@
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
                 "NL🇳🇱",
+                "TR🇹🇷",
                 "DE🇩🇪",
                 "US🇺🇸",
-                "TR🇹🇷",
                 "SE🇸🇪"
             ]
         },
@@ -119,12 +119,12 @@
             "outbounds": [
                 "رایگان | REALITY | @prrofile_purple | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | SE🇸🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -152,6 +152,16 @@
             "tolerance": 50
         },
         {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
@@ -169,16 +179,6 @@
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "TR🇹🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -255,6 +255,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "uc.bastaniqifi.ir",
+            "server_port": 80,
+            "uuid": "dd6018cb-e047-4371-bdca-460bf0045f02",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uOXWzNhsJ6sMuaZV8zPNZLu0kHNoUmDTRv6P1mlnsXk",
+                    "short_id": "86d61db3f4a3d6ad"
+                }
             }
         },
         {
@@ -409,34 +437,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | TR🇹🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "uc.bastaniqifi.ir",
-            "server_port": 80,
-            "uuid": "dd6018cb-e047-4371-bdca-460bf0045f02",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "uOXWzNhsJ6sMuaZV8zPNZLu0kHNoUmDTRv6P1mlnsXk",
-                    "short_id": "86d61db3f4a3d6ad"
-                }
             }
         },
         {
