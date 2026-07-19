@@ -104,55 +104,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST | رایگان",
-                "PH🇵🇭"
+                "URL-TEST | رایگان"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @Hope_Net | PH🇵🇭 | 0️⃣1️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "PH🇵🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @Hope_Net | PH🇵🇭 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | VMESS | @Hope_Net | PH🇵🇭 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "61.245.11.60",
-            "server_port": 80,
-            "uuid": "e7d6a050-e52a-4d85-ac26-95f85e44e8f4",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vmess\/",
-                "headers": {
-                    "Host": "61.245.11.60"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
         },
         {
             "tag": "direct",
