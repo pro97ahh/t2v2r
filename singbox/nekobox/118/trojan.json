@@ -114,7 +114,8 @@
                 "RELAY🚩",
                 "FR🇫🇷",
                 "US🇺🇸",
-                "NZ🇳🇿"
+                "NZ🇳🇿",
+                "SC🇸🇨"
             ]
         },
         {
@@ -129,7 +130,9 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | NZ🇳🇿 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -183,7 +186,18 @@
             "tag": "NZ🇳🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | NZ🇳🇿 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -223,7 +237,7 @@
         {
             "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.16.174.12",
+            "server": "162.159.38.119",
             "server_port": 443,
             "password": "humanity",
             "multiplex": {
@@ -233,7 +247,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.ignitelimit.com",
+                "server_name": "www.gossipglove.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -244,7 +258,7 @@
                 "type": "ws",
                 "path": "\/\/assignment",
                 "headers": {
-                    "Host": "www.ignitelimit.com"
+                    "Host": "www.gossipglove.com"
                 }
             }
         },
@@ -397,6 +411,62 @@
                 "path": "\/\/assignment",
                 "headers": {
                     "Host": "www.creationlong.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | NZ🇳🇿 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "202.37.33.80",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.creationlong.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/assignment",
+                "headers": {
+                    "Host": "www.creationlong.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "45.130.125.112",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.calmlunch.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/assignment",
+                "headers": {
+                    "Host": null
                 }
             }
         },
