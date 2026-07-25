@@ -105,24 +105,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "HK🇭🇰",
                 "KR🇰🇷",
+                "SG🇸🇬",
                 "RELAY🚩",
-                "NZ🇳🇿",
-                "CH🇨🇭",
-                "IR🇮🇷"
+                "NZ🇳🇿"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | IR🇮🇷 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +143,18 @@
             "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | SG🇸🇬 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,7 +164,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣"
             ],
@@ -161,27 +183,19 @@
             "tolerance": 50
         },
         {
-            "tag": "CH🇨🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "wealthy-loon.rooster465.autos",
+            "server_port": 443,
+            "password": "NQ26071394",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | IR🇮🇷 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "immortal-woodcock.rooster465.autos",
             "server_port": 443,
@@ -193,7 +207,40 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "45.135.228.169",
+            "server_port": 443,
+            "password": "IQ68037294",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "167.150.100.133",
+            "server_port": 450,
+            "password": "0_Oms89nH82l_Ki813_Nxmw81_Rbt_Jq190Kl_m",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "grape-power-sg.roxa.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "162.159.38.119",
             "server_port": 443,
@@ -302,30 +349,6 @@
                 "headers": {
                     "Host": "www.creationlong.org"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "179.237.75.177",
-            "server_port": 17373,
-            "password": "938a1fb2b751d876bb4c8d3ba706054f",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "mmd.asan9720.ir",
-            "server_port": 8880,
-            "password": "hGGbs2T6hf",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
