@@ -112,6 +112,7 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "FR🇫🇷",
+                "CH🇨🇭",
                 "RU🇷🇺",
                 "NL🇳🇱",
                 "RO🇷🇴"
@@ -127,9 +128,11 @@
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣3️⃣",
@@ -149,7 +152,8 @@
                 "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,6 +166,16 @@
                 "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -368,6 +382,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "103.109.234.138",
+            "server_port": 443,
+            "uuid": "ea0a2f27-7e22-4337-820b-6703eca2d7b4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣3️⃣",
             "type": "vless",
             "server": "54.37.75.187",
@@ -448,6 +490,34 @@
                     "enabled": true,
                     "public_key": "rA_ItMaIiG_OUjcaTLpxOoF-OHh4WJsNUfWh7QUn_xU",
                     "short_id": "2f3178a1d747"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | CH🇨🇭 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "animall-zooke.fardaty.ir",
+            "server_port": 8080,
+            "uuid": "e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bkj8m8COBtgcxZZ0ankB6vbxWRwnnreXjDTZA5CUVB0",
+                    "short_id": "4da5c8a61cc588e8"
                 }
             }
         },
