@@ -108,8 +108,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ]
         },
@@ -117,8 +117,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -126,24 +126,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "91.107.139.186",
-            "server_port": 51459,
-            "uuid": "500cdc83-b189-4d79-b06b-139c7972a57f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @free1_vpn | HK🇭🇰 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "uk1.levikogjgfdd.ir",
             "server_port": 443,
@@ -179,11 +162,28 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "91.107.139.186",
+            "server_port": 51459,
+            "uuid": "500cdc83-b189-4d79-b06b-139c7972a57f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "33ae86a0-473d-11ef-a6cd-1239d0255272",
+            "server": "172.67.207.26",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -194,11 +194,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/vmws",
+                "path": "\/\/linkws",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "172.67.207.26"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
