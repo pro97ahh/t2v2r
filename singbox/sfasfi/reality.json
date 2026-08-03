@@ -111,7 +111,8 @@
                 "FR🇫🇷",
                 "DE🇩🇪",
                 "RU🇷🇺",
-                "RO🇷🇴"
+                "RO🇷🇴",
+                "FI🇫🇮"
             ]
         },
         {
@@ -123,10 +124,12 @@
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @lrnbymaa | RO🇷🇴 | 0️⃣1️⃣"
+                "رایگان | REALITY | @lrnbymaa | RO🇷🇴 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,6 +162,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣2️⃣"
@@ -172,6 +176,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @lrnbymaa | RO🇷🇴 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -318,6 +332,41 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "217.149.30.124",
+            "server_port": 50054,
+            "uuid": "e6acf17c-b19c-45ee-afda-373ba72795ce",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rubr7.cheburnetnastalgia1998.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UC7-PeUa2Hc_qJqN6gad454qrfqjM1x1CCX5qxGyuj0",
+                    "short_id": "fcbda044673fdbd1"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
             "type": "vless",
             "server": "qq.utiltools.ru",
@@ -426,6 +475,34 @@
                     "enabled": true,
                     "public_key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU",
                     "short_id": "113241ad01e99a2d"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "5.181.21.234",
+            "server_port": 443,
+            "uuid": "d7fc372d-c057-43ce-8070-9b96abbc60f3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fl4.raketa-balance.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY",
+                    "short_id": "6c6082a2223c1d03"
                 }
             }
         },
