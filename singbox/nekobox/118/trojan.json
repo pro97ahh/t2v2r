@@ -111,7 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
-                "IE🇮🇪"
+                "IE🇮🇪",
+                "US🇺🇸"
             ]
         },
         {
@@ -124,7 +125,8 @@
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,6 +152,16 @@
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -308,6 +320,34 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "ezaccess1-luffy-ezaccess1-658c.up.railway.app",
+            "server_port": 443,
+            "password": "f7d7e66a-b293-4108-861b-4d41dcf8fd3b",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ezaccess1-luffy-ezaccess1-658c.up.railway.app",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/ws\/trojan\/f7d7e66a-b293-4108-861b-4d41dcf8fd3b?ed=2048",
+                "headers": {
+                    "Host": "ezaccess1-luffy-ezaccess1-658c.up.railway.app"
+                }
             }
         },
         {
