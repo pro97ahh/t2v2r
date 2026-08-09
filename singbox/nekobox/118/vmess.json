@@ -272,9 +272,9 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.16.67.38",
+            "server": "104.17.147.22",
             "server_port": 2053,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "uuid": "00fb7867-95ad-4eaf-99f1-22255beb6251",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -287,7 +287,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "nt-haze-7dad.rogap16875.workers.dev",
+                "server_name": null,
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -296,13 +296,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/\/afrhms16v.bestxray.buzz\/linkws",
-                "headers": {
-                    "Host": "104.16.67.38"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+                "type": "grpc",
+                "service_name": "\/",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
