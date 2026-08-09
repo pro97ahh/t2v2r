@@ -118,6 +118,7 @@
                 "RU🇷🇺",
                 "US🇺🇸",
                 "NL🇳🇱",
+                "PL🇵🇱",
                 "FI🇫🇮",
                 "TR🇹🇷",
                 "IT🇮🇹",
@@ -150,7 +151,7 @@
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
@@ -166,6 +167,8 @@
                 "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @azadi_az_inja_migzare | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @azadi_az_inja_migzare | PL🇵🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣",
@@ -238,7 +241,7 @@
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣"
             ],
@@ -280,7 +283,18 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @azadi_az_inja_migzare | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | VLESS | @azadi_az_inja_migzare | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "PL🇵🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @azadi_az_inja_migzare | PL🇵🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -858,11 +872,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "etaoin.virusjadid1.site",
-            "server_port": 443,
-            "uuid": "fadc6fb5-0bd9-45f9-9e48-dc19468d0a55",
+            "server": "104.17.109.155",
+            "server_port": 80,
+            "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -870,20 +884,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "etaoin.virusjadid1.site",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "etaoin.virusjadid1.site"
+                    "Host": "us3.rtacg.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1291,6 +1296,43 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "85.17.145.65",
+            "server_port": 12068,
+            "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @azadi_az_inja_migzare | PL🇵🇱 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "byocsv48182d.dxdx3.com",
+            "server_port": 15744,
+            "uuid": "c26a059d-e324-4c93-912f-443ddec99643",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
