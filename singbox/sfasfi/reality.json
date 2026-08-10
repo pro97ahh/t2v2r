@@ -110,10 +110,13 @@
                 "URL-TEST | رایگان",
                 "EE🇪🇪",
                 "DE🇩🇪",
+                "GB🇬🇧",
+                "BE🇧🇪",
                 "FI🇫🇮",
                 "ZA🇿🇦",
                 "AE🇦🇪",
-                "BE🇧🇪",
+                "FR🇫🇷",
+                "RU🇷🇺",
                 "US🇺🇸"
             ]
         },
@@ -126,10 +129,15 @@
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | ZA🇿🇦 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | ZA🇿🇦 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ConfigsHUB | AE🇦🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -160,6 +168,27 @@
             "tolerance": 50
         },
         {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "BE🇧🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
@@ -173,7 +202,8 @@
             "tag": "ZA🇿🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | ZA🇿🇦 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | ZA🇿🇦 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | ZA🇿🇦 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -190,10 +220,20 @@
             "tolerance": 50
         },
         {
-            "tag": "BE🇧🇪",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -350,6 +390,90 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "144.31.213.150",
+            "server_port": 443,
+            "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.pinecloud.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vWSgdMDirb9aDZLWijSXXXl-NCTrtBgEe9MQqcgV6h8",
+                    "short_id": "6a2e3af684799b19"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "109.69.218.206",
+            "server_port": 443,
+            "uuid": "2a12bb81-f3a3-41bb-99ab-36febf676b4a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kind-wolf.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "109.69.218.217",
+            "server_port": 443,
+            "uuid": "2a12bb81-f3a3-41bb-99ab-36febf676b4a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bold-kestrel.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @prrofile_purple | FI🇫🇮 | 0️⃣2️⃣",
             "type": "vless",
             "server": "ch-play.mobileemdad.top",
@@ -406,6 +530,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @v2ray1_ng | ZA🇿🇦 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "31.43.191.39",
+            "server_port": 443,
+            "uuid": "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "luminous-vortex.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @ConfigsHUB | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "78.17.4.20",
@@ -434,11 +586,39 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "109.69.218.217",
+            "server": "uiv.taguenaby-backend.com",
             "server_port": 443,
-            "uuid": "2a12bb81-f3a3-41bb-99ab-36febf676b4a",
+            "uuid": "74ed8b25-5ff1-40bf-bcd7-3db03be19f53",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "status.play.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs",
+                    "short_id": "49bcf0de6392f0"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "193.233.255.14",
+            "server_port": 443,
+            "uuid": "8fdf6dde-a1ca-456d-9b18-86b74d5768e6",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -448,7 +628,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "bold-kestrel.cdn.cachefleet.com",
+                "server_name": "fr.sellflow.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -456,7 +636,7 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU",
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": ""
                 }
             }
