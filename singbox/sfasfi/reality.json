@@ -108,10 +108,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "EE🇪🇪",
                 "DE🇩🇪",
                 "GB🇬🇧",
                 "BE🇧🇪",
-                "EE🇪🇪",
                 "AE🇦🇪",
                 "FR🇫🇷",
                 "US🇺🇸"
@@ -121,6 +121,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
@@ -128,11 +129,20 @@
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @ConfigsHUB | BE🇧🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @prrofile_purple | EE🇪🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ConfigsHUB | AE🇦🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "EE🇪🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -173,16 +183,6 @@
             "tolerance": 50
         },
         {
-            "tag": "EE🇪🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | EE🇪🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
@@ -197,7 +197,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -212,6 +212,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | EE🇪🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "188.255.236.213",
+            "server_port": 443,
+            "uuid": "2a12bb81-f3a3-41bb-99ab-36febf676b4a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cosmic-aurora.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UMvz-4jhwqv9obtELN1iozBhEUsayjnOvXBSHEiX_DI",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣2️⃣",
@@ -410,34 +438,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | EE🇪🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "188.255.236.213",
-            "server_port": 443,
-            "uuid": "2a12bb81-f3a3-41bb-99ab-36febf676b4a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cosmic-aurora.cdn.cachefleet.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UMvz-4jhwqv9obtELN1iozBhEUsayjnOvXBSHEiX_DI",
-                    "short_id": ""
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "78.17.126.47",
@@ -494,7 +494,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "31.220.86.213",
             "server_port": 443,
