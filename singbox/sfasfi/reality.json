@@ -112,6 +112,7 @@
                 "DE🇩🇪",
                 "SC🇸🇨",
                 "FI🇫🇮",
+                "TR🇹🇷",
                 "IN🇮🇳"
             ]
         },
@@ -120,12 +121,13 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | IN🇮🇳 | 0️⃣3️⃣"
+                "رایگان | REALITY | @ConfigsHUB | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | IN🇮🇳 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,7 +147,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -174,10 +176,20 @@
             "tolerance": 50
         },
         {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | TR🇹🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "IN🇮🇳",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | IN🇮🇳 | 0️⃣3️⃣"
+                "رایگان | REALITY | @free1_vpn | IN🇮🇳 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -212,7 +224,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "de-d-178105.homelanderwins.com",
             "server_port": 40840,
@@ -359,7 +371,42 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | IN🇮🇳 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | TR🇹🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.226.92.175",
+            "server_port": 49736,
+            "uuid": "442e1d8f-d2d3-422c-b03a-00b13098fb9a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "72YYFwmWjUG4MF8Jyon9yBGT31lboO__K-x9FjCO70M",
+                    "short_id": "2942cebdac"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | IN🇮🇳 | 0️⃣3️⃣",
             "type": "vless",
             "server": "5.8.35.72",
             "server_port": 443,
