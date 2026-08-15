@@ -118,7 +118,6 @@
                 "NL🇳🇱",
                 "LU🇱🇺",
                 "FI🇫🇮",
-                "RU🇷🇺",
                 "HK🇭🇰",
                 "IE🇮🇪",
                 "GB🇬🇧"
@@ -133,6 +132,7 @@
                 "رایگان | VLESS | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
@@ -171,7 +171,6 @@
                 "رایگان | REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣2️⃣",
-                "رایگان | VLESS | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣"
@@ -189,6 +188,7 @@
                 "رایگان | VLESS | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣"
@@ -290,16 +290,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -469,6 +459,38 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "69.46.46.40",
+            "server_port": 443,
+            "uuid": "14e941de-82a6-802c-b0f3-c31697d9692b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rvg-production-471c.up.railway.app",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/ws\/14e941de-82a6-802c-b0f3-c31697d9692b",
+                "headers": {
+                    "Host": "rvg-production-471c.up.railway.app"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -1427,38 +1449,6 @@
                     "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
                     "short_id": "29b21343ab4d"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "92.42.96.240",
-            "server_port": 443,
-            "uuid": "4038f946-bd95-5505-a111-196c05d6d92f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mAhaNrEaliteAm.MaHkHan.iR",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "mAhaNrEaliteAm.MaHkHan.iR"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
