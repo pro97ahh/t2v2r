@@ -112,7 +112,8 @@
                 "URL-TEST | رایگان",
                 "FI🇫🇮",
                 "DE🇩🇪",
-                "NL🇳🇱",
+                "SE🇸🇪",
+                "RU🇷🇺",
                 "US🇺🇸"
             ]
         },
@@ -122,8 +123,8 @@
             "outbounds": [
                 "رایگان | REALITY | @DarkTeam_VPN | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -144,18 +145,27 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -228,12 +238,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "169.40.42.232",
-            "server_port": 443,
-            "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-            "flow": "xtls-rprx-vision",
+            "server": "185.113.11.136",
+            "server_port": 1443,
+            "uuid": "4984930f-4a7a-4dfa-8edc-5d21bbf5ca13",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -242,7 +252,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "sw.pubconverter.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -250,17 +260,24 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-                    "short_id": "c39cc7310a"
+                    "public_key": "-yJaCCGsucUDEnTTn6VJJyF0R5ZLlJAVNeIXFJYSGn8",
+                    "short_id": "361c68748712c743"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "nl8.helper-internet.com",
+            "server": "193.233.255.32",
             "server_port": 443,
-            "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
+            "uuid": "5c22dd50-f75d-4cf5-ba53-721f91d8bfe1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -270,7 +287,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "nl8.helper-internet.com",
+                "server_name": "fr.sellflow.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -278,8 +295,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
-                    "short_id": "ff776ff77be48b88"
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
                 }
             }
         },
