@@ -110,20 +110,32 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "US🇺🇸",
                 "DE🇩🇪",
-                "GB🇬🇧",
-                "US🇺🇸"
+                "GB🇬🇧"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,16 +162,102 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "205.172.59.52",
+            "server_port": 33843,
+            "uuid": "139aa859-0297-4235-82fb-41678653978e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "timeline.www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RA9NH_qGC2s6M4qRsEcTal72R407pHOo6xL5d9FhTQ0",
+                    "short_id": "316dda"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "205.172.59.52",
+            "server_port": 33843,
+            "uuid": "139aa859-0297-4235-82fb-41678653978e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "timeline.www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RA9NH_qGC2s6M4qRsEcTal72R407pHOo6xL5d9FhTQ0",
+                    "short_id": "316dda"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "31.76.46.138",
+            "server_port": 20422,
+            "uuid": "d8523317-503e-43ad-b2c3-e5f77d725848",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ",
+                    "short_id": "90"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
@@ -214,97 +312,6 @@
                     "enabled": true,
                     "public_key": "-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE",
                     "short_id": "84f9881951050a30"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "205.172.59.52",
-            "server_port": 33843,
-            "uuid": "139aa859-0297-4235-82fb-41678653978e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "timeline.www.cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "RA9NH_qGC2s6M4qRsEcTal72R407pHOo6xL5d9FhTQ0",
-                    "short_id": "316dda"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "140.99.223.19",
-            "server_port": 443,
-            "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "savesafe.run",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8",
-                    "short_id": "e4f6a3446ac34a24"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "31.76.46.138",
-            "server_port": 20422,
-            "uuid": "d8523317-503e-43ad-b2c3-e5f77d725848",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ",
-                    "short_id": "90"
                 }
             }
         },
