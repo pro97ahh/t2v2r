@@ -110,30 +110,58 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | CY🇨🇾 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | CY🇨🇾 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "66.78.40.202",
+            "server_port": 443,
+            "uuid": "302c2e89-6f2d-4500-90ce-26d075c7e84f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A",
+                    "short_id": "61"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
@@ -220,34 +248,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "fin.feywebsite.ir",
-            "server_port": 8898,
-            "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "play.googleapis.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "y2ciDMmaLyu1U7wEG7Wi9buO91wWHnRtWfPLGjSZHC8",
-                    "short_id": "6633e065744286"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "103.109.234.113",
@@ -311,7 +311,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "31.76.46.138",
             "server_port": 20422,
