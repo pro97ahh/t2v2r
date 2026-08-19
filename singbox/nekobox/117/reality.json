@@ -108,7 +108,9 @@
                 "US🇺🇸",
                 "GB🇬🇧",
                 "CY🇨🇾",
-                "FI🇫🇮"
+                "FI🇫🇮",
+                "SG🇸🇬",
+                "FR🇫🇷"
             ]
         },
         {
@@ -120,7 +122,9 @@
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | CY🇨🇾 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,6 +167,26 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -333,6 +357,62 @@
                     "enabled": true,
                     "public_key": "y2ciDMmaLyu1U7wEG7Wi9buO91wWHnRtWfPLGjSZHC8",
                     "short_id": "6633e065744286"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "111.119.235.145",
+            "server_port": 13779,
+            "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tesla.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+                    "short_id": "af1bdd293097b664"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "node5.get-tres.ru",
+            "server_port": 443,
+            "uuid": "d67af820-f54c-48ab-862c-19086357f276",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telegraf.lv",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+                    "short_id": "e5f67890"
                 }
             }
         },
