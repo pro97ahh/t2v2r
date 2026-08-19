@@ -105,32 +105,34 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪",
+                "FR🇫🇷",
                 "NL🇳🇱",
-                "RELAY🚩"
+                "RELAY🚩",
+                "TR🇹🇷"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,11 +161,21 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "3.64.117.92",
+            "server": "firm-warthog.rooster465.autos",
             "server_port": 443,
-            "password": "FH72359861",
+            "password": "PQ05174892",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -171,11 +183,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "63.176.171.181",
+            "server": "musical-shrew.rooster465.autos",
             "server_port": 443,
-            "password": "FH72359861",
+            "password": "PQ05174892",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -185,9 +197,9 @@
         {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "193.169.239.160",
+            "server": "actual-aardvark.rooster465.autos",
             "server_port": 443,
-            "password": "AE62539071",
+            "password": "PQ05174892",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -275,6 +287,27 @@
                 "path": "\/\/assignment",
                 "headers": {
                     "Host": "www.ignitelimit.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "193.124.46.65",
+            "server_port": 443,
+            "password": "8bS8vVC5CQ2GsckhMh8IT1jv",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "193.124.46.65",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
