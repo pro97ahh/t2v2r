@@ -140,7 +140,8 @@
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
@@ -183,7 +184,8 @@
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
@@ -1018,11 +1020,34 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "moharez-production.up.railway.app",
-            "server_port": 443,
-            "uuid": "087994dd-39fa-c1e0-81fc-751b0171fb8a",
+            "server": "www.parsvds.ir",
+            "server_port": 8080,
+            "uuid": "78c28b24-01f0-4ab3-9e1d-d7634c52beea",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/SHHPROXY?ed=8080",
+                "headers": {
+                    "Host": "SHHproxy-shhPROXY-SHHproxy.joinTELEGRAM.net."
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "14.102.229.221",
+            "server_port": 2096,
+            "uuid": "1149be91-5a4f-47de-995f-66f8d7d64498",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1032,12 +1057,21 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "moharez-production.up.railway.app",
+                "server_name": "De03.SiMaNsAnAt.Ir.",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "De03.SiMaNsAnAt.Ir."
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
