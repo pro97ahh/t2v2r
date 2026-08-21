@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "HK🇭🇰",
                 "US🇺🇸",
+                "DE🇩🇪",
                 "SG🇸🇬",
                 "PL🇵🇱"
             ]
@@ -116,10 +117,12 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | HK🇭🇰 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣3️⃣",
                 "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -130,7 +133,8 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | HK🇭🇰 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,9 +144,19 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,7 +166,7 @@
             "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -197,7 +211,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "hk10.levikogjgfdd.ir",
+            "server_port": 443,
+            "uuid": "daf0c4cb-3541-4f20-bc71-cc9d94bb17bc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BF9aCRIeWaFADnCRCeEKsX1SSRaqAPrXttdD9eFCl0k",
+                    "short_id": "96b6483bfb4ac526"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "rssm-1btto92.joxenly.com",
             "server_port": 443,
@@ -288,7 +330,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "de.lobbytech.ru",
+            "server_port": 443,
+            "uuid": "d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "j4Ny4oGjMLcq2mxWMxt2S2VDFk_YHyvR2_2ZIoAa8Hs",
+                    "short_id": "6b80b599"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣3️⃣",
             "type": "vless",
             "server": "162.128.87.50",
             "server_port": 443,
