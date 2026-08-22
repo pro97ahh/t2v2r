@@ -115,6 +115,7 @@
                 "TR🇹🇷",
                 "NL🇳🇱",
                 "RO🇷🇴",
+                "RU🇷🇺",
                 "PL🇵🇱",
                 "US🇺🇸",
                 "IR🇮🇷",
@@ -151,6 +152,7 @@
                 "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | RO🇷🇴 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
@@ -254,6 +256,16 @@
             "tolerance": 50
         },
         {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
@@ -300,7 +312,7 @@
         {
             "tag": "رایگان | VLESS | @VlessConfig | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "13.39.52.74",
+            "server": "15.224.22.40",
             "server_port": 22224,
             "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
             "flow": "",
@@ -995,6 +1007,41 @@
                     "public_key": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0",
                     "short_id": "72cd47c079c0a3df"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "185.207.66.243",
+            "server_port": 443,
+            "uuid": "626c0789-16d1-4815-be8b-bd03959d7d12",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eNvO4-6_VFngHHC6D5AhcCpCpOdi5gY7-Srimhh-6Xw",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc-tunnel",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
