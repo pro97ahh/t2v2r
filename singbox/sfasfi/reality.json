@@ -112,6 +112,7 @@
                 "TR🇹🇷",
                 "NL🇳🇱",
                 "RO🇷🇴",
+                "SC🇸🇨",
                 "PL🇵🇱",
                 "US🇺🇸"
             ]
@@ -120,11 +121,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | RO🇷🇴 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
@@ -136,7 +138,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -147,7 +149,7 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -174,6 +176,16 @@
             "tolerance": 50
         },
         {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | SC🇸🇨 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
@@ -194,7 +206,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "104.105.3.99",
             "server_port": 32855,
@@ -250,7 +262,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "93.114.98.84",
             "server_port": 32855,
@@ -330,6 +342,34 @@
                     "enabled": true,
                     "public_key": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0",
                     "short_id": "72cd47c079c0a3df"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.195.111.108",
+            "server_port": 443,
+            "uuid": "66824c94-7ba9-4113-908e-bd793f296852",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg",
+                    "short_id": "2715592069f36fe7"
                 }
             }
         },
