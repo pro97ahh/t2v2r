@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "AE🇦🇪",
+                "FR🇫🇷",
                 "PL🇵🇱",
                 "HK🇭🇰",
                 "US🇺🇸"
@@ -119,8 +120,9 @@
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | AE🇦🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | PL🇵🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -149,6 +151,16 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | FR🇫🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
@@ -162,7 +174,7 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -263,6 +275,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "95.182.96.120",
+            "server_port": 80,
+            "uuid": "NamedZadim",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "console.hetzner.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CMlXrhikqsy7lZl3kfLuiwrgdHn4hm3Jgr8gf_ZnYRM",
+                    "short_id": "d3fb"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | PL🇵🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "83.168.71.216",
@@ -291,7 +331,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
             "type": "vless",
             "server": "207.56.137.51",
             "server_port": 443,
