@@ -111,9 +111,11 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣3️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -157,9 +159,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣3️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -207,6 +211,42 @@
             "server": "zula.ir",
             "server_port": 2096,
             "uuid": "26b9c4ce-1a25-4d8e-b265-17ed45ac5f12",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kingo.hightechservice.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "zula.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 2096,
+            "uuid": "0ea36531-40ec-4390-8104-7698eac9eb57",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -292,6 +332,20 @@
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "18.159.232.255",
+            "server_port": 22224,
+            "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
