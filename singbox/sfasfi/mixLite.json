@@ -110,7 +110,8 @@
                 "URL-TEST | رایگان",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -136,6 +137,7 @@
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
@@ -159,7 +161,8 @@
             "outbounds": [
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -185,6 +188,7 @@
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣",
@@ -249,7 +253,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "dashboard.afrashop.top",
             "server_port": 5381,
@@ -259,6 +263,20 @@
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "18.198.221.49",
+            "server_port": 22224,
+            "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -900,6 +918,38 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "188.137.235.179",
+            "server_port": 8444,
+            "uuid": "1f619326-cd93-4d6b-aebe-e0b5f8831d02",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl3.meshbeat.online",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/api\/v1\/devices\/7c05e2fb91\/telemetry",
+                "headers": {
+                    "Host": "nl3.meshbeat.online"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
