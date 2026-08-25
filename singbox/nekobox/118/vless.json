@@ -129,10 +129,10 @@
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -157,7 +157,7 @@
                 "رایگان | VLESS | @FreakConfig | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | LU🇱🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -171,10 +171,10 @@
                 "رایگان | VLESS | @VlessConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VLESS | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -271,7 +271,7 @@
             "outbounds": [
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -362,6 +362,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "188.137.230.221",
+            "server_port": 443,
+            "uuid": "1f619326-cd93-4d6b-aebe-e0b5f8831d02",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo",
+                    "short_id": "7bcfc0bc"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "94.237.102.117",
@@ -437,20 +465,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "panel3.nanaweb.ir",
-            "server_port": 3031,
-            "uuid": "1b73f053-2709-4698-bbec-cb20e8a5f288",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -1013,7 +1027,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @SafeNet_Server | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
             "server": "using.neobo-tooth.ru",
             "server_port": 2083,
