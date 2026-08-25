@@ -110,8 +110,8 @@
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
                 "RU🇷🇺",
-                "US🇺🇸",
-                "SC🇸🇨"
+                "GB🇬🇧",
+                "US🇺🇸"
             ]
         },
         {
@@ -120,9 +120,10 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | SC🇸🇨 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +134,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,20 +152,20 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SC🇸🇨",
+            "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | SC🇸🇨 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -226,6 +228,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "72.56.81.165",
+            "server_port": 40443,
+            "uuid": "4bf5a71c-d726-4585-b095-7396675706d5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "deepl.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU",
+                    "short_id": "c84f"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "176.109.88.216",
@@ -254,11 +284,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "167.104.223.29",
+            "server": "109.169.84.94",
             "server_port": 443,
-            "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+            "uuid": "3bcb31ef-840e-415d-abb3-28628add98d0",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -268,7 +298,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "167.104.223.29.sslip.io",
+                "server_name": "strapi.io",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -276,17 +306,17 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "qOraT1A2tq0v0HIZlcplEnqXx4Sn-99z_EKNqTEZv1M",
-                    "short_id": "6ecabc17bcfb4291"
+                    "public_key": "vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ",
+                    "short_id": "ff6975658b6cefce"
                 }
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | SC🇸🇨 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "45.195.111.108",
+            "server": "47.253.226.114",
             "server_port": 443,
-            "uuid": "219762a7-b918-4e2b-8a3d-d309ef98bb61",
+            "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -296,7 +326,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "storage.yandex.net",
+                "server_name": "www.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -304,8 +334,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg",
-                    "short_id": "f4b4a6365558ea2e"
+                    "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+                    "short_id": ""
                 }
             }
         },
