@@ -109,9 +109,10 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
+                "AE🇦🇪",
                 "RU🇷🇺",
                 "SC🇸🇨",
-                "AE🇦🇪",
+                "DE🇩🇪",
                 "PL🇵🇱",
                 "BG🇧🇬"
             ]
@@ -122,9 +123,11 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | AE🇦🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣2️⃣"
             ],
@@ -144,10 +147,21 @@
             "tolerance": 50
         },
         {
+            "tag": "AE🇦🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | AE🇦🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,10 +178,10 @@
             "tolerance": 50
         },
         {
-            "tag": "AE🇦🇪",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -250,11 +264,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "176.109.88.216",
+            "server": "162.35.231.31",
             "server_port": 443,
-            "uuid": "2c7f1414-87ae-4a01-9796-a02c067891a6",
+            "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -264,7 +278,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "api-maps.yandex.ru",
+                "server_name": "162.35.231.31.sslip.io",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -272,8 +286,64 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk",
-                    "short_id": "a9c4f17e3b62d8"
+                    "public_key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI",
+                    "short_id": "f41bc0b00ca1a978"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "162.35.231.31",
+            "server_port": 443,
+            "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "162.35.231.31.sslip.io",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI",
+                    "short_id": "f41bc0b00ca1a978"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "84.38.187.134",
+            "server_port": 443,
+            "uuid": "53ffd172-de4c-0037-aa77-1a6830a36cf8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "git.xpkg.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc",
+                    "short_id": "2c9431dc7a306018"
                 }
             }
         },
@@ -306,11 +376,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "162.35.231.31",
+            "server": "188.137.235.179",
             "server_port": 443,
-            "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+            "uuid": "1f619326-cd93-4d6b-aebe-e0b5f8831d02",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -320,7 +390,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "162.35.231.31.sslip.io",
+                "server_name": "yahoo.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -328,8 +398,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI",
-                    "short_id": "f41bc0b00ca1a978"
+                    "public_key": "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo",
+                    "short_id": "7bcfc0bc"
                 }
             }
         },
