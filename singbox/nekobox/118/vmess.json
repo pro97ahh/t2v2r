@@ -112,8 +112,7 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "RELAY🚩",
-                "IR🇮🇷",
-                "HK🇭🇰"
+                "IR🇮🇷"
             ]
         },
         {
@@ -121,10 +120,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣3️⃣"
+                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,7 +132,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -154,18 +153,7 @@
             "tag": "IR🇮🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣3️⃣"
+                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -173,6 +161,33 @@
         },
         {
             "tag": "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "guanwang.awsno.com",
+            "server_port": 443,
+            "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "guanwang.awsno.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "guanwang.awsno.com",
             "server_port": 443,
@@ -259,49 +274,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "dashboard.afrashop.top",
-            "server_port": 5381,
-            "uuid": "130b0fbf-4f19-44d0-911f-95355e9632e4",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "156.245.232.239",
-            "server_port": 35043,
-            "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "156.245.232.239"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
