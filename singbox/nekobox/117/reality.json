@@ -112,7 +112,9 @@
                 "DE🇩🇪",
                 "GB🇬🇧",
                 "GR🇬🇷",
-                "MD🇲🇩"
+                "MD🇲🇩",
+                "US🇺🇸",
+                "RU🇷🇺"
             ]
         },
         {
@@ -121,14 +123,16 @@
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | RS🇷🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | GR🇬🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -158,7 +162,6 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -210,7 +213,28 @@
             "tag": "MD🇲🇩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -270,41 +294,6 @@
                     "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
                     "short_id": "2f49bccf11150ef2"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @proxy_kafee | JP🇯🇵 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "31.76.91.138",
-            "server_port": 2087,
-            "uuid": "309b0ce3-09a8-4883-bfe4-bd56e215be44",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ads.x5.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "JfuItzJ81sJehx1PbxyliWSJvuBMKoa9ahNgPO3R7R4",
-                    "short_id": "c226283c4de5b1ad"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -522,6 +511,97 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "89.35.14.30",
+            "server_port": 443,
+            "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "md1.univesalsrv.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
+                    "short_id": "221ba6174224ca5b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "hub.v1.RelayService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "172.239.67.156",
+            "server_port": 26542,
+            "uuid": "c020a807-16d3-4ad0-99f7-8379421c8b71",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nvidia.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "my3biw2X9hZxXzrlw5P9aa9PqlCHgqYMaX5QqNSkBAc",
+                    "short_id": "916152c18db147"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "82.202.177.148",
+            "server_port": 5269,
+            "uuid": "2e483b48-ad25-4c80-8806-73000fd5b031",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "max.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fFmp4fFO2wuoJKvc2_e5MF5C92H6Ei4c_AfV7toZO1c",
+                    "short_id": "a62ae57fa46a0d6d"
+                }
             }
         },
         {
