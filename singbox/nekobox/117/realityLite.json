@@ -105,12 +105,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
+                "رایگان | REALITY | @shh_proxy | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | BG🇧🇬 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | BG🇧🇬 | 0️⃣3️⃣",
@@ -127,12 +127,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
+                "رایگان | REALITY | @shh_proxy | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | BG🇧🇬 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | BG🇧🇬 | 0️⃣3️⃣",
@@ -149,7 +149,35 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @shh_proxy | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "www.b.mobilesari.ir",
+            "server_port": 443,
+            "uuid": "91a32c70-7a90-42ca-94d5-cd44b98cd262",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "amp-api-edge.apps.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM",
+                    "short_id": "5002b5329814b487"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣3️⃣",
             "type": "vless",
             "server": "www.e.mobilenarges.ir",
             "server_port": 7333,
@@ -285,34 +313,6 @@
                     "enabled": true,
                     "public_key": "AL1Q34aEyaqV5FlCsQU75ga6XoKRLIktpytwS0jrtUA",
                     "short_id": "c4659970"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "www.b.mobilesari.ir",
-            "server_port": 443,
-            "uuid": "91a32c70-7a90-42ca-94d5-cd44b98cd262",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "amp-api-edge.apps.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM",
-                    "short_id": "5002b5329814b487"
                 }
             }
         },
