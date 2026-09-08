@@ -109,7 +109,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "SG🇸🇬"
+                "SG🇸🇬",
+                "HK🇭🇰"
             ]
         },
         {
@@ -117,7 +118,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | SG🇸🇬 | 0️⃣2️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,6 +140,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | SG🇸🇬 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -176,6 +188,23 @@
             "server": "149.88.23.207",
             "server_port": 18000,
             "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "154.37.223.105",
+            "server_port": 13221,
+            "uuid": "a0d7636e-b973-4d6a-e6c3-c520d0b43a55",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
