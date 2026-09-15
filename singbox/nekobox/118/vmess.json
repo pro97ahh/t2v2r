@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "MY🇲🇾",
                 "GB🇬🇧"
             ]
         },
@@ -119,7 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | MY🇲🇾 | 0️⃣2️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,10 +138,20 @@
             "tolerance": 50
         },
         {
+            "tag": "MY🇲🇾",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @DeamNet_Proxy | MY🇲🇾 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,7 +175,33 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | MY🇲🇾 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "47.250.45.234",
+            "server_port": 43063,
+            "uuid": "c77f48f5-4be3-4461-b52b-49998e7b897b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/arki?ed=2048",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "66.163.117.58",
             "server_port": 22324,
