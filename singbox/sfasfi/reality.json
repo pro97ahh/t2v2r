@@ -108,9 +108,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "ES🇪🇸",
                 "DE🇩🇪",
                 "RU🇷🇺",
-                "NL🇳🇱",
+                "CY🇨🇾",
                 "RS🇷🇸"
             ]
         },
@@ -118,10 +119,21 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | REALITY | @Outline_Vpn | ES🇪🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | RS🇷🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "ES🇪🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | ES🇪🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +143,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,17 +153,17 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2ray1_ng | CY🇨🇾 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -168,11 +180,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | ES🇪🇸 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "150.241.79.210",
+            "server": "83.147.18.3",
             "server_port": 443,
-            "uuid": "cfffb81e-5034-49ce-8729-18b60c7f1e89",
+            "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -182,7 +194,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "rutube.ru",
+                "server_name": "www.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -190,13 +202,48 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "3J5mYA5NziIVJi77fRsx9dZPYWzLkvaIz-cCdZQvhn8",
-                    "short_id": "1a2b"
+                    "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+                    "short_id": "fd8cf7e1173f0edb"
                 }
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "31.184.244.219",
+            "server_port": 2053,
+            "uuid": "60a361f9-3c45-4954-9e4c-92a85bda243d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY",
+                    "short_id": "4881f8244d1b9021"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "195.133.73.65",
             "server_port": 443,
@@ -224,12 +271,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | CY🇨🇾 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "nl.armankhan.shop",
-            "server_port": 8043,
-            "uuid": "8a5082ab-ccfa-4035-9553-067af387315d",
-            "flow": "",
+            "server": "194.76.155.80",
+            "server_port": 40443,
+            "uuid": "588456a5-f724-46a7-a08b-5d336d9f8f56",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -238,7 +285,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "support-shield.nvidia.no",
+                "server_name": "deepl.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -246,8 +293,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "ZZh7kdIiOal4hm8nkmCdeRDG4hRbhnTFu9XvVpiQuls",
-                    "short_id": "341b"
+                    "public_key": "3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic",
+                    "short_id": "e496c7fe1cefc9ff"
                 }
             }
         },
