@@ -110,8 +110,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "GB🇬🇧",
+                "NL🇳🇱",
                 "US🇺🇸",
+                "CA🇨🇦",
+                "TR🇹🇷",
                 "ES🇪🇸"
             ]
         },
@@ -119,20 +121,21 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣2️⃣"
+                "رایگان | VMESS | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣1️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,18 +152,37 @@
             "tolerance": 50
         },
         {
-            "tag": "ES🇪🇸",
+            "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣2️⃣"
+                "رایگان | VMESS | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | GB🇬🇧 | 0️⃣1️⃣",
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "ES🇪🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "186.190.211.67",
             "server_port": 443,
@@ -222,7 +244,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "66.163.118.73",
             "server_port": 443,
@@ -258,7 +280,34 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "supervpn.armanspeed.ir",
+            "server_port": 443,
+            "uuid": "9e316d2c-3f46-4f47-a3bd-cad429b8eb2a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "supervpn.armanspeed.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | ES🇪🇸 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "66.163.118.73",
             "server_port": 22324,
