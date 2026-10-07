@@ -110,28 +110,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "JP🇯🇵",
                 "AU🇦🇺",
-                "BR🇧🇷"
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "JP🇯🇵",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free1_vpn | AU🇦🇺 | 0️⃣3️⃣",
+                "رایگان | VMESS | @free1_vpn | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,24 +130,97 @@
             "tag": "AU🇦🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣2️⃣"
+                "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free1_vpn | AU🇦🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "BR🇧🇷",
+            "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣3️⃣"
+                "رایگان | VMESS | @free1_vpn | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "194.99.79.26",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "aksai.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkvws",
+                "headers": {
+                    "Host": "194.99.79.26"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free1_vpn | AU🇦🇺 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "194.99.79.26",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "aksai.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkvws",
+                "headers": {
+                    "Host": "194.99.79.26"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free1_vpn | JP🇯🇵 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "168.138.43.75",
             "server_port": 80,
@@ -178,78 +240,6 @@
                 "path": "\/\/cctv13.m3u8",
                 "headers": {
                     "Host": "168.138.43.75"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @v2ray1_ng | AU🇦🇺 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "194.99.79.26",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "aksai.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkvws",
-                "headers": {
-                    "Host": "194.99.79.26"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "194.99.79.26",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "aksai.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkvws",
-                "headers": {
-                    "Host": "194.99.79.26"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
