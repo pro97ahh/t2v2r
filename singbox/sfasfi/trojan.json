@@ -111,7 +111,8 @@
                 "SC🇸🇨",
                 "RELAY🚩",
                 "SG🇸🇬",
-                "US🇺🇸"
+                "FR🇫🇷",
+                "EE🇪🇪"
             ]
         },
         {
@@ -123,7 +124,9 @@
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | EE🇪🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,10 +165,21 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "EE🇪🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | EE🇪🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -278,11 +292,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "167.82.76.7",
+            "server": "141.94.76.177",
             "server_port": 443,
-            "password": "MiTiVPN",
+            "password": "6e3b4240-38f9-4321-9b3c-bc669a34b848",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -290,18 +304,53 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ssl.fastly.com",
+                "server_name": "",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "51.38.99.96",
+            "server_port": 443,
+            "password": "b8808043-6566-4923-9195-e66bfb553d57",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/NLSs---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN",
-                "headers": {
-                    "Host": "mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "ba24.ir",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | EE🇪🇪 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "138.124.183.216",
+            "server_port": 443,
+            "password": "xxoo",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
