@@ -110,31 +110,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VMESS | @DeamNet_Proxy | MY🇲🇾 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @FreakConfig | SE🇸🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | MY🇲🇾 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @FreakConfig | SE🇸🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | MY🇲🇾 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "47.250.135.244",
-            "server_port": 10000,
-            "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+            "server": "www.shopify.com",
+            "server_port": 443,
+            "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -144,6 +146,61 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "guanwang.awsno.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/hls\/cctv5phd.m3u8",
+                "headers": {
+                    "Host": "www.shopify.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "guanwang.awsno.com",
+            "server_port": 443,
+            "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "guanwang.awsno.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/hls\/cctv5phd.m3u8",
+                "headers": {
+                    "Host": "guanwang.awsno.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -190,11 +247,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | SE🇸🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "defe.sync-bridge.ir",
+            "server": "nl3.downbala.com",
             "server_port": 443,
-            "uuid": "386c5322-48aa-4fc1-814f-2ff6c34d77e0",
+            "uuid": "536006da-15d2-432d-b18b-307f2230dc82",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -207,13 +264,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "defe.sync-bridge.ir",
+                "server_name": "t0.m.awsstatic.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/sync\/",
+                "headers": {
+                    "Host": "nl3.downbala.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
