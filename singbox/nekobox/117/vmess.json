@@ -106,8 +106,6 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
-                "TR🇹🇷",
-                "PL🇵🇱",
                 "US🇺🇸"
             ]
         },
@@ -116,10 +114,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | TR🇹🇷 | 0️⃣3️⃣",
-                "رایگان | VMESS | @ConfigsHUB | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -130,29 +124,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "TR🇹🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | TR🇹🇷 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "PL🇵🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -170,42 +142,6 @@
         },
         {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "www.shopify.com",
-            "server_port": 443,
-            "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "guanwang.awsno.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/hls\/cctv5phd.m3u8",
-                "headers": {
-                    "Host": "www.shopify.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "guanwang.awsno.com",
             "server_port": 443,
@@ -238,57 +174,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "206.1.101.206",
-            "server_port": 30950,
-            "uuid": "1940fac2-2d1b-4330-aebd-69a29271688e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | TR🇹🇷 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "206.1.101.206",
-            "server_port": 58057,
-            "uuid": "1940fac2-2d1b-4330-aebd-69a29271688e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | PL🇵🇱 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "45.144.48.32",
-            "server_port": 57072,
-            "uuid": "d8f45bbb-e84d-4ad5-aa63-970f1345b164",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
