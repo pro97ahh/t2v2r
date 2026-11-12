@@ -111,10 +111,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
             ]
         },
@@ -123,10 +122,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -151,11 +149,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "67.220.95.3",
-            "server_port": 18000,
-            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "server": "104.21.3.99",
+            "server_port": 443,
+            "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -165,23 +163,25 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "bmi.ir.kolman.com.de",
-            "server_port": 80,
-            "uuid": "da59eb92-6077-4d9c-9cfc-2153e7c7c680",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.windowsmsidownloads.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/truth",
+                "headers": {
+                    "Host": "104.21.3.99"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -202,7 +202,34 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "176.9.199.190",
+            "server_port": 443,
+            "uuid": "6bb70a79-c55b-4180-89e3-fc29bfab6662",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "176.9.199.190",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.156.121",
             "server_port": 443,
@@ -232,42 +259,6 @@
                 "path": "\/\/truth",
                 "headers": {
                     "Host": "172.67.156.121"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "www.windowssearchtools.com",
-            "server_port": 443,
-            "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.windowssearchtools.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/truth",
-                "headers": {
-                    "Host": "www.windowssearchtools.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
