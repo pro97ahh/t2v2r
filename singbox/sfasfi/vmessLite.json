@@ -109,13 +109,13 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣"
             ]
         },
         {
@@ -123,13 +123,13 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +153,24 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "169.197.142.22",
+            "server_port": 18000,
+            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "47.244.120.197",
             "server_port": 36703,
@@ -179,7 +196,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "57.129.132.223",
             "server_port": 80,
@@ -202,59 +219,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "www.gptcloudai.com",
-            "server_port": 443,
-            "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.gptcloudai.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/truth",
-                "headers": {
-                    "Host": "www.gptcloudai.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "169.197.142.22",
-            "server_port": 18000,
-            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -322,6 +286,42 @@
                 "path": "\/\/truth",
                 "headers": {
                     "Host": "172.67.156.121"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "www.gptcloudai.com",
+            "server_port": 443,
+            "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.gptcloudai.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/truth",
+                "headers": {
+                    "Host": "www.gptcloudai.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
