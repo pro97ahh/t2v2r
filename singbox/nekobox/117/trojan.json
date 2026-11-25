@@ -105,26 +105,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "SG🇸🇬",
-                "NL🇳🇱"
+                "HK🇭🇰",
+                "NL🇳🇱",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
+            "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,18 +138,30 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "43.156.36.253",
-            "server_port": 443,
-            "password": "WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0",
+            "server": "47.242.93.89",
+            "server_port": 12012,
+            "password": "12012",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -162,6 +178,83 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "hlhl.thugiping.com",
+            "server_port": 443,
+            "password": "dad9f029-e280-4dc4-8855-fec0f8143925",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hlhl.thugiping.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "md.foldandflyhigh.com",
+            "server_port": 443,
+            "password": "963A4918-A630-29DA-A873-093CDF8AD784",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "md.foldandflyhigh.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "md.foldandflyhigh.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "bg.foldandflyhigh.com",
+            "server_port": 443,
+            "password": "963A4918-A630-29DA-A873-093CDF8AD784",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bg.foldandflyhigh.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "bg.foldandflyhigh.com"
+                }
             }
         },
         {
